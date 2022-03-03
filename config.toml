@@ -16,7 +16,7 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "About"
+name = "Technology"
 pre = "#"
 url = "mission"
 weight = 2
