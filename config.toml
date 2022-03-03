@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ".../mhr/"
+baseURL = "https://ytyeoh.github.io/mhr/"
 title = "MHR"
 theme = "omega"
 # google analytics
