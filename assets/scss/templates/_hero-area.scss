@@ -32,7 +32,9 @@
 
 			@extend .image-reveal;
 		}
-
+    .content_2{
+      left: 50%!important;
+    }
 		.content {
 			position: absolute;
 			top: 33%;

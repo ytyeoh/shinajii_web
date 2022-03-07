@@ -58,9 +58,10 @@
     }
 }
 .mission-content{
-    margin-left: 130px;
+    // margin-left: 130px;
     position: relative;
     z-index: 2;
+    text-align: center;
     @include desktop{
         margin-left: 0;
     }
@@ -72,7 +73,7 @@
         letter-spacing: 1px;
         span{
             clip-path: inset(0 100% 0 0);
-            text-transform: capitalize;
+            text-transform: uppercase;
         }
         @include desktop {
             font-size: 50px;
@@ -82,21 +83,21 @@
             font-size: 35px;
             line-height: 40px;
         }
-        &::before{
-            position: absolute;
-            content: '';
-            width: 130px;
-            height: 1px;
-            background: $white;
-            left: 0;
-            bottom: -20px;
-        }
+        // &::before{
+        //     position: absolute;
+        //     content: '';
+        //     width: 130px;
+        //     height: 1px;
+        //     background: $white;
+        //     left: 0;
+        //     bottom: -20px;
+        // }
     }
     p{
         font-size: 20px;
         line-height: 40px;
         letter-spacing: 1px;
-        max-width: 80%;
+        max-width: 100%;
         @include tablet{
             font-size: 16px;
             line-height: 25px;

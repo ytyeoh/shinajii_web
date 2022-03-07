@@ -9270,13 +9270,23 @@ li.fancybox-thumbs-loading {
   font-family: 'butlerbold';
   src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("../fonts/butler_bold-webfont.woff") format("woff"); }
 
+/* averia-serif-libre-regular - latin */
+@font-face {
+  font-family: 'Averia Serif Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/averia-serif-libre-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/averia-serif-libre-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/averia-serif-libre-v10-latin-regular.woff2") format("woff2"), url("../fonts/averia-serif-libre-v10-latin-regular.woff") format("woff"), url("../fonts/averia-serif-libre-v10-latin-regular.ttf") format("truetype"), url("../fonts/averia-serif-libre-v10-latin-regular.svg#AveriaSerifLibre") format("svg");
+  /* Legacy iOS */ }
+
 body {
   line-height: 1.5;
-  font-family: "bebas_neue_regular";
+  font-family: "Averia Serif Libre";
   -webkit-font-smoothing: antialiased; }
 
 p {
-  font-family: "bebas_neue_regular";
+  font-family: "Averia Serif Libre";
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px; }
@@ -9527,6 +9537,8 @@ body {
         opacity: .28; }
       .hero-slider-wrapper .item .item-image:after {
         background: #38396B; }
+    .hero-slider-wrapper .item .content_2 {
+      left: 50% !important; }
     .hero-slider-wrapper .item .content {
       position: absolute;
       top: 33%;
@@ -9560,7 +9572,7 @@ body {
         letter-spacing: 2px;
         font-weight: 400;
         font-size: 20px;
-        font-family: "bebas_neue_regular"; }
+        font-family: "Averia Serif Libre"; }
         @media (max-width: 1200px) {
           .hero-slider-wrapper .item .content h3 {
             font-size: 20px;
@@ -9622,7 +9634,7 @@ body {
     position: relative;
     font-size: 13px;
     margin-top: 20px;
-    font-family: "bebas_neue_regular"; }
+    font-family: "Averia Serif Libre"; }
     .scroll h6::before {
       position: absolute;
       content: '';
@@ -9696,9 +9708,9 @@ body {
         .mission .section-title:before {
           content: none; } }
 .mission-content {
-  margin-left: 130px;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  text-align: center; }
   @media (max-width: 991px) {
     .mission-content {
       margin-left: 0; } }
@@ -9710,7 +9722,7 @@ body {
     letter-spacing: 1px; }
     .mission-content h2 span {
       clip-path: inset(0 100% 0 0);
-      text-transform: capitalize; }
+      text-transform: uppercase; }
     @media (max-width: 991px) {
       .mission-content h2 {
         font-size: 50px;
@@ -9719,19 +9731,11 @@ body {
       .mission-content h2 {
         font-size: 35px;
         line-height: 40px; } }
-    .mission-content h2::before {
-      position: absolute;
-      content: '';
-      width: 130px;
-      height: 1px;
-      background: #fff;
-      left: 0;
-      bottom: -20px; }
   .mission-content p {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
-    max-width: 80%; }
+    max-width: 100%; }
     @media (max-width: 767px) {
       .mission-content p {
         font-size: 16px;
@@ -9821,7 +9825,7 @@ body {
   z-index: 6; }
   .visions::before {
     content: 'MADE THINGS';
-    font-family: "bebas_neue_regular";
+    font-family: "Averia Serif Libre";
     position: absolute;
     top: 18%;
     width: 100%;
