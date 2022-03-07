@@ -10405,6 +10405,15 @@ ul.social-list li a {
     color: #fff;
     text-decoration: none; }
 
+footer {
+  color: white;
+  font-size: 40px;
+  padding: 0.5em 1em; }
+  footer a {
+    color: white; }
+  footer i {
+    padding-left: 0.5em; }
+
 .footer {
   padding: 150px 0;
   position: fixed;
