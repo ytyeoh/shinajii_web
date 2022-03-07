@@ -9495,7 +9495,7 @@ body {
     padding-right: 25px;
     padding-left: 25px;
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px; }
   #main-nav .navbar-nav .music-icon {
@@ -9665,16 +9665,11 @@ body {
     position: absolute;
     top: 22%;
     z-index: 2; }
-    .mission .bg::before {
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 100%;
-      background: #0a0e52;
-      opacity: .75; }
     @media (max-width: 991px) {
       .mission .bg {
         width: 80%; } }
+    .mission .bg .img-fluid {
+      margin-left: 15%; }
   .mission .right-shape {
     position: absolute;
     right: 0;

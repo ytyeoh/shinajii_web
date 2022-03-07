@@ -8,16 +8,19 @@
         position: absolute;
         top: 22%;
         z-index: 2;
-        &::before{
-            position: absolute;
-            content: '';
-            height: 100%;
-            width: 100%;
-            background: #0a0e52;
-            opacity: .75;
-        }
+        // &::before{
+        //     position: absolute;
+        //     content: '';
+        //     height: 100%;
+        //     width: 100%;
+        //     // background: #0a0e52;
+        //     opacity: .75;
+        // }
         @include desktop {
             width: 80%;
+        }
+        .img-fluid{
+          margin-left: 15%;
         }
     }
     .right-shape{
