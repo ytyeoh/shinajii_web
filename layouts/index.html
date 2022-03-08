@@ -3,41 +3,35 @@
 {{ if site.Data.homepage.banner.enable }}
 {{ with site.Data.homepage.banner }}
 <section class="hero-slider">
-  <div class="container-fluid p-0 m-0">
+  <div class="container-fluid p-0 m-0 ">
     <div class="row m-0">
-      <div class="col-12 p-0 ml-auto">
+      <div class="col-12 p-0 ml-auto my-5">
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" style="animation-delay: 2s;">
               <img src="{{ .image | absURL }}" alt="slider-image">
             </div>
             <div class="content">
-              <h2>
-                <span class="rev">
-                  {{.title | markdownify}}
-                </span>
-              </h2>
-              <h3>{{ .content | markdownify }}</h3>
               {{ if .button.enable }}
               {{ with .button }}
-              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll">{{.label}}</a>
+              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll"><img src="{{ .label }}" alt="slider-image"></a>
               {{ end }}
               {{ end }}
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 p-0 ml-auto">
+      <div class="col-12 p-0 ml-auto bg-white my-5">
         <div class="hero-slider-wrapper">
           <div class="item">
-            <div class="item-image image-reveal mr-auto ml-0" style="animation-delay: 2s;">
+            <div class="item-image-2 image-reveal mr-auto ml-0" style="animation-delay: 2s;">
               <img src="{{ .image_2 | absURL }}" alt="slider-image">
             </div>
             <div class="content content_2">
               <h2>
-                <span class="rev">
+                
                   {{.title_2 | markdownify}}
-                </span>
+                
               </h2>
               <h3>{{ .content_2 | markdownify }}</h3>
               {{ if .button_2.enable }}
@@ -47,11 +41,6 @@
               {{ end }}
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-12 text-center">
-        <div class="scroll">
-          <h6>SCROLL</h6>
         </div>
       </div>
     </div>
