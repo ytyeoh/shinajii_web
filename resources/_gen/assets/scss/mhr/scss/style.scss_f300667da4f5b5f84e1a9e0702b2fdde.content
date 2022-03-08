@@ -9270,6 +9270,10 @@ li.fancybox-thumbs-loading {
   font-family: 'butlerbold';
   src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("../fonts/butler_bold-webfont.woff") format("woff"); }
 
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap"); }
+
 /* averia-serif-libre-regular - latin */
 @font-face {
   font-family: 'Averia Serif Libre';
@@ -9282,17 +9286,17 @@ li.fancybox-thumbs-loading {
 
 body {
   line-height: 1.5;
-  font-family: "Averia Serif Libre";
+  font-family: "Be Vietnam Pro";
   -webkit-font-smoothing: antialiased; }
 
 p {
-  font-family: "Averia Serif Libre";
+  font-family: "Be Vietnam Pro";
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "butlerbold";
+  font-family: "Be Vietnam Pro";
   color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9301,6 +9305,9 @@ h1, h2, h3, h4, h5, h6 {
 label {
   font-size: 15px;
   margin-bottom: 5px; }
+
+.btn {
+  font-size: 25px; }
 
 body {
   background: #05091D; }
@@ -9522,11 +9529,15 @@ body {
     overflow: hidden; }
     .hero-slider-wrapper .item .item-image-2 {
       position: relative;
-      width: 40%;
+      width: 100%;
       margin-left: auto;
       margin-right: 10%; }
       .hero-slider-wrapper .item .item-image-2 img {
         width: 100%; }
+      @media (max-width: 575px) {
+        .hero-slider-wrapper .item .item-image-2 {
+          width: 100%;
+          margin: 0; } }
     .hero-slider-wrapper .item .item-image {
       position: relative;
       width: 40%;
@@ -9536,25 +9547,18 @@ body {
         width: 100%; }
       .hero-slider-wrapper .item .item-image:after {
         background: #000; }
-    .hero-slider-wrapper .item .content_2 {
-      top: 20% !important;
-      left: 50% !important;
-      width: 50%; }
-      .hero-slider-wrapper .item .content_2 h2 {
-        color: black;
-        text-transform: uppercase; }
-      .hero-slider-wrapper .item .content_2 h3 {
-        color: black; }
     .hero-slider-wrapper .item .content {
       position: absolute;
       top: 33%;
       left: 7%; }
       @media (max-width: 991px) {
         .hero-slider-wrapper .item .content {
-          top: 20%; } }
+          top: 20%;
+          left: -10%; } }
       @media (max-width: 575px) {
         .hero-slider-wrapper .item .content {
-          top: 0; } }
+          top: 10%;
+          left: -10%; } }
       .hero-slider-wrapper .item .content h2 {
         font-weight: 600;
         line-height: 110px;
@@ -9578,7 +9582,7 @@ body {
         letter-spacing: 2px;
         font-weight: 400;
         font-size: 20px;
-        font-family: "Averia Serif Libre"; }
+        font-family: "Be Vietnam Pro"; }
         @media (max-width: 1200px) {
           .hero-slider-wrapper .item .content h3 {
             font-size: 20px;
@@ -9598,6 +9602,12 @@ body {
         width: 70%; }
         .hero-slider-wrapper .item .content .hero-btn img {
           width: 100%; }
+          @media (max-width: 991px) {
+            .hero-slider-wrapper .item .content .hero-btn img {
+              width: 70%; } }
+          @media (max-width: 575px) {
+            .hero-slider-wrapper .item .content .hero-btn img {
+              width: 70%; } }
         @media (max-width: 991px) {
           .hero-slider-wrapper .item .content .hero-btn {
             padding: 20px 30px; } }
@@ -9633,6 +9643,35 @@ body {
     right: 6%;
     bottom: 5%; }
 
+.content_2 h2 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 84px; }
+
+.content_2 h3 {
+  color: black; }
+
+.content_2 .hero-btn {
+  padding: 25px 50px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 3rem;
+  border: none;
+  letter-spacing: 2px;
+  background: black; }
+
+@media (max-width: 991px) {
+  .content_2 {
+    width: 50%; } }
+
+@media (max-width: 575px) {
+  .content_2 {
+    width: 50%; }
+    .content_2 h2 {
+      font-size: 3rem !important;
+      line-height: 4.2rem !important;
+      font-weight: 900; } }
+
 .scroll {
   height: 70px;
   overflow: hidden; }
@@ -9642,7 +9681,7 @@ body {
     position: relative;
     font-size: 13px;
     margin-top: 20px;
-    font-family: "Averia Serif Libre"; }
+    font-family: "Be Vietnam Pro"; }
     .scroll h6::before {
       position: absolute;
       content: '';
@@ -9828,7 +9867,7 @@ body {
   z-index: 6; }
   .visions::before {
     content: 'MADE THINGS';
-    font-family: "Averia Serif Libre";
+    font-family: "Be Vietnam Pro";
     position: absolute;
     top: 18%;
     width: 100%;

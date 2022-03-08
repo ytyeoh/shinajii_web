@@ -21,26 +21,28 @@
           </div>
         </div>
       </div>
-      <div class="col-12 p-0 ml-auto bg-white my-5">
+      <div class="col-sm-12  col-12 col-lg-6 p-0 ml-auto bg-white my-lg-5 my-0">
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image-2 image-reveal mr-auto ml-0" style="animation-delay: 2s;">
               <img src="{{ .image_2 | absURL }}" alt="slider-image">
             </div>
-            <div class="content content_2">
-              <h2>
-                
-                  {{.title_2 | markdownify}}
-                
-              </h2>
-              <h3>{{ .content_2 | markdownify }}</h3>
-              {{ if .button_2.enable }}
-              {{ with .button_2 }}
-              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll">{{.label_2}}</a>
-              {{ end }}
-              {{ end }}
-            </div>
           </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-12 col-lg-6  my-0 px-lg-0 ml-auto bg-white my-lg-5 content_2 content text-left py-lg-5 py-3 px-4 ">
+      	<div class="align-middle py-lg-5">
+	        <h2>
+	          
+		          {{.title_2 | markdownify}}
+	          
+	        </h2>
+	        <h3>{{ .content_2 | markdownify }}</h3>
+	        {{ if .button_2.enable }}
+	        {{ with .button_2 }}
+	        <a href="{{ .link | absURL }}" class=" my-3 hero-btn btn page-scroll">{{.label}}</a>
+	        {{ end }}
+	        {{ end }}
         </div>
       </div>
     </div>
