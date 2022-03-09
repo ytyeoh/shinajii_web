@@ -1,34 +1,27 @@
 {{ define "main" }}
 
 <!--==================================
-=            Career Promo            =
+=            technology Promo            =
 ===================================-->
 
 {{ if .Params.about.enable }}
 {{ with .Params.about }}
-<section class="section career-featured pt-0">
+<section class="section technology-featured pt-0">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-sm-12  col-12 col-lg-6">
+				<img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+			</div>
+			<div class="col-sm-12  col-12 col-lg-6 technology-featured my-lg-5 py-3 px-4 text-left">
 				<div class="block">
 					<!-- written-content -->
-					<div class="content">
-						<!-- Career heading -->
-						<h2><span class="rev">{{ .title }}</span></h2>
-						<!-- Career Description -->
+					<div class="content py-lg-5 title-case">
+						<!-- technology heading -->
+						<h2 class="text-uppercase">{{ .title }}</h2>
+						<!-- technology Description -->
 						<p>{{ .content | markdownify }}</p>
 					</div>
 					<!-- Promo Video -->
-					<div class="video image-reveal">
-						<!-- Video Thumb -->
-						<img class="img-fluid shadow" src="{{ .video_thumb | absURL }}" alt="video-thumbnail">
-						<!-- Video Button -->
-						<div class="video-button video-box">
-							<a href="javascript:void(0)">
-								<i class="fa fa-play" data-video="https://www.youtube.com/embed/{{.video_id}}?autoplay=1"></i>
-							</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -37,26 +30,34 @@
 {{ end }}
 {{ end }}
 
-<!--====  End of Career Promo  ====-->
+<!--====  End of technology Promo  ====-->
 
 <!--=============================
 =            Gallery            =
 ==============================-->
 {{ if .Params.gallery.enable }}
 {{ with .Params.gallery }}
-<section class="gallery">
-	<div class="container-fluid p-0">
-		<div class="row no-gutters">
-			{{ range .images }}
-			<div class="col-md-4">
-				<div class="image image-reveal">
-					<img data-fancybox="gallery" href="{{ . |absURL }}" class="img-fluid"
-						src="{{ . |absURL }}" alt="">
+<section class="gallery bg-white">
+	<div class=" container-fluid p-0">
+		<div class="row">
+			<div class="col-sm-12  col-12 col-lg-6 my-lg-5 py-3 px-4 text-left">
+				<div class="block">
+					<!-- written-content -->
+					<div class="content py-lg-5 title-case">
+						<!-- technology heading -->
+						<h2 class="text-uppercase">{{ .title }}</h2>
+						<!-- technology Description -->
+						<p>{{ .content | markdownify }}</p>
+					</div>
+					<!-- Promo Video -->
 				</div>
 			</div>
-			{{ end }}
+			<div class="col-sm-12  col-12 col-lg-6">
+				<img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+			</div>
 		</div>
 	</div>
+	
 </section>
 {{ end }}
 {{ end }}
@@ -97,8 +98,8 @@
 <!--===============================
 =            Job lists            =
 ================================-->
-{{ if .Params.career.enable }}
-{{ with .Params.career }}
+{{ if .Params.technology.enable }}
+{{ with .Params.technology }}
 <section class="job-list section pt-0">
 	<div class="container">
 		<div class="row">

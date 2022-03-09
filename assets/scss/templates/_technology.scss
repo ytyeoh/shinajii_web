@@ -1,4 +1,4 @@
-.career-featured{
+.technology-featured{
 	.block{
 		display: flex;
 		@include tablet {
@@ -11,19 +11,22 @@
 		    @include tablet {
     	        flex-grow: 1;
 		        width: 100%;
-		        margin-bottom: 30px;
+		        margin: 0;
 		        text-align: center;
 		    }
 		    h2{
-                font-size: 35px;
-                margin-bottom: 20px;
-                span{
-                    clip-path: inset(0 100% 0 0);
-                }
-            }
-            p{
-                letter-spacing: 1px;
-            }
+          font-size: 84px;
+          margin-bottom: 20px;
+          @include  tablet {
+            font-size: 3rem;
+          }
+          span{
+              clip-path: inset(0 100% 0 0);
+          }
+        }
+        p{
+            letter-spacing: 1px;
+        }
 		}
 		.video{
 	        justify-content: center;
@@ -69,6 +72,15 @@
 }
 
 .gallery{
+  .content{
+    h2{
+      color: black;
+    }
+    p{
+      color: black;
+    }
+    
+  }
 	.image{
         overflow: hidden;
 		cursor: pointer;

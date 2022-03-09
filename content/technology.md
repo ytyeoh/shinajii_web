@@ -1,21 +1,24 @@
 ---
-title : "Career"
-layout: "career"
-description: "Do what you enjoy, invest for your future and reap the benefits of working with the worlds first advancement company that puts people first."
+title : "advanced innovation"
+layout: "technology"
+description: "Technologies is about advancement, and innovation is to come out with something original and unique, and MHR is combining this tow terms together, to make high quality and affordable helmet for all motorcycle riders."
+image : "images/hero-image/7.png"
 
 
 ######### about ###############
 about:
   enable : true
-  title : "Who we're looking for"
-  content : "Bright, educated and hard working individuals who put professionalism first."
-  video_thumb : "images/promo-video-thumbnail.jpg"
-  video_id : "g3-VxLQO7do"
+  title : "advanced innovation"
+  content : "Technologies is about advancement, and innovation is to come out with something original and unique, and MHR is combining this tow terms together, to make high quality and affordable helmet for all motorcycle riders."
+  image : "images/hero-image/7.png"
 
 
 ########### Gallery ##########
 gallery:
   enable : true
+  title : "LIGHT WEIGHT."
+  content : "Weighting under 1.4 Kilograms, MHR helmets is comfortable for long rides and road trips. The lightweight materials leaves little to no stress on the neck of the rider."
+  image : "images/hero-image/7.png"
   images:
   - "images/gallery/gallery-01.png"
   - "images/gallery/gallery-02.png"

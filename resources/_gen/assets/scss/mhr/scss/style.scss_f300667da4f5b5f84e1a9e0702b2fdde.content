@@ -9302,6 +9302,14 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
+.title-case h2 {
+  font-size: 84px;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+.title-case p {
+  font-size: 1.75rem; }
+
 label {
   font-size: 15px;
   margin-bottom: 5px; }
@@ -10311,36 +10319,39 @@ ul.social-list li a {
     line-height: 48px;
     color: #0a6446; }
 
-.career-featured .block {
+.technology-featured .block {
   display: flex; }
   @media (max-width: 767px) {
-    .career-featured .block {
+    .technology-featured .block {
       flex-wrap: wrap; } }
-  .career-featured .block .content {
+  .technology-featured .block .content {
     flex-basis: 100%;
     align-self: center;
     margin-right: 20px; }
     @media (max-width: 767px) {
-      .career-featured .block .content {
+      .technology-featured .block .content {
         flex-grow: 1;
         width: 100%;
-        margin-bottom: 30px;
+        margin: 0;
         text-align: center; } }
-    .career-featured .block .content h2 {
-      font-size: 35px;
+    .technology-featured .block .content h2 {
+      font-size: 84px;
       margin-bottom: 20px; }
-      .career-featured .block .content h2 span {
+      @media (max-width: 767px) {
+        .technology-featured .block .content h2 {
+          font-size: 3rem; } }
+      .technology-featured .block .content h2 span {
         clip-path: inset(0 100% 0 0); }
-    .career-featured .block .content p {
+    .technology-featured .block .content p {
       letter-spacing: 1px; }
-  .career-featured .block .video {
+  .technology-featured .block .video {
     justify-content: center;
     align-self: center;
     flex-basis: 100%;
     margin-left: 10px;
     overflow: hidden; }
     @media (max-width: 767px) {
-      .career-featured .block .video {
+      .technology-featured .block .video {
         flex-grow: 1;
         width: 100%; } }
 .company-fun-facts h2 {
@@ -10366,6 +10377,12 @@ ul.social-list li a {
     border: 1px solid #fff;
     border-radius: 100%;
     color: #fff; }
+
+.gallery .content h2 {
+  color: black; }
+
+.gallery .content p {
+  color: black; }
 
 .gallery .image {
   overflow: hidden;
