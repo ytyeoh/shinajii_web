@@ -9307,7 +9307,16 @@ label {
   margin-bottom: 5px; }
 
 .btn {
-  font-size: 25px; }
+  font-size: 25px;
+  min-width: 20%; }
+
+.btn-black {
+  background: black;
+  color: white;
+  border-radius: 3rem;
+  padding: 25px 50px;
+  font-weight: 600;
+  border: none; }
 
 body {
   background: #05091D; }
@@ -9704,10 +9713,15 @@ body {
 
 .mission {
   position: relative;
-  padding: 185px 0 170px 0; }
+  padding: 185px 0 170px 0;
+  margin-bottom: 170px; }
   @media (max-width: 991px) {
     .mission {
-      padding: 100px 0; } }
+      padding: 100px 0 0 0; } }
+  @media (max-width: 575px) {
+    .mission {
+      padding: 100px 0 50px 0;
+      margin-bottom: 0; } }
   .mission .bg {
     position: absolute;
     top: 22%;
@@ -9827,20 +9841,36 @@ body {
         .mission-content .video iframe {
           min-height: 350px; } }
 .vision {
-  padding: 180px 0 100px 0;
-  overflow: hidden; }
+  padding: 0px 0 100px 0;
+  overflow: hidden;
+  background: white;
+  padding: 90px 0; }
   @media (max-width: 991px) {
     .vision {
-      padding: 100px 0; } }
+      padding: 50px 0; } }
   @media (max-width: 767px) {
     .vision {
       padding: 70px 0; } }
+  .vision a:hover {
+    color: white; }
+  .vision .card {
+    background: #000;
+    border: 1px solid #707070;
+    border-radius: 38px; }
+    .vision .card h3 {
+      text-transform: uppercase;
+      font-size: 48px; }
+    .vision .card a {
+      font-size: 24px;
+      color: white; }
+    .vision .card a:hover {
+      text-decoration: none;
+      color: white; }
+    .vision .card img {
+      border-radius: 38px; }
   .vision .section-title {
-    position: absolute;
     z-index: 3;
-    transform: rotate(-90deg);
-    top: 15px;
-    right: 0; }
+    text-align: center; }
     @media (max-width: 991px) {
       .vision .section-title {
         position: relative;
@@ -9848,9 +9878,10 @@ body {
         margin-bottom: 30px;
         transform: rotate(0); } }
     .vision .section-title span {
-      font-size: 17px;
-      color: #fff;
-      letter-spacing: 12px; }
+      font-size: 48px;
+      letter-spacing: 12px;
+      color: black;
+      font-weight: 700; }
     .vision .section-title:before {
       position: absolute;
       width: 30px;
@@ -9865,21 +9896,6 @@ body {
 .visions {
   position: relative;
   z-index: 6; }
-  .visions::before {
-    content: 'MADE THINGS';
-    font-family: "Be Vietnam Pro";
-    position: absolute;
-    top: 18%;
-    width: 100%;
-    font-size: 220px;
-    color: #fff;
-    z-index: 4;
-    letter-spacing: 7px;
-    opacity: .05;
-    font-weight: 600; }
-    @media (max-width: 767px) {
-      .visions::before {
-        display: none; } }
   .visions .vision-item {
     position: relative;
     z-index: 3; }

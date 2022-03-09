@@ -95,19 +95,23 @@
         <div class="section-title">
           <span>{{ .section | markdownify }}</span>
         </div>
-        <div class="visions">
+        <div class="visions row mt-5">
           {{ range .vision_item }}
-          <div class="vision-item">
-            <div class="image image-reveal">
-              <img src="{{ .image | absURL }}" class="img-fluid" alt="vision-thumb">
-            </div>
-            <div class="text-content">
-              <h3>{{ .title | markdownify }}</h3>
-              <p>{{ .content | markdownify}}</p>
+          <div class="col-lg-4 col-12 col-sm-12 py-2 px-0">
+            <div class="card mx-3 ">
+	             <img src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+            
+	            <div class="card-body text-center">
+	              <h3>{{ .title | markdownify }}</h3>
+	              <a href="{{ .link | absURL }}" >{{ .content | markdownify}}</a>
+	            </div>
             </div>
           </div>
           {{ end }}
         </div>
+      </div>
+      <div class="col-12 text-center">
+      	<a href="/products" class="btn-black btn ">Buy Now</a>
       </div>
     </div>
   </div>
