@@ -9306,10 +9306,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 84px;
   margin-bottom: 20px;
   text-transform: uppercase; }
-
+  @media (max-width: 767px) {
+    .title-case h2 {
+      font-size: 3rem;
+      line-height: 3.2rem;
+      text-align: center; } }
 .title-case p {
   font-size: 1.75rem; }
-
+  @media (max-width: 767px) {
+    .title-case p {
+      text-align: center; } }
 label {
   font-size: 15px;
   margin-bottom: 5px; }

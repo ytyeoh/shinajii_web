@@ -27,7 +27,7 @@ gallery:
 
 ########### funfacts ##########
 funfacts:
-  enable : true
+  enable : false
   title : "amenities for you to enjoy"
   funfacts_item:
   - name : "Flexible hours"

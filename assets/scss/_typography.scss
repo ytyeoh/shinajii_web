@@ -52,9 +52,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 84px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include tablet{
+        font-size: 3rem;
+        line-height: 3.2rem;
+        text-align: center;
+    }
   }
   p{
     font-size: 1.75rem;;
+    @include tablet{
+        text-align: center;
+    }
   }
 }
 
