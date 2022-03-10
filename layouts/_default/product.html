@@ -40,7 +40,7 @@
 {{ if .Params.product.enable }}
 {{ with .Params.product }}
 
-<section class="vision pt-0" id="helmet">
+<section class="vision" id="helmet">
   <div class="container-fluid px-lg-5 ">
     <div class="row">
       <div class="col-12">
@@ -62,7 +62,7 @@
 			              		<p>{{ .content | markdownify}}</p>
 			              	</div>
 			              	<div class="col-12 col-lg-4 text-right">
-			              		<a class="my-3 btn-black btn page-scroll" href="{{ .link }}">{{ .name }}</a>
+			              		<a class="my-3 btn-black btn page-scroll" href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .name }}</a>
 			              	</div>
 			              </div>
 			            </div>
@@ -144,49 +144,5 @@
 {{ end }}
 
 <!--====  End of Job lists  ====-->
-
-{{ if site.Data.homepage.contact.enable }}
-{{ with site.Data.homepage.contact }}
-<div class="contact mb-0" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title">
-          <span>{{ .section | markdownify }}</span>
-        </div>
-      </div>
-      <div class="col-lg-7 ml-auto">
-        <div class="text-block">
-          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
-          <p>{{.content | markdownify}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="map-div">
-    {{ with site.Params.map }}
-    <div id="map" data-center-lat="{{.map_center_lat}}" data-center-lng="{{.map_center_lng}}" data-position-lat="{{.map_position_lat}}" data-position-lng="{{.map_position_lng}}" data-marker="{{.map_marker | absURL }}" data-name="{{site.Title}}"></div>
-    {{ end }}
-    <div class="office">
-      <div class="contents">
-        <img src="{{ .image |absURL}}" alt="office">
-        <div class="address">
-          <h2>{{ site.Params.contact_info | markdownify}}</h2>
-          <ul class="social-list list-inline">
-            {{ range site.Params.social }}
-            <li class="list-inline-item">
-              <a href="{{ .link | safeURL }}" target="_blank">
-                <i class="fa {{ .icon }}"></i>
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
-{{ end }}
 
 {{ end }}

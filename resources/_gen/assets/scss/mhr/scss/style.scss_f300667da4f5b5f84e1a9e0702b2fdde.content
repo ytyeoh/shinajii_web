@@ -10012,21 +10012,24 @@ body {
     @media (max-width: 991px) {
       #helmet #line {
         display: none; } }
+.map-div iframe {
+  border-radius: 60px; }
+
 .contact {
   position: relative;
   padding-top: 180px;
-  margin-bottom: 495px;
+  margin-bottom: 2em;
   z-index: 1; }
   @media (max-width: 991px) {
     .contact {
       padding-top: 100px;
-      margin-bottom: 335px; } }
+      margin-bottom: 2em; } }
   @media (max-width: 767px) {
     .contact {
       padding-top: 70px; } }
   @media (max-width: 575px) {
     .contact {
-      margin-bottom: 320px; } }
+      margin-bottom: 2em; } }
   .contact .section-title {
     position: absolute;
     z-index: 3;

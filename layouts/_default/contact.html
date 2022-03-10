@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ if site.Data.homepage.contact.enable }}
+{{ with site.Data.homepage.contact }}
+<div class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-div px-lg-5 px-4 title-case">
+  	<h2>
+  		{{ if site.Params.logo }}
+            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+        {{end}}
+	    {{ .sub_title | markdownify }}
+	</h2>
+  	{{ with site.Params.map }}
+  	<iframe src="{{.gmap_api}}" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+{{ end }}

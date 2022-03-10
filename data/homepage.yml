@@ -34,14 +34,17 @@ vision:
   - title : "FULL FACE"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
+    link : "#products"
     
   - title : "flip up"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
+    link : "#products"
     
   - title : "open face"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
+    link : "#products"
 
 
 #################### product ####################
@@ -69,12 +72,12 @@ product:
 
 ###################### Contact ####################
 contact:
-  enable : false
+  enable : true
   section : "CONTACT US"
   title : "reach us"
   image : "images/map-bg.jpg"
   content : "The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business."
-
+  sub_title: "find us here"
   
 ################### call to action #################
 call_to_action:

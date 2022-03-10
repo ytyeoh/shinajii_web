@@ -1,17 +1,23 @@
+.map-div{
+  iframe{
+    border-radius: 60px;
+  }
+  
+}
 .contact{
     position: relative;
     padding-top: 180px;
-    margin-bottom: 495px;
+    margin-bottom: 2em;
     z-index: 1;
     @include desktop{
         padding-top: 100px;
-        margin-bottom: 335px;
+        margin-bottom: 2em;
     }
     @include tablet{
         padding-top: 70px;
     }
     @include mobile{
-        margin-bottom: 320px;
+        margin-bottom: 2em;
     }
     .section-title{
         position: absolute;
