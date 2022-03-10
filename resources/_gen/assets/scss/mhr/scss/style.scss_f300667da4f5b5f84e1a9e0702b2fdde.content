@@ -10325,6 +10325,20 @@ ul.social-list li a {
     line-height: 48px;
     color: #0a6446; }
 
+#image-100 {
+  margin: 0;
+  width: 100%; }
+  #image-100:after {
+    display: none; }
+
+#content-50 {
+  width: 50%; }
+  @media (max-width: 991px) {
+    #content-50 {
+      left: 5%; } }
+  @media (max-width: 575px) {
+    #content-50 p {
+      font-size: 1rem; } }
 .technology-featured .block {
   display: flex; }
   @media (max-width: 767px) {

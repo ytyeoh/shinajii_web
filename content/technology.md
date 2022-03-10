@@ -27,70 +27,16 @@ gallery:
 
 ########### funfacts ##########
 funfacts:
-  enable : false
-  title : "amenities for you to enjoy"
-  funfacts_item:
-  - name : "Flexible hours"
-    icon : "fa-bicycle"
-    content : "Tight schedule, tell us so we can tailor the schedule that fits your needs."
-    
-  - name : "Free Snacks"
-    icon : "fa-bell-o"
-    content : "Tight schedule, tell us so we can tailor the schedule that fits your needs."
-    
-  - name : "Recreation"
-    icon : "fa-microchip"
-    content : "Tight schedule, tell us so we can tailor the schedule that fits your needs."
-    
-  - name : "5 Working Days"
-    icon : "fa-plug"
-    content : "Tight schedule, tell us so we can tailor the schedule that fits your needs."
+  enable : true
+  title : "AERO DYNAMIC."
+  content : "The aerodynamic design of our helmets helps in dealing with turbulence which minimize noises on the road. And with multiple intake and exhaust channels to provide airflow to reduce the drag pressure for a comfortable trip."
+  image : "images/hero-image/7.png"
     
 ########### Career ############
 career:
   enable : true
-  title : "Job Opening"
-  job_item:
-  - name : "Android Developer"
-    location : "Hamburg, Germany"
-    form_action : "#"
-    about : "With experience in creating visual directions for tech products, you are able to set the standard and lead designers along the way. You are not only able to execute beautiful user experiences yourself but communicate those concepts to the team and clients."
-    experiences:
-    - "3+ years Development	experience in a startup environment"
-    - "Strong knowledge of iOS, Android & Web Platforms"
-    - "Dynamic presentation and communication skills"
-    - "Self-motivation: You manage your own milestones, deadlines, and priorities"
-    
-  - name : "DevOps Engineer"
-    location : "Hamburg, Germany"
-    form_action : "#"
-    about : "With experience in creating visual directions for tech products, you are able to set the standard and lead designers along the way. You are not only able to execute beautiful user experiences yourself but communicate those concepts to the team and clients."
-    experiences:
-    - "3+ years Development	experience in a startup environment"
-    - "Strong knowledge of iOS, Android & Web Platforms"
-    - "Dynamic presentation and communication skills"
-    - "Self-motivation: You manage your own milestones, deadlines, and priorities"
-
-
-  - name : "Operations Manager"
-    location : "Hamburg, Germany"
-    form_action : "#"
-    about : "With experience in creating visual directions for tech products, you are able to set the standard and lead designers along the way. You are not only able to execute beautiful user experiences yourself but communicate those concepts to the team and clients."
-    experiences:
-    - "3+ years Development	experience in a startup environment"
-    - "Strong knowledge of iOS, Android & Web Platforms"
-    - "Dynamic presentation and communication skills"
-    - "Self-motivation: You manage your own milestones, deadlines, and priorities"
-
-
-  - name : "International Compliance Officer"
-    location : "Hamburg, Germany"
-    form_action : "#"
-    about : "With experience in creating visual directions for tech products, you are able to set the standard and lead designers along the way. You are not only able to execute beautiful user experiences yourself but communicate those concepts to the team and clients."
-    experiences:
-    - "3+ years Development	experience in a startup environment"
-    - "Strong knowledge of iOS, Android & Web Platforms"
-    - "Dynamic presentation and communication skills"
-    - "Self-motivation: You manage your own milestones, deadlines, and priorities"
+  title : "DURABLE."
+  content : "Any good helmet should be able to withstand wear, pressure and damage. MHR's helmet will protect you from the environment you’re riding in, whether it be inclement weather or debris and bugs hitting your visor."
+  image : "images/technical/4.png"
 
 ---
