@@ -9328,7 +9328,15 @@ label {
   background: black;
   color: white;
   border-radius: 3rem;
-  padding: 25px 50px;
+  padding: 10px 50px;
+  font-weight: 600;
+  border: none; }
+
+.btn-white {
+  background: white;
+  color: black;
+  border-radius: 3rem;
+  padding: 10px 50px;
   font-weight: 600;
   border: none; }
 
@@ -9987,187 +9995,23 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
-.products {
-  padding: 100px 0;
-  position: relative; }
-  @media (max-width: 767px) {
-    .products {
-      padding: 70px 0; } }
-  .products .bg {
-    position: absolute;
-    top: 12%;
-    right: 0;
-    z-index: 2; }
+.product1 h3 {
+  font-size: 180px;
+  text-transform: uppercase;
+  border-bottom: 5px solid white; }
+  @media (max-width: 575px) {
+    .product1 h3 {
+      font-size: 80px; } }
+#helmet {
+  background: black; }
+  #helmet h3, #helmet h4, #helmet p {
+    color: black; }
+  #helmet #line {
+    height: 10rem;
+    border-left: 2px solid black; }
     @media (max-width: 991px) {
-      .products .bg {
-        width: 80%; } }
-    .products .bg::before {
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 100%;
-      background: #0a0e52;
-      opacity: .75; }
-  .products .left-shape {
-    position: absolute;
-    top: -12%; }
-  .products .section-title {
-    position: absolute;
-    z-index: 2;
-    transform: rotate(-90deg);
-    top: 150px;
-    right: -40px; }
-    @media (max-width: 991px) {
-      .products .section-title {
-        position: relative;
-        top: 0;
-        right: 0;
-        transform: rotate(0);
-        margin-bottom: 30px; } }
-    .products .section-title span {
-      font-size: 17px;
-      color: #fff;
-      letter-spacing: 12px; }
-    .products .section-title:before {
-      position: absolute;
-      width: 30px;
-      height: 1px;
-      content: '';
-      bottom: -9px;
-      right: -70%;
-      background: #fff; }
-      @media (max-width: 991px) {
-        .products .section-title:before {
-          content: none; } }
-  .products .text-block {
-    position: relative;
-    z-index: 3; }
-    .products .text-block h2 {
-      position: relative;
-      margin-bottom: 42px;
-      font-size: 60px;
-      line-height: 65px;
-      letter-spacing: 1px; }
-      .products .text-block h2 span {
-        clip-path: inset(0 100% 0 0);
-        text-transform: capitalize; }
-      @media (max-width: 991px) {
-        .products .text-block h2 {
-          font-size: 50px;
-          line-height: 60px; } }
-      @media (max-width: 767px) {
-        .products .text-block h2 {
-          font-size: 35px;
-          line-height: 40px; } }
-      @media (max-width: 575px) {
-        .products .text-block h2 {
-          font-size: 20px;
-          line-height: 25px; } }
-      .products .text-block h2::before {
-        position: absolute;
-        content: '';
-        width: 130px;
-        height: 1px;
-        background: #fff;
-        left: 0;
-        bottom: -20px; }
-    .products .text-block p {
-      font-size: 20px;
-      line-height: 40px;
-      letter-spacing: 1px;
-      max-width: 80%; }
-      @media (max-width: 767px) {
-        .products .text-block p {
-          font-size: 16px;
-          line-height: 25px;
-          max-width: 100%; } }
-.product-slider-wrapper {
-  padding-top: 175px;
-  padding-bottom: 135px;
-  position: relative;
-  z-index: 3;
-  overflow: hidden; }
-  @media (max-width: 991px) {
-    .product-slider-wrapper {
-      padding-top: 60px;
-      padding-bottom: 60px; } }
-  @media (max-width: 767px) {
-    .product-slider-wrapper {
-      padding-top: 40px;
-      padding-bottom: 40px; } }
-  .product-slider-wrapper .product-item {
-    position: relative;
-    max-width: 380px;
-    margin: 0 15px;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    cursor: pointer; }
-    .product-slider-wrapper .product-item img {
-      transition: all .3s ease-in-out;
-      width: 100%; }
-    .product-slider-wrapper .product-item .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      margin: 30px;
-      transform: scale(0);
-      transition: all .3s ease-in-out;
-      transform-origin: center center; }
-      .product-slider-wrapper .product-item .overlay .content {
-        display: flex;
-        flex-direction: column;
-        background: #fff;
-        padding: 0 30px;
-        height: calc(100% - 60px);
-        justify-content: center; }
-        .product-slider-wrapper .product-item .overlay .content h5 {
-          color: #05091D;
-          margin-bottom: 20px;
-          font-size: 30px; }
-          @media (max-width: 991px) {
-            .product-slider-wrapper .product-item .overlay .content h5 {
-              font-size: 25px; } }
-        .product-slider-wrapper .product-item .overlay .content p {
-          color: #383838;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: 1px; }
-        .product-slider-wrapper .product-item .overlay .content a {
-          font-size: 14px;
-          letter-spacing: 3px;
-          text-decoration: none;
-          font-weight: bold;
-          transition: all .3s ease;
-          color: #FF1D5D; }
-    .product-slider-wrapper .product-item:hover img {
-      transform: scale(1.2); }
-    .product-slider-wrapper .product-item:hover .overlay {
-      transform: scale(1); }
-  .product-slider-wrapper .slick-list {
-    overflow: visible; }
-  .product-slider-wrapper .slick-slide {
-    outline: 0; }
-  .product-slider-wrapper .slick-prev, .product-slider-wrapper .slick-next {
-    position: absolute;
-    cursor: pointer;
-    z-index: 5;
-    background: transparent;
-    border: none;
-    outline: none; }
-    .product-slider-wrapper .slick-prev i, .product-slider-wrapper .slick-next i {
-      color: #fff;
-      opacity: .33;
-      font-size: 20px; }
-    .product-slider-wrapper .slick-prev:hover i, .product-slider-wrapper .slick-next:hover i {
-      opacity: 1; }
-  .product-slider-wrapper .slick-next {
-    right: 4%;
-    bottom: 1.5%; }
-  .product-slider-wrapper .slick-prev {
-    right: 6.5%;
-    bottom: 1.5%; }
-
+      #helmet #line {
+        display: none; } }
 .contact {
   position: relative;
   padding-top: 180px;

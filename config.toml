@@ -23,8 +23,8 @@ weight = 2
 
 [[menu.main]]
 name = "Products"
-pre = "#"
-url = "products"
+pre = "/"
+url = "product"
 weight = 3
 
 [[menu.main]]

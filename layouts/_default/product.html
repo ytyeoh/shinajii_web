@@ -1,0 +1,192 @@
+{{ define "main" }}
+
+<!--==================================
+=            technology Promo            =
+===================================-->
+
+{{ if .Params.about.enable }}
+{{ with .Params.about }}
+<section class="section technology-featured pt-0 product1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12  col-12 col-lg-8 technology-featured my-lg-5 py-3 px-4 text-left">
+        <div class="block">
+          <!-- written-content -->
+          <div class="content py-lg-5 title-case rev">
+            <!-- technology heading -->
+            <h2 class="text-uppercase">{{ .title }}</h2>
+            <!-- technology Description -->
+            <h3>{{ .content | markdownify }}</h3>
+            <a class="my-3 btn-white btn page-scroll"
+                  href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+          </div>
+          <!-- Promo Video -->
+        </div>
+      </div>
+      <div class="col-sm-12  col-12 col-lg-4 my-lg-auto">
+	      <img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of technology Promo  ====-->
+
+<!--=============================
+=            Gallery            =
+==============================-->
+{{ if .Params.product.enable }}
+{{ with .Params.product }}
+
+<section class="vision pt-0" id="helmet">
+  <div class="container-fluid px-lg-5 ">
+    <div class="row">
+      <div class="col-12">
+        <div class="visions row">
+          {{ range .vision_item }}
+          <div class="col-12 col-sm-12 py-2 px-0">
+            <div class="card mx-3 bg-white">
+            	<div class="row">
+            		<div class="col-12 col-lg-4 col-sm-12">
+            			<img src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+            		</div>
+            		<div class="col-12 col-lg-8 col-sm-12">
+            			<div class="card-body text-left">
+			              <h3>{{ .title | markdownify }}</h3>
+			              <h4>{{ .section | markdownify }}</h4>
+			              <div class="row">
+			              	<div class="col-12  ml-3" id="line"></div>
+			              	<div class="col-12 col-lg-8">
+			              		<p>{{ .content | markdownify}}</p>
+			              	</div>
+			              	<div class="col-12 col-lg-4 text-right">
+			              		<a class="my-3 btn-black btn page-scroll" href="{{ .link }}">{{ .name }}</a>
+			              	</div>
+			              </div>
+			            </div>
+            		</div>
+            	</div>
+	             
+            
+	            
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!--====  End of Gallery  ====-->
+
+<!--===============================
+=            Fun Facts            =
+================================-->
+
+{{ if .Params.funfacts.enable }}
+{{ with .Params.funfacts }}
+<section class="section technology-featured ">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12  col-12 col-lg-7">
+        <img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+      </div>
+      <div class="col-sm-12  col-12 col-lg-5 technology-featured my-lg-5 py-3 px-4 text-left">
+        <div class="block">
+          <!-- written-content -->
+          <div class="content py-lg-5 title-case">
+            <!-- technology heading -->
+            <h2 class="text-uppercase">{{ .title }}</h2>
+            <!-- technology Description -->
+            <p>{{ .content | markdownify }}</p>
+          </div>
+          <!-- Promo Video -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of Fun Facts  ====-->
+
+<!--===============================
+=            Job lists            =
+================================-->
+{{ if .Params.career.enable }}
+{{ with .Params.career }}
+<section class="hero-slider">
+  <div class="container-fluid p-0 m-0 ">
+    <div class="row m-0">
+      <div class="col-12 p-0 ml-auto my-5">
+        <div class="hero-slider-wrapper">
+          <div class="item">
+            <div class="item-image image-reveal" id="image-100" style="animation-delay: 2s;">
+              <img src="{{ .image | absURL }}" alt="slider-image">
+            </div>
+            <div class="content text-white" id="content-50">
+              <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+              <p>{{ .content | markdownify }}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!--====  End of Job lists  ====-->
+
+{{ if site.Data.homepage.contact.enable }}
+{{ with site.Data.homepage.contact }}
+<div class="contact mb-0" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>{{ .section | markdownify }}</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-div">
+    {{ with site.Params.map }}
+    <div id="map" data-center-lat="{{.map_center_lat}}" data-center-lng="{{.map_center_lng}}" data-position-lat="{{.map_position_lat}}" data-position-lng="{{.map_position_lng}}" data-marker="{{.map_marker | absURL }}" data-name="{{site.Title}}"></div>
+    {{ end }}
+    <div class="office">
+      <div class="contents">
+        <img src="{{ .image |absURL}}" alt="office">
+        <div class="address">
+          <h2>{{ site.Params.contact_info | markdownify}}</h2>
+          <ul class="social-list list-inline">
+            {{ range site.Params.social }}
+            <li class="list-inline-item">
+              <a href="{{ .link | safeURL }}" target="_blank">
+                <i class="fa {{ .icon }}"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+{{ end }}
