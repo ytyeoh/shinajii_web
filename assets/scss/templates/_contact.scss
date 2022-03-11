@@ -2,9 +2,20 @@
   iframe{
     border-radius: 60px;
   }
-  
+
 }
 .contact{
+  i{
+    color: white;
+    font-size: 3rem;
+  }
+  .title-case p{
+    font-size: 1.2rem;
+    @include mobile{
+      text-align: left;
+
+    }
+  }
     position: relative;
     padding-top: 180px;
     margin-bottom: 2em;

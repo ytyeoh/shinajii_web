@@ -10020,6 +10020,14 @@ body {
   padding-top: 180px;
   margin-bottom: 2em;
   z-index: 1; }
+  .contact i {
+    color: white;
+    font-size: 3rem; }
+  .contact .title-case p {
+    font-size: 1.2rem; }
+    @media (max-width: 575px) {
+      .contact .title-case p {
+        text-align: left; } }
   @media (max-width: 991px) {
     .contact {
       padding-top: 100px;

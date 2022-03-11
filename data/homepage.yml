@@ -78,6 +78,9 @@ contact:
   image : "images/map-bg.jpg"
   content : "The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business."
   sub_title: "find us here"
+  formspree_action: "/mail.php"
+  address: "STORE ADDRESS<br>Hong Lun Sdn.Bhd. (PG0340870-H)<br>No. 12, Jalan Nafiri 1,Victory Aura Industry Park,<br>14200 Sungai Bakap,Pulau Pinang,<br>Malaysia  "
+  phone: "CALL US<br>+ 017-510 5584<br>@ mhrhelmetofficial@gmail.com  "
   
 ################### call to action #################
 call_to_action:
