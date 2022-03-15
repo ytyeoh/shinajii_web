@@ -86,80 +86,80 @@ body{
 .reveal-text {
 	position: relative;
 	white-space: nowrap;
-	animation-name: reveal-text;
-	animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(1,.01,0,1);
-  clip-path: inset(0 100% 0 0);
+	// animation-name: reveal-text;
+	// animation-duration: 1s;
+	// animation-fill-mode: both;
+	// animation-timing-function: cubic-bezier(1,.01,0,1);
+ //  clip-path: inset(0 100% 0 0);
 }
 
-.reveal-text::after {
-	content: "";
-	position: absolute;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: $primary-color;
-	transform: scaleX(0);
-        transform-origin: 0 50%;
-        animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(1,.01,0,1);
-	animation-name: revealer-text;
-}
+// .reveal-text::after {
+// 	content: "";
+// 	position: absolute;
+// 	z-index: 999;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	background-color: $primary-color;
+	// transform: scaleX(0);
+ //        transform-origin: 0 50%;
+ //        animation-duration: 1s;
+	// animation-fill-mode: both;
+	// animation-timing-function: cubic-bezier(1,.01,0,1);
+	// animation-name: revealer-text;
+// }
 
-@keyframes reveal-text {
-	from {
-        clip-path: inset(0 100% 0 0);
-	}
-	to {
-        clip-path: inset(0 0 0 0);
-	}
-}
+// @keyframes reveal-text {
+// 	from {
+//         clip-path: inset(0 100% 0 0);
+// 	}
+// 	to {
+//         clip-path: inset(0 0 0 0);
+// 	}
+// }
 
-@keyframes revealer-text {
-	0%, 50% {
-    transform-origin: 0 50%;
-	}
-	51%, 100% {
-    transform-origin: 100% 50%;		
-	}	
-	50% {
-    transform: scaleX(1);
-	}
-	100% {
-    transform: scaleX(0);
-	}
-}
+// @keyframes revealer-text {
+// 	0%, 50% {
+//     transform-origin: 0 50%;
+// 	}
+// 	51%, 100% {
+//     transform-origin: 100% 50%;		
+// 	}	
+// 	50% {
+//     transform: scaleX(1);
+// 	}
+// 	100% {
+//     transform: scaleX(0);
+// 	}
+// }
 
 .image-reveal{
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: all 1s cubic-bezier(1,.01,0,1);
+  // transform: scaleX(0);
+  // transform-origin: left;
+  // transition: all 1s cubic-bezier(1,.01,0,1);
   position: relative;
   img{
     width: 100%;
   }
-  &:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: $white;
-    z-index: 2;
-    transition: all .5s cubic-bezier(1,.01,0,1);
-    transition-delay: 1s;
-  }
-  &.trigger{
-    transform: scaleX(1);
-    &:after{
-      transform: translateX(100%);
-    }
-  }
+  // &:after{
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   background: $white;
+  //   z-index: 2;
+  //   transition: all .5s cubic-bezier(1,.01,0,1);
+  //   transition-delay: 1s;
+  // }
+  // &.trigger{
+  //   transform: scaleX(1);
+  //   &:after{
+  //     transform: translateX(100%);
+  //   }
+  // }
 }
 
 .preloader{

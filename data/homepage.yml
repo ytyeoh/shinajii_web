@@ -36,17 +36,17 @@ vision:
   - title : "FULL FACE"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
-    link : "#products"
+    link : "/product/#full face"
     
   - title : "flip up"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
-    link : "#products"
+    link : "/product/#flip up"
     
   - title : "open face"
     image : "images/vision/helmet.png"
     content : "Helmets<br> | <br>LEARN MORE"
-    link : "#products"
+    link : "/product/#open face"
 
 
 #################### product ####################

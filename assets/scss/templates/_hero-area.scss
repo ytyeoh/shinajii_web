@@ -250,20 +250,20 @@
 			left: 48%;
 			top: -4px;
 			overflow: hidden;
-			animation-name: scroll_animation;
-			animation-duration: 1s;
-			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
+			// animation-name: scroll_animation;
+			// animation-duration: 1s;
+			// animation-iteration-count: infinite;
+			// animation-timing-function: ease-in-out;
 		}
 	}
 }
 
-@keyframes scroll_animation {
-	from {
-		transform: translateX(0);
-	}
+// @keyframes scroll_animation {
+// 	from {
+// 		transform: translateX(0);
+// 	}
 
-	to {
-		transform: translateX(-200%);
-	}
-}
+// 	to {
+// 		transform: translateX(-200%);
+// 	}
+// }

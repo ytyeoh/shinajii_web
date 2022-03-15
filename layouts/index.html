@@ -104,7 +104,7 @@
             
 	            <div class="card-body text-center">
 	              <h3>{{ .title | markdownify }}</h3>
-	              <a href="{{ .link | absURL }}" >{{ .content | markdownify}}</a>
+	              <a href="{{ .link | relURL }}" >{{ .content | markdownify}}</a>
 	            </div>
             </div>
           </div>
@@ -112,7 +112,7 @@
         </div>
       </div>
       <div class="col-12 text-center">
-      	<a href="/products" class="btn-black btn ">Buy Now</a>
+      	<a href="./product" class="btn-black btn ">Buy Now</a>
       </div>
     </div>
   </div>
