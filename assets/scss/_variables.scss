@@ -1,11 +1,12 @@
 // Colors
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
 $primary-color: #0a6446;
 $black: #000;
 $white: #fff;
 $gray: #848484;
 $border-color:#d8dbdd;
-$primary-font: 'Be Vietnam Pro';
-$secondary-font: 'Be Vietnam Pro';
+$primary-font: 'Be Vietnam Pro', sans-serif;;
+$secondary-font: 'Be Vietnam Pro', sans-serif;
 $icon-font: 'FontAwesome';
 $text-color: $white;
 $text-color-dark: #05091D;

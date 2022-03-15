@@ -23,6 +23,9 @@
       a{
         font-size: 24px;
         color: white;
+        span{
+          font-weight: 100;
+        }
       }
       a:hover{
         text-decoration: none;
@@ -47,7 +50,7 @@
         }        
         span{
             font-size: 48px;
-            letter-spacing: 12px;
+            // letter-spacing: 5px;
             color: black;
             font-weight: 700;
         }
