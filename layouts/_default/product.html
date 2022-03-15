@@ -47,7 +47,7 @@
         <div class="visions row">
           {{ range .vision_item }}
           <div class="col-12 col-sm-12 py-2 px-0">
-            <div class="card mx-3 bg-white">
+            <div class="card mx-3 bg-white" id="{{.title}}">
             	<div class="row">
             		<div class="col-12 col-lg-4 col-sm-12">
             			<img src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
@@ -62,7 +62,7 @@
 			              		<p>{{ .content | markdownify}}</p>
 			              	</div>
 			              	<div class="col-12 col-lg-4 text-right">
-			              		<a class="my-3 btn-black btn page-scroll" href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .name }}</a>
+			              		<a class="my-3 btn-black btn page-scroll" href="{{ .link }}">{{ .name }}</a>
 			              	</div>
 			              </div>
 			            </div>

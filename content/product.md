@@ -2,7 +2,7 @@
 title : "advanced innovation"
 layout: "product"
 description: "Technologies is about advancement, and innovation is to come out with something original and unique, and MHR is combining this tow terms together, to make high quality and affordable helmet for all motorcycle riders."
-image : "images/hero-image/7.png"
+image : "images/helmet/c1.png"
 
 
 ######### about ###############
@@ -24,23 +24,23 @@ product:
   vision_item:
   - title : "FULL FACE"
     section: 'Helmets'
-    image : "images/vision/helmet.png"
+    image : "images/helmet/c2.png"
     content : "A sturdy protection for your head, covers the entirehead and chin area to provide full protection, and the only moving part of the helmet is the visor."
-    link : "https://mhrracing.com/index.php?route=product/manufacturer/info&manufacturer_id=1"
+    link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=1"
     name: 'Buy Now'
     
   - title : "flip up"
     section: 'Helmets'
-    image : "images/vision/helmet.png"
+    image : "images/helmet/c3.png"
     content : "Sits perfectly in the middle of Open Face and Full FaceHelmet. A well preferred helmet by the commuters who also loves occasional long weekend trips."
-    link : "https://mhrracing.com/index.php?route=product/manufacturer/info&manufacturer_id=1"
+    link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=2"
     name: 'Buy Now'
     
   - title : "open face"
     section: 'Helmets'
-    image : "images/vision/helmet.png"
+    image : "images/helmet/c4.png"
     content : "Provides motorcyclist an enhanced airflow, a decent protection, comfort and have longer visor which adds weather protection when you need it."
-    link : "https://mhrracing.com/index.php?route=product/manufacturer/info&manufacturer_id=1"
+    link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=3"
     name: 'Buy Now'
 
 

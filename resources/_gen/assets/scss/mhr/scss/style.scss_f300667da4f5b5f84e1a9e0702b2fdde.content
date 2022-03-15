@@ -9312,7 +9312,7 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 3.2rem;
       text-align: center; } }
 .title-case p {
-  font-size: 1.75rem; }
+  font-size: 1.5rem; }
   @media (max-width: 767px) {
     .title-case p {
       text-align: center; } }
@@ -9341,7 +9341,7 @@ label {
   border: none; }
 
 body {
-  background: #05091D; }
+  background: #000; }
 
 .section {
   padding: 100px 0; }
@@ -9680,7 +9680,8 @@ body {
   font-size: 84px; }
 
 .content_2 h3 {
-  color: black; }
+  color: black;
+  font-size: 1.5rem; }
 
 .content_2 .hero-btn {
   padding: 25px 50px;
@@ -9797,7 +9798,8 @@ body {
     margin-bottom: 42px;
     font-size: 60px;
     line-height: 65px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-transform: uppercase; }
     .mission-content h2 span {
       clip-path: inset(0 100% 0 0);
       text-transform: uppercase; }
@@ -9996,7 +9998,7 @@ body {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
 .product1 h3 {
-  font-size: 180px;
+  font-size: 150px;
   text-transform: uppercase;
   border-bottom: 5px solid white; }
   @media (max-width: 575px) {
@@ -10024,7 +10026,7 @@ body {
     color: white;
     font-size: 3rem; }
   .contact .title-case p {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     @media (max-width: 575px) {
       .contact .title-case p {
         text-align: left; } }

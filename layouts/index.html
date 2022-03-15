@@ -14,14 +14,15 @@
             <div class="content">
               {{ if .button.enable }}
               {{ with .button }}
-              <a href="{{ .link | absURL }}" class="hero-btn btn page-scroll"><img src="{{ .label }}" alt="slider-image"></a>
+
+              <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll"><img src="{{ .label }}" alt="slider-image"></a>
               {{ end }}
               {{ end }}
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-12  col-12 col-lg-6 p-0 ml-auto bg-white my-lg-5 my-0">
+      <div class="col-sm-12  col-12 col-lg-6 p-0 ml-auto bg-white my-lg-5 my-0" id="advance">
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image-2 image-reveal mr-auto ml-0" style="animation-delay: 2s;">
@@ -40,7 +41,7 @@
 	        <h3>{{ .content_2 | markdownify }}</h3>
 	        {{ if .button_2.enable }}
 	        {{ with .button_2 }}
-	        <a href="{{ .link | absURL }}" class=" my-3 hero-btn btn page-scroll">{{.label}}</a>
+	        <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll" class=" my-3 hero-btn btn page-scroll">{{.label}}</a>
 	        {{ end }}
 	        {{ end }}
         </div>
@@ -67,7 +68,7 @@
           <span>{{.section}}</span>
         </div> -->
         <div class="mission-content">
-          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
+          <h2>{{ .title | markdownify}}</h2>
           <p>{{ .content | markdownify }}</p>
 
           <!-- <div class="video image-reveal">

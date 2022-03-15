@@ -7,14 +7,16 @@ banner:
   button:
     enable : true
     label : "images/hero-image/mhr.png"
-    link : "#products"
+    Pre: "#"
+    URL : "advance"
   title_2 : "Advanced innovation"
   content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. <br>Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
-  image_2 : "images/hero-image/7.png"
+  image_2 : "images/helmet/a2.png"
   button_2:
     enable : true
     label : "Learn More"
-    link : "#products"
+    Pre: "/mhr/"
+    URL : "technology"
 
 #################### Mission #####################
 mission:

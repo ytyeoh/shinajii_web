@@ -30,7 +30,7 @@ weight = 3
 [[menu.main]]
 name = "E-Store"
 pre = ""
-url = "https://mhrracing.com"
+url = "https://shop.mhrracing.com/"
 weight = 4
 
 [[menu.main]]
