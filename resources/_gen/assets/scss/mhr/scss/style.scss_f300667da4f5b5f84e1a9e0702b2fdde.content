@@ -5,6 +5,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap");
 :root {
   --blue:#007bff;
   --indigo:#6610f2;
@@ -9270,10 +9271,6 @@ li.fancybox-thumbs-loading {
   font-family: 'butlerbold';
   src: url("../fonts/butler_bold-webfont.woff2") format("woff2"), url("../fonts/butler_bold-webfont.woff") format("woff"); }
 
-@font-face {
-  font-family: 'Be Vietnam Pro';
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap"); }
-
 /* averia-serif-libre-regular - latin */
 @font-face {
   font-family: 'Averia Serif Libre';
@@ -9286,17 +9283,17 @@ li.fancybox-thumbs-loading {
 
 body {
   line-height: 1.5;
-  font-family: "Be Vietnam Pro";
+  font-family: "Be Vietnam Pro", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
 p {
-  font-family: "Be Vietnam Pro";
+  font-family: "Be Vietnam Pro", sans-serif;
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Be Vietnam Pro";
+  font-family: "Be Vietnam Pro", sans-serif;
   color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9480,7 +9477,9 @@ body {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline; }
   #main-nav .navbar-nav .music-icon {
     padding-left: 55px;
     padding-right: 25px; }
@@ -9558,7 +9557,7 @@ body {
         letter-spacing: 2px;
         font-weight: 400;
         font-size: 20px;
-        font-family: "Be Vietnam Pro"; }
+        font-family: "Be Vietnam Pro", sans-serif; }
         @media (max-width: 1200px) {
           .hero-slider-wrapper .item .content h3 {
             font-size: 20px;
@@ -9622,11 +9621,13 @@ body {
 .content_2 h2 {
   color: black;
   text-transform: uppercase;
-  font-size: 84px; }
+  font-size: 84px;
+  font-weight: 900; }
 
 .content_2 h3 {
   color: black;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: 100; }
 
 .content_2 .hero-btn {
   padding: 25px 50px;
@@ -9658,7 +9659,7 @@ body {
     position: relative;
     font-size: 13px;
     margin-top: 20px;
-    font-family: "Be Vietnam Pro"; }
+    font-family: "Be Vietnam Pro", sans-serif; }
     .scroll h6::before {
       position: absolute;
       content: '';
@@ -9822,6 +9823,8 @@ body {
     .vision .card a {
       font-size: 24px;
       color: white; }
+      .vision .card a span {
+        font-weight: 100; }
     .vision .card a:hover {
       text-decoration: none;
       color: white; }
@@ -9838,7 +9841,6 @@ body {
         transform: rotate(0); } }
     .vision .section-title span {
       font-size: 48px;
-      letter-spacing: 12px;
       color: black;
       font-weight: 700; }
     .vision .section-title:before {

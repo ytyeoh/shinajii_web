@@ -9477,7 +9477,9 @@ body {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline; }
   #main-nav .navbar-nav .music-icon {
     padding-left: 55px;
     padding-right: 25px; }
@@ -9624,7 +9626,8 @@ body {
 
 .content_2 h3 {
   color: black;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: 100; }
 
 .content_2 .hero-btn {
   padding: 25px 50px;
@@ -9820,6 +9823,8 @@ body {
     .vision .card a {
       font-size: 24px;
       color: white; }
+      .vision .card a span {
+        font-weight: 100; }
     .vision .card a:hover {
       text-decoration: none;
       color: white; }
@@ -9836,7 +9841,6 @@ body {
         transform: rotate(0); } }
     .vision .section-title span {
       font-size: 48px;
-      letter-spacing: 12px;
       color: black;
       font-weight: 700; }
     .vision .section-title:before {
