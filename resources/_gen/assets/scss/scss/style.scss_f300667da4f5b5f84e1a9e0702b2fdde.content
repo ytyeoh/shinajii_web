@@ -9484,7 +9484,7 @@ body {
     padding-left: 25px;
     color: #fff;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: underline; }
