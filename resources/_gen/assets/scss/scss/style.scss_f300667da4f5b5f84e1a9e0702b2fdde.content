@@ -9299,17 +9299,25 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
+.f-100 {
+  font-weight: 100 !important; }
+
+.f-900 {
+  font-weight: 900 !important; }
+
 .title-case h2 {
   font-size: 84px;
   margin-bottom: 20px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 900; }
   @media (max-width: 767px) {
     .title-case h2 {
       font-size: 3rem;
       line-height: 3.2rem;
       text-align: center; } }
 .title-case p {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: 100; }
   @media (max-width: 767px) {
     .title-case p {
       text-align: center; } }
@@ -9534,13 +9542,16 @@ body {
         .hero-slider-wrapper .item .content {
           top: 10%;
           left: -10%; } }
+      .hero-slider-wrapper .item .content p {
+        font-weight: 100; }
       .hero-slider-wrapper .item .content h2 {
         font-weight: 600;
         line-height: 110px;
         font-size: 80px;
         letter-spacing: 1px;
         line-height: 1;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-weight: 900; }
         .hero-slider-wrapper .item .content h2 span {
           clip-path: inset(0 100% 0 0); }
         @media (max-width: 1200px) {
@@ -9751,7 +9762,8 @@ body {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
-    max-width: 100%; }
+    max-width: 100%;
+    font-weight: 100; }
     @media (max-width: 767px) {
       .mission-content p {
         font-size: 16px;
@@ -10150,7 +10162,8 @@ ul.social-list li a {
         text-align: center; } }
     .technology-featured .block .content h2 {
       font-size: 84px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: 100; }
       @media (max-width: 767px) {
         .technology-featured .block .content h2 {
           font-size: 3rem; } }

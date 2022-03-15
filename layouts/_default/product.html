@@ -14,10 +14,10 @@
           <!-- written-content -->
           <div class="content py-lg-5 title-case rev">
             <!-- technology heading -->
-            <h2 class="text-uppercase">{{ .title }}</h2>
+            <h2 class="text-uppercase ">{{ .title }}</h2>
             <!-- technology Description -->
             <h3>{{ .content | markdownify }}</h3>
-            <a class="my-3 btn-white btn page-scroll"
+            <a class="my-3 btn-white btn page-scroll f-100"
                   href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
           </div>
           <!-- Promo Video -->
@@ -54,8 +54,8 @@
             		</div>
             		<div class="col-12 col-lg-8 col-sm-12">
             			<div class="card-body text-left">
-			              <h3>{{ .title | markdownify }}</h3>
-			              <h4>{{ .section | markdownify }}</h4>
+			              <h3 class='f-900'>{{ .title | markdownify }}</h3>
+			              <h4 class='f-100'>{{ .section | markdownify }}</h4>
 			              <div class="row">
 			              	<div class="col-12  ml-3" id="line"></div>
 			              	<div class="col-12 col-lg-8">
