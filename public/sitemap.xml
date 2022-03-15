@@ -2,12 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ytyeoh.github.io/mhr/career/</loc>
+    <loc>https://test.mhrracing.com/contact/</loc>
   </url><url>
-    <loc>https://ytyeoh.github.io/mhr/categories/</loc>
+    <loc>https://test.mhrracing.com/product/</loc>
   </url><url>
-    <loc>https://ytyeoh.github.io/mhr/</loc>
+    <loc>https://test.mhrracing.com/technology/</loc>
   </url><url>
-    <loc>https://ytyeoh.github.io/mhr/tags/</loc>
+    <loc>https://test.mhrracing.com/categories/</loc>
+  </url><url>
+    <loc>https://test.mhrracing.com/</loc>
+  </url><url>
+    <loc>https://test.mhrracing.com/tags/</loc>
   </url>
 </urlset>

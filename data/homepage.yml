@@ -15,7 +15,7 @@ banner:
   button_2:
     enable : true
     label : "Learn More"
-    Pre: "/mhr/"
+    Pre: "/"
     URL : "technology"
 
 #################### Mission #####################
