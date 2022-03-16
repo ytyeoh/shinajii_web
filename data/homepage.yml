@@ -35,17 +35,17 @@ vision:
   vision_item:
   - title : "FULL FACE"
     image : "images/vision/helmet.png"
-    content : "<br> | <br>LEARN MORE"
+    content : "<br> | <br>LEARN MORE>"
     link : "/product/#full face"
     
   - title : "flip up"
     image : "images/vision/helmet.png"
-    content : "<br> | <br>LEARN MORE"
+    content : "<br> | <br>LEARN MORE>"
     link : "/product/#flip up"
     
   - title : "open face"
     image : "images/vision/helmet.png"
-    content : "<br> | <br>LEARN MORE"
+    content : "<br> | <br>LEARN MORE>"
     link : "/product/#open face"
 
 

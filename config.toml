@@ -44,7 +44,7 @@ weight = 5
 #################### default parameters ################################
 [params]
 logo = "images/mhr_logo.svg"
-logo_width = "120px"
+logo_width = "70px"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"

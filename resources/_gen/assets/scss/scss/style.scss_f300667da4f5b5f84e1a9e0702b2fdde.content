@@ -9302,6 +9302,12 @@ h1, h2, h3, h4, h5, h6 {
 .f-100 {
   font-weight: 100 !important; }
 
+.f-200 {
+  font-weight: 200 !important; }
+
+.f-700 {
+  font-weight: 700 !important; }
+
 .f-900 {
   font-weight: 900 !important; }
 
@@ -9309,7 +9315,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 84px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: 700; }
   @media (max-width: 767px) {
     .title-case h2 {
       font-size: 3rem;
@@ -9317,7 +9323,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center; } }
 .title-case p {
   font-size: 1.5rem;
-  font-weight: 100; }
+  font-weight: 200; }
   @media (max-width: 767px) {
     .title-case p {
       text-align: center; } }
@@ -9483,7 +9489,7 @@ body {
     padding-right: 25px;
     padding-left: 25px;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -9831,7 +9837,7 @@ body {
     border-radius: 38px; }
     .vision .card h3 {
       text-transform: uppercase;
-      font-size: 48px; }
+      font-size: 40px; }
     .vision .card a {
       font-size: 24px;
       color: white; }
@@ -9946,6 +9952,9 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+.product1 h2 {
+  font-size: 64px !important; }
+
 .product1 h3 {
   font-size: 150px;
   text-transform: uppercase;
@@ -9957,6 +9966,8 @@ body {
   background: black; }
   #helmet h3, #helmet h4, #helmet p {
     color: black; }
+  #helmet h3 {
+    font-size: 60px; }
   #helmet #line {
     height: 10rem;
     border-left: 2px solid black; }
@@ -9975,7 +9986,7 @@ body {
     color: white;
     font-size: 3rem; }
   .contact .title-case p {
-    font-size: 1rem; }
+    font-size: 0.9rem; }
     @media (max-width: 575px) {
       .contact .title-case p {
         text-align: left; } }
@@ -10163,7 +10174,7 @@ ul.social-list li a {
     .technology-featured .block .content h2 {
       font-size: 84px;
       margin-bottom: 20px;
-      font-weight: 100; }
+      font-weight: 700; }
       @media (max-width: 767px) {
         .technology-featured .block .content h2 {
           font-size: 3rem; } }

@@ -26,9 +26,14 @@
 		            {{site.Title}}
 		            {{ end }}
 		          </a>
+		          {{ $current := . }}
               {{ range site.Menus.main }}
+              {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+						  {{ $active = or $active (eq .Name $current.Title) }}
+						  {{ $active = or $active (and (eq .Name "Technology") (eq $current.Section "post")) }}
+						  {{ $active = or $active (and (eq .Name "Home") (eq $current.Section "tags")) }}
               <li class="nav-item">
-                <a class="nav-link page-scroll"
+                <a class="nav-link page-scroll {{ if $active }}active{{ end }}"
                   href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               </li>
               {{ end }}

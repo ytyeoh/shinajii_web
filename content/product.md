@@ -10,7 +10,7 @@ about:
   enable : true
   title : "PRODUCT"
   content : "Line-up"
-  image : "images/hero-image/7.png"
+  image : "images/helmet/c1.png"
   name: 'Discover More'
   pre: '#'
   url: 'helmet'
