@@ -9494,6 +9494,9 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: underline; }
+  #main-nav .navbar-nav .nav-item .active {
+    color: #02FD34;
+    text-decoration-color: white; }
   #main-nav .navbar-nav .music-icon {
     padding-left: 55px;
     padding-right: 25px; }

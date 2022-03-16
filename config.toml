@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://test.mhrracing.com/"
 # baseURL = "https://ytyeoh.github.io/mhr/"
-title = "MHR"
+title = "Home"
 theme = "omega"
 # google analytics
 googleAnalytics = "" # example : UA-123-45
