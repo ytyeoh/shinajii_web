@@ -60,7 +60,7 @@
   <div class="map-div px-lg-5 my-5 px-4 pt-lg-5 title-case">
   	<h2 class="text-capitalize">
   		{{ if site.Params.logo }}
-            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+            <img loading="lazy"class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
         {{end}}
 	    {{ .sub_title | markdownify }}
 	</h2>

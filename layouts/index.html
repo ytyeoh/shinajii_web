@@ -15,7 +15,7 @@
               {{ if .button.enable }}
               {{ with .button }}
 
-              <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll"><img src="{{ .label }}" alt="slider-image"></a>
+              <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll"><img loading="lazy" src="{{ .label }}" alt="slider-image"></a>
               {{ end }}
               {{ end }}
             </div>
@@ -26,7 +26,7 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image-2 image-reveal mr-auto ml-0" style="animation-delay: 2s;">
-              <img src="{{ .image_2 | absURL }}" alt="slider-image">
+              <img loading="lazy" src="{{ .image_2 | absURL }}" alt="slider-image">
             </div>
           </div>
         </div>
@@ -56,10 +56,10 @@
 {{ with site.Data.homepage.mission }}
 <section class="mission" id="mission">
   <div class="bg">
-    <img src="{{`images/who.svg` | absURL}}" class="img-fluid " alt="section-bg">
+    <img loading="lazy" src="{{`images/who.svg` | absURL}}" class="img-fluid " alt="section-bg">
   </div>
   <!-- <div class="right-shape">
-    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+    <img loading="lazy" src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
   </div> -->
   <div class="container">
     <div class="row">
@@ -74,7 +74,7 @@
           <!-- <div class="video image-reveal">
             <a class="video-play"
               data-video="https://www.youtube.com/embed/{{.video_id}}?autoplay=1&showinfo=0&controls=0">
-              <img src="{{ .video_thumb | absURL }}" class="img-fluid" alt="video-thumb">
+              <img loading="lazy" src="{{ .video_thumb | absURL }}" class="img-fluid" alt="video-thumb">
               <i class="fa fa-play"></i>
             </a>
           </div> -->
@@ -100,7 +100,7 @@
           {{ range .vision_item }}
           <div class="col-lg-4 col-12 col-sm-12 py-2 px-0">
             <div class="card mx-3 ">
-	             <img src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+	             <img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
             
 	            <div class="card-body text-center">
 	              <h3>{{ .title | markdownify }}</h3>
@@ -124,10 +124,10 @@
 {{ with site.Data.homepage.product }}
 <section class="products" id="products">
   <div class="bg">
-    <img src="{{`images/section-bg-2.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+    <img loading="lazy" src="{{`images/section-bg-2.jpg` | absURL}}" class="img-fluid" alt="section-bg">
   </div>
   <div class="left-shape">
-    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+    <img loading="lazy" src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
   </div>
   <div class="container">
     <div class="row">
@@ -151,7 +151,7 @@
         <div class="product-slider-wrapper">
           {{ range .product_item }}
           <div class="product-item">
-            <img src="{{ .image | absURL }}" alt="product-image">
+            <img loading="lazy" src="{{ .image | absURL }}" alt="product-image">
             <div class="overlay">
               <div class="content">
                 <h5>{{ .title | markdownify }}</h5>

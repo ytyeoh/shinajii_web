@@ -50,7 +50,7 @@
             <div class="card mx-3 bg-white" id="{{.title}}">
             	<div class="row">
             		<div class="col-12 col-lg-4 col-sm-12">
-            			<img src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+            			<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
             		</div>
             		<div class="col-12 col-lg-8 col-sm-12">
             			<div class="card-body text-left">
@@ -93,7 +93,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12  col-12 col-lg-7">
-        <img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+        <img loading="lazy" src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
       </div>
       <div class="col-sm-12  col-12 col-lg-5 technology-featured my-lg-5 py-3 px-4 text-left">
         <div class="block">
@@ -127,7 +127,7 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" id="image-100" style="animation-delay: 2s;">
-              <img src="{{ .image | absURL }}" alt="slider-image">
+              <img loading="lazy" src="{{ .image | absURL }}" alt="slider-image">
             </div>
             <div class="content text-white" id="content-50">
               <h2><span class="rev">{{ .title | markdownify}}</span></h2>
