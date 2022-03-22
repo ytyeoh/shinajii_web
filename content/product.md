@@ -27,21 +27,21 @@ product:
     image : "images/helmet/c2.png"
     content : "A sturdy protection for your head, covers the entirehead and chin area to provide full protection, and the only moving part of the helmet is the visor."
     link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=1"
-    name: 'Buy Now'
+    name: 'Learn More'
     
   - title : "flip up"
     section: 'Helmets'
     image : "images/helmet/c3.png"
     content : "Sits perfectly in the middle of Open Face and Full FaceHelmet. A well preferred helmet by the commuters who also loves occasional long weekend trips."
     link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=2"
-    name: 'Buy Now'
+    name: 'Learn More'
     
   - title : "open face"
     section: 'Helmets'
     image : "images/helmet/c4.png"
     content : "Provides motorcyclist an enhanced airflow, a decent protection, comfort and have longer visor which adds weather protection when you need it."
     link : "https://shop.mhrracing.com/index.php?route=product/category&path=1&ff1=3"
-    name: 'Buy Now'
+    name: 'Learn More'
 
 
 ########### funfacts ##########
