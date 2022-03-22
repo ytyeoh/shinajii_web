@@ -10332,14 +10332,26 @@ footer {
   padding: 0.5em 1em; }
   footer a {
     color: white; }
+    @media (max-width: 991px) {
+      footer a {
+        font-size: 20px; } }
   footer i {
     padding-left: 0.5em; }
   footer p {
-    font-size: 0.6rem;
-    text-align: center;
-    bottom: 0;
-    position: fixed; }
-
+    font-size: 0.5rem;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    bottom: 10px;
+    position: absolute; }
+    @media (max-width: 767px) {
+      footer p {
+        top: 10px;
+        position: relative; } }
+    @media (max-width: 575px) {
+      footer p {
+        top: 20px;
+        position: relative; } }
 .footer {
   padding: 150px 0;
   position: fixed;
