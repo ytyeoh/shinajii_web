@@ -63,59 +63,77 @@
             <img loading="lazy"class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
         {{end}}
 	    {{ .sub_title | markdownify }}
-	</h2>
+		</h2>
   	{{ with site.Params.map }}
   	<iframe src="{{.gmap_api}}" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     {{ end }}
   </div>
 </div>
+{{ end }}
+{{ end }}
 
-<div class="card">
-  <div class="card-header text-center">
-    <span>Seller</span>
-  </div>
-  <div class="card-body">
-    <div class="flex flex-column mb-5 mt-4 faq-section">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="heading-1">
-                <h5 class="mb-0">
-                  <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                      Penang
-                                    </a>
-                </h5>
-              </div>
-              <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
-                <div class="card-body">
-                  FXCOPIER is the worlds most reliable remote trade copier. Its allow you to copy trades almost instantly between hundreds of MT4 accounts through the use of technology. Many of the industries leading money managers use FXCopier to easily manage multiple
-                  client accounts in tandem.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="heading-2">
-                <h5 class="mb-0">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                      Kedah
-                                    </a>
-                </h5>
-              </div>
-              <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
-                <div class="card-body">
-                  After subscription you will get our special trade copier. If you want to use this copier for business purpose or other commercial pupose then directly contact with www.fxcopier.co.uk.
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
+
+{{ if .Params.dealer.enable }}
+{{ with .Params.dealer }}
+<section id="dealer">
+	<div class="px-lg-5 my-5 px-4 pt-lg-5 title-case">
+		<h2 class='f-700 text-capitalize'>
+			{{ if site.Params.logo }}
+        <img loading="lazy"class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+      {{end}}
+      authorized dealer
+    </h2>
+		<div class="card">
+		  <div class="card-header text-center">
+        <span>Malaysia</span>
+		  </div>
+		  <div class="card-body">
+		    <div class="flex flex-column mb-5 mt-4 faq-section">
+		  {{ range .stage }}
+		  
+		      <div class="row">
+		        <div class="col-md-12">
+		          <div id="accordion">
+		            <div class="card bg-grey">
+		            	<h5 class="mb-0">
+	                  <a role="button" data-toggle="collapse" href="#{{.name}}" aria-expanded="true" aria-controls="collapse-1">
+				              <div class="card-header" id="heading-1">
+				              	{{ .name }}
+				              </div>
+			              </a>
+	                </h5>
+		              <div id="{{.name}}" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+		                <div class="card-body">
+		                  <div class="row">
+		                  	{{ range .d }}
+		                  	<div class="card col-12 col-sm-6">
+		                  		<div class="card-body">
+		                  			<h5 class="card-title">{{.name}}</h5>
+		                  			<p>{{ .adress1 }}</p>
+		                  			<p>{{ .adress2 }}</p>
+		                  			<p>{{ .adress3 }}</p>
+		                  			<p>{{ .adress4 }}</p>
+		                  			<p>{{ .phone }}</p>
+		                  		</div>
+		                  	</div>
+		                  	{{ end }}
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        
+		      </div>
+		    
+		  {{ end }}
+		  </div>
+		  </div>
+		</div>
+	</div>
+	
+</section>
+
 {{ end }}
 {{ end }}
 

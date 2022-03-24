@@ -1,3 +1,20 @@
+#dealer{
+  .card{
+    background: black;
+    color: white;
+    .card-header{
+      color: #007bff;
+    }
+  }
+  a{
+    .card-header{
+      color: white!important;
+    }
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
 .map-div{
   iframe{
     border-radius: 60px;
