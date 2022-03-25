@@ -7,7 +7,7 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">{{.name}}</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
@@ -109,8 +109,8 @@
       authorized dealer
     </h2>
 		<div class="card">
-		  <div class="card-header text-center">
-        <span>Malaysia</span>
+		  <div class="card-header text-left bg-black">
+        <span class="display-3">🇲🇾 Malaysia</span>
 		  </div>
 		  <div class="card-body">
 		    <div class="flex flex-column mb-5 mt-4 faq-section">
@@ -119,7 +119,7 @@
 		      <div class="row">
 		        <div class="col-md-12">
 		          <div id="accordion">
-		            <div class="card bg-grey">
+		            <div class="card ">
 		            	<h5 class="mb-0">
 	                  <a role="button" data-toggle="collapse" href="#{{.name}}" aria-expanded="true" aria-controls="collapse-1">
 				              <div class="card-header" id="heading-1">
@@ -132,15 +132,15 @@
 		                  <div class="row">
 		                  	{{ range .d }}
 		                  	<div class="card col-12 col-sm-6">
-		                  		<div class="card-body">
-		                  			<h5 class="card-title">{{.name}}</h5>
+		                  		<div class="card-body text-center">
+		                  			<h3 class="card-title">{{.name}}</h3>
 		                  			<p>{{ .address1 }}</p>
 		                  			<p>{{ .address2 }}</p>
 		                  			<p>{{ .address3 }}</p>
 		                  			<p>{{ .address4 }}</p>
 		                  			<p>{{ .phone }}</p>
 		                  		</div>
-		                  		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{.id}}">Map</button>
+		                  		<button type="button" class="btn btn-primary my-2 mx-2" data-toggle="modal" data-target="#{{.id}}">Map</button>
 		                  	</div>
 		                  	
 		                  	{{ end }}

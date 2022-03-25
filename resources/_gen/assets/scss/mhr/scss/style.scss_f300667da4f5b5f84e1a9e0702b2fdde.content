@@ -9363,6 +9363,9 @@ body {
 .bg-grey {
   background: #CCD1D1 !important; }
 
+.bg-black {
+  background: black !important; }
+
 .video {
   position: relative; }
   .video:before {
@@ -10087,10 +10090,11 @@ img.hover-shadow {
   background: black;
   color: white; }
   #dealer .card .card-header {
-    color: #007bff; }
+    color: #007bff;
+    background: #ccd1d1; }
 
 #dealer a .card-header {
-  color: white !important; }
+  color: black !important; }
 
 #dealer a:hover {
   text-decoration: none; }
