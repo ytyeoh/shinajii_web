@@ -10099,6 +10099,9 @@ img.hover-shadow {
 #dealer a:hover {
   text-decoration: none; }
 
+#modal h5, #modal button {
+  color: black; }
+
 .map-div iframe {
   border-radius: 60px; }
 
