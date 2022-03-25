@@ -10103,11 +10103,13 @@ img.hover-shadow {
       padding-left: 0;
       padding-right: 0; } }
   #dealer .card .card-header {
-    color: #007bff;
-    background: #ccd1d1; }
+    color: white;
+    background: #ccd1d1;
+    font-size: 1.25rem; }
 
 #dealer a .card-header {
-  color: black !important; }
+  color: black !important;
+  text-transform: uppercase; }
 
 #dealer a:hover {
   text-decoration: none; }
