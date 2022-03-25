@@ -112,7 +112,7 @@ dealer:
           phone: '016-5280473 WAYNE LIM'
           google_map: 'https://goo.gl/maps/G7Vw3b1sxyL7fQQR8'
 
-    - name : 'Kuala Lumpur'
+    - name : 'KL'
       d: 
         - name: 'FARIT ISMETH HELMET AND ACCESSORIES '
           address1: 'NO.4-1'
@@ -191,7 +191,7 @@ dealer:
           phone: '019-9891616 MR.TAN'
           google_map: 'https://goo.gl/maps/e8jpyvtVAHZnt1uEA'
 
-    - name : 'Pulau Pinang'
+    - name : 'Penang'
       d: 
         - name: 'KIEN LUM MOTOR SDN. BHD.'
           address1: 'NO.4451'
