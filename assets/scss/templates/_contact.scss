@@ -1,4 +1,10 @@
 #dealer{
+  p{
+    margin-bottom: 0.1rem;
+    @include mobile{
+      font-size: 1rem;
+    }
+  }
   .card{
     background: black;
     color: white;
