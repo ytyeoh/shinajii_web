@@ -11,20 +11,23 @@ dealer:
     - name : 'Johor'
       d: 
         - name: 'MOY HUAT MOTOR TRADING SDN. BHD.'
+          id:  1
           address1: 'NO.69 & 71'
           address2: 'JALAN BENTARA 1'
           address3: 'TAMAN UNGKU TUN AMINAH'
           address4: '81300 SKUDAI'
           phone: '0167-108515 MR.NG'
-          google_map: 'https://goo.gl/maps/n7PDHvLQFroakwxd8'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.417132968399!2d103.65801751475418!3d1.5185247988925858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da73a1c5257b09%3A0x9b2f5218ff7f8677!2sMoy%20Huat%20Motor%20Trading%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1648175050221!5m2!1sen!2smy'
         - name: 'TOKAN MOTORSPORT '
+          id:  2
           address1: 'NO.25'
           address2: 'JALAN PADI EMAS 3/1'
           address3: 'BANDAR BARU UDA'
           address4: '81200 JOHOR BAHRU'
           phone: '011-39162515 AYIE'
-          google_map: 'https://goo.gl/maps/38d3STQ2diA1x9av6'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4566489066124!2d103.70785311475409!3d1.496957898908299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da7344d5ed35f1%3A0xa85fa3f88500a96a!2sTokan%20Helmet%20-%20Bandar%20Baru%20Uda!5e0!3m2!1sen!2smy!4v1648175283520!5m2!1sen!2smy'
         - name: 'SML MOTOR ACCESSORIES SDN. BHD. '
+          id:  3
           address1: 'LOT.1590-C'
           address2: 'JLN.GELANG PATAH LIMA KEDAI'
           address3: '81120 GELANG PATAH'
@@ -32,6 +35,7 @@ dealer:
           phone: '07-5101663'
           google_map: 'https://goo.gl/maps/3ZyN9quaM77aNaMY7'
         - name: 'HONG DA MOTORCYCLE ACCESSORIES'
+          id: 4
           address1: 'NO.9'
           address2: 'TAMAN HIJAU'
           address3: 'GROUND FLOOR'
@@ -39,6 +43,7 @@ dealer:
           phone: '012-7655004 MR.PHANG'
           google_map: 'https://goo.gl/maps/Ld1DVVq2voBn9HPD6'
         - name: 'MH MOTORWORLD SDN. BHD.'
+          id: 5
           address1: 'NO.52'
           address2: 'JALAN EKOPERNIAGAAN 2'
           address3: 'TAMAN KOTA MASAI'
@@ -46,6 +51,7 @@ dealer:
           phone: '016-7108515'
           google_map: 'https://goo.gl/maps/kFHSw2XaS5brpKte9'
         - name: 'CHUAN HUAT ENTERPRISE'
+          id: 6
           address1: 'NO.31'
           address2: 'JALAN IMPIAN EMAS 5/2'
           address3: 'TAMAN IMPIAN EMAS'
@@ -53,6 +59,7 @@ dealer:
           phone: '019-7754906'
           google_map: 'https://goo.gl/maps/ZJatrLrYCEyfnLB9A'
         - name: 'SOON BROTHERS MOTOR CO. SDN. BHD.'
+          id: 7
           address1: 'NO.102'
           address2: 'JALAN TUN SRI LANANG'
           address3: '(JALAN MAWAI)'
@@ -63,6 +70,7 @@ dealer:
     - name : 'Selangor'
       d: 
         - name: 'GT-MAX MOTORS (M) SDN BHD'
+          id: 8
           address1: 'NO.1'
           address2: 'JALAN UNGGUL 25/40'
           address3: 'TAMAN SRI MUDA'
@@ -70,6 +78,7 @@ dealer:
           phone: '012-6369899 DAVID'
           google_map: 'https://goo.gl/maps/cwFqvjBuXfvYhqh38'
         - name: 'NALURI KUALITI SDN. BHD.'
+          id: 9
           address1: 'NO.24'
           address2: 'JALAN SRI SELAYANG'
           address3: 'TAMAN SRI SELAYANG'
@@ -77,6 +86,7 @@ dealer:
           phone: '03-61883611'
           google_map: 'https://goo.gl/maps/zHNpwSw81NtvWPMc9'
         - name: 'KVC BIKERS STORE'
+          id: 10
           address1: 'NO.1'
           address2: 'JALAN KIYAI SUJAK 15'
           address3: 'TAMAN PERANGSANG'
@@ -84,6 +94,7 @@ dealer:
           phone: '012-6369899 MR.KHOO'
           google_map: 'https://goo.gl/maps/s2PMdKLAEqy7552w7'
         - name: 'SIN SENG HUAT MOTOR'
+          id: 11
           address1: 'NO.17'
           address2: 'LRG.DATO KAYA KECIL 6/KU13'
           address3: 'TAMAN INDAH KAPAR'
@@ -91,6 +102,7 @@ dealer:
           phone: '03-32591324'
           google_map: 'https://goo.gl/maps/B54dc76UfZCc3QxM6'
         - name: 'WELLY TOP MOTOR SDN.BHD.'
+          id: 12
           address1: 'NO.133'
           address2: 'JALAN COKMAR 1'
           address3: 'TMN.MUTIARA BKT.RAJA'
@@ -98,6 +110,7 @@ dealer:
           phone: '012-2323602 BEN HO'
           google_map: 'https://goo.gl/maps/rSWGobTsZdMMakuZ7'
         - name: 'BROTHER KYO ENTERPRISE'
+          id: 13
           address1: 'NO.G163'
           address2: 'SEASONS SQUARE,JLN.PJU 10/3C'
           address3: 'DAMANSARA DAMAI'
@@ -105,6 +118,7 @@ dealer:
           phone: '017-6602131'
           google_map: 'https://goo.gl/maps/ZN7m196t4tzeU9uQ8'
         - name: 'MYMOTORONLINE SDN.BHD.'
+          id: 14
           address1: 'A1-27-13'
           address2: 'AVELON TOWER'
           address3: 'PLAZA MEDAN PUTRA'
@@ -115,6 +129,7 @@ dealer:
     - name : 'KL'
       d: 
         - name: 'FARIT ISMETH HELMET AND ACCESSORIES '
+          id: 15
           address1: 'NO.4-1'
           address2: 'JALAN 1/76C'
           address3: 'DESA PANDAN'
@@ -122,6 +137,7 @@ dealer:
           phone: '017-5299375 MR.FARIT'
           google_map: 'https://goo.gl/maps/dQuhjFqZo4Y6aZkRA'
         - name: 'ZACK MIEYOU EMPIRE'
+          id: 16
           address1: 'NO.2A'
           address2: 'JALAN PANDAN KEMAJUAN A'
           address3: '55100 KAMPUNG PANDAN DALAM'
@@ -129,6 +145,7 @@ dealer:
           phone: '014-5079201'
           google_map: 'https://g.page/zackhelmetempire?share'
         - name: 'EC RIDING GEAR SDN BHD'
+          id: 17
           address1: 'NO.81'
           address2: 'JALAN GENTING KELANG'
           address3: '53300 SETAPAK'
@@ -136,6 +153,7 @@ dealer:
           phone: '03-28587190'
           google_map: 'https://g.page/ec-riding-gear-sdn-bhd?share'
         - name: 'PSY BIKER STORE'
+          id: 18
           address1: 'B-2-3'
           address2: 'BOULEVARD BUSINESS PARK'
           address3: 'PUSAT KOMERSIAL'
@@ -143,6 +161,7 @@ dealer:
           phone: '016-7642525'
           google_map: 'https://goo.gl/maps/grdW2XpEf8B2LKsn9'
         - name: 'GERHANA MOTOR SPORT'
+          id: 19
           address1: 'NO.639'
           address2: 'JALAN SENTUL'
           address3: '51000 JALAN SENTUL'
@@ -150,6 +169,7 @@ dealer:
           phone: '012-3950613 SIMON'
           google_map: 'https://goo.gl/maps/4dDrzNcczFd4jZv98'
         - name: 'WAN BIKERS GARAGE (HQ)'
+          id: 20
           address1: 'LOT 212 JALAN 10/141'
           address2: 'KAMPUNG MALAYSIA TAMBAHAN'
           address3: 'SUNGAI BESI'
@@ -157,6 +177,7 @@ dealer:
           phone: '018-3700390'
           google_map: 'https://goo.gl/maps/JspKGXoT9s9freVMA'
         - name: 'RB RACING VENTURE'
+          id: 21
           address1: 'NO.7'
           address2: 'DIAMOND SQUARE COMMERCIAL CENTRE'
           address3: 'JALAN SEMARAK API 1'
@@ -164,6 +185,7 @@ dealer:
           phone: '019-9009566 GAZLO'
           google_map: 'https://goo.gl/maps/tWWEjKEuYMjkwSDq5'
         - name: 'KEDAI MOTORSIKAL TENAGA SDN. BHD.'
+          id: 23
           address1: 'NO.28 & 30'
           address2: 'JALAN SEMBILANG'
           address3: 'TAMAN TENAGA'
@@ -174,6 +196,7 @@ dealer:
     - name : 'Perak'
       d: 
         - name: 'SWEE HUAT MOTOR SDN.BHD.'
+          id: 24
           address1: 'SL-8 & SL-12'
           address2: 'JALAN BALING'
           address3: '33100 PENGKALAN HULU (KROH)'
@@ -184,6 +207,7 @@ dealer:
     - name : 'Terengganu'
       d: 
         - name: 'LBT GEMILANG MOTOR'
+          id: 25
           address1: 'NO.8,TINGKAT BAWAH'
           address2: 'PUSAT DAGANGAN,GERBANG SELATAN'
           address3: 'JALAN JAKAR'
@@ -194,6 +218,7 @@ dealer:
     - name : 'Penang'
       d: 
         - name: 'KIEN LUM MOTOR SDN. BHD.'
+          id: 26
           address1: 'NO.4451'
           address2: 'JALAN RAJA UDA'
           address3: '12300 BUTTERWORTH'
@@ -201,6 +226,7 @@ dealer:
           phone: '012-4283372'
           google_map: 'https://goo.gl/maps/8P2sQEnFbCmZAjRL6'
         - name: 'DFZ MOTORWORKS SDN. BHD.'
+          id: 27
           address1: 'NO.20 & 21'
           address2: 'JALAN SERI PINANG'
           address3: 'TAMAN SERI PINANG'
@@ -208,6 +234,7 @@ dealer:
           phone: '012-4178489 ABD HAFIZ'
           google_map: 'https://goo.gl/maps/wSCSsfi8kAgnMgEP9'
         - name: 'SOON LEE JAYA MOTOR (SG DUA) SDN BHD'
+          id: 28
           address1: 'NO.1881,JALAN MERBAU INDAH'
           address2: 'TAMAN MERBAU INDAH'
           address3: 'SUNGAI DUA'
@@ -215,6 +242,7 @@ dealer:
           phone: '04-3562899'
           google_map: 'https://goo.gl/maps/DrKtEJgrrf9N6UCP7'
         - name: 'CHUAN KEAT MOTOR TRADING SDN. BHD.'
+          id: 29
           address1: 'NO.1 & 3'
           address2: 'JALAN DAGANGAN 10'
           address3: 'PUSAT BANDAR BERTAM'
@@ -222,6 +250,7 @@ dealer:
           phone: '012-5181241 KIAT'
           google_map: 'https://goo.gl/maps/PVk5ND1cwNoxkGTi7'
         - name: 'TKC MOTOR ACCESSORIES (M) SDN BHD'
+          id: 30
           address1: 'NO.35'
           address2: 'JALAN CHEE BEE NOR'
           address3: '14000 BUKIT MERTAJAM'
@@ -229,6 +258,7 @@ dealer:
           phone: '04-5388162 '
           google_map: 'https://goo.gl/maps/wDiYFVxJPzK2Q9GGA'
         - name: 'SIN SUM SUN MOTOR SDN BHD'
+          id: 31
           address1: 'NO.96'
           address2: 'JALAN IRVING'
           address3: '10400 GEORGETOWN'
@@ -236,6 +266,7 @@ dealer:
           phone: '04-2287275 Ms Yap'
           google_map: 'https://goo.gl/maps/6um1N4ysQhN8ZgQt6'
         - name: 'JIWON MOTOR'
+          id: 32
           address1: 'NO.1713'
           address2: 'JALAN BESAR'
           address3: 'TAMAN PING WAH'
@@ -246,6 +277,7 @@ dealer:
     - name : 'Kedah'
       d: 
         - name: 'VR 46 ENTERPRISE'
+          id: 33
           address1: 'NO.12-D'
           address2: 'KG.BANGGOL BELIMBING'
           address3: 'JALAN JENUN'
@@ -253,6 +285,7 @@ dealer:
           phone: '013-4539218 MR.YAP'
           google_map: 'https://goo.gl/maps/EgU1JkvFNrg2RfRk6'
         - name: 'LEAN HUAT MOTOR GROUP SDN. BHD. (KULIM)'
+          id: 34
           address1: 'NO.65-68'
           address2: 'TAMAN MANGGIS III'
           address3: 'JALAN KELANG LAMA'
@@ -260,6 +293,7 @@ dealer:
           phone: '04-4907396'
           google_map: 'https://g.page/lhmotor-kelang-lama?share'
         - name: 'BS SENG MOTORS SDN. BHD.'
+          id: 35
           address1: 'NO.440'
           address2: 'JALAN TUNKU IBRAHIM'
           address3: '08200 SIK'
@@ -267,6 +301,7 @@ dealer:
           phone: '04-4695131'
           google_map: 'https://goo.gl/maps/15GqHg1qCae6UTMG9'
         - name: 'CP MOTOR PARTS TRADING'
+          id: 36
           address1: 'NO.245-C'
           address2: 'JALAN TUNKU PUTRA'
           address3: '09000 KULIM'
@@ -274,6 +309,7 @@ dealer:
           phone: '04-4907032'
           google_map: 'https://goo.gl/maps/1VAVgxgdx2VmT1CUA'
         - name: 'THYE SENG MOTOR SDN. BHD.'
+          id: 37
           address1: 'NO.19A & B'
           address2: 'JALAN RAYA'
           address3: '08300 GURUN'
@@ -281,6 +317,7 @@ dealer:
           phone: '04-4684688 (MS TAN)'
           google_map: 'https://goo.gl/maps/BUjvbwCCh1pDyMUn7'
         - name: 'PRIMA SETIA MOTOR SDN. BHD. '
+          id: 38
           address1: 'NO.22A'
           address2: 'TKT.BAWAH,JLN.KPJ 2/1'
           address3: 'KOMPLEKS PERNIAGAAN JITRA 2'
@@ -288,6 +325,7 @@ dealer:
           phone: '017-4101388 JUN'
           google_map: 'https://g.page/primasetiamotor?share'
         - name: 'MEN HUAT MOTORS SDN. BHD.'
+          id: 39
           address1: 'NO.167-A'
           address2: 'JALAN PJ 7'
           address3: 'PEKAN JITRA 2'
@@ -295,6 +333,7 @@ dealer:
           phone: '012-3955621'
           google_map: 'https://goo.gl/maps/GfsStHrN4FH1DeL49'
         - name: 'SLM MOTORPORT SDN. BHD.'
+          id: 40
           address1: 'NO.63A,65,66 & 85,'
           address2: 'JALAN SEKERAT'
           address3: 'PUSAT PERNIAGAAN PEKAN LAMA,'
@@ -305,6 +344,7 @@ dealer:
     - name : 'Sabah'
       d: 
         - name: 'EKO KEN MOTOR SDN. BHD. '
+          id: 41
           address1: '3,TINGKAT BAWAH'
           address2: 'KEDAI GOLDEN PLAZA'
           address3: 'DONGGONGON PENAMPANG'

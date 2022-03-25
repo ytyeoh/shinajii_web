@@ -1,5 +1,30 @@
 {{ define "main" }}
-
+{{ if .Params.dealer.enable }}
+	{{ with .Params.dealer }}
+		{{ range .stage }}
+    	{{ range .d }}
+			<div class="modal fade" id="{{.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <iframe src="{{.google_map}}" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			{{ end }}
+		{{ end }}
+	{{ end }}
+{{ end }}
 {{ if site.Data.homepage.contact.enable }}
 {{ with site.Data.homepage.contact }}
 <div class="contact" id="contact">
@@ -115,7 +140,9 @@
 		                  			<p>{{ .address4 }}</p>
 		                  			<p>{{ .phone }}</p>
 		                  		</div>
+		                  		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{.id}}">Map</button>
 		                  	</div>
+		                  	
 		                  	{{ end }}
 		                  </div>
 		                </div>
@@ -136,5 +163,6 @@
 
 {{ end }}
 {{ end }}
+
 
 {{ end }}
