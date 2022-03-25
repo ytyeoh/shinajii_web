@@ -2,6 +2,16 @@
   .card{
     background: black;
     color: white;
+    @include mobile{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .card-body{
+      @include mobile{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
     .card-header{
       color: #007bff;
       background: #ccd1d1;

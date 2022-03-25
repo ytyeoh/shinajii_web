@@ -10089,6 +10089,14 @@ img.hover-shadow {
 #dealer .card {
   background: black;
   color: white; }
+  @media (max-width: 575px) {
+    #dealer .card {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 575px) {
+    #dealer .card .card-body {
+      padding-left: 0;
+      padding-right: 0; } }
   #dealer .card .card-header {
     color: #007bff;
     background: #ccd1d1; }
