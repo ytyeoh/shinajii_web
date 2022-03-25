@@ -62,7 +62,7 @@
 			              		<p>{{ .content | markdownify}}</p>
 			              	</div>
 			              	<div class="col-12 col-lg-4 text-right">
-			              		<a class="my-3 btn-black btn page-scroll" href="{{ .link }}" target="_blank">{{ .name }}</a>
+			              		<a class="my-3 btn-black btn page-scroll" href="{{ .link | relURL }}" target="_blank">{{ .name }}</a>
 			              	</div>
 			              </div>
 			            </div>
