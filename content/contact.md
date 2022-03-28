@@ -8,6 +8,16 @@ formspree_action: "/mail.php"
 dealer:
   enable: true
   stage:
+    - name : 'PLATINUM'
+      d: 
+        - name: 'DFZ MOTORWORKS SDN. BHD.'
+          id: 0
+          address1: 'NO.20 & 21'
+          address2: 'JALAN SERI PINANG'
+          address3: 'TAMAN SERI PINANG'
+          address4: '13020 BUTTERWORTH'
+          phone: '012-4178489 ABD HAFIZ'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.7914129093047!2d100.39556351476544!3d5.44860519604857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac51f98a9c745%3A0x47384f90703a90ac!2sDFZ%20AGENCY%20SDN%20BHD!5e0!3m2!1sen!2smy!4v1648435039408!5m2!1sen!2smy'
     - name : 'Johor'
       d: 
         - name: 'MOY HUAT MOTOR TRADING SDN. BHD.'
