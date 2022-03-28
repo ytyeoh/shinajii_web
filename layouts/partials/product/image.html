@@ -1,8 +1,10 @@
 <div class="col-12 col-sm-4 py-2 px-0">
+	<a href="{{ .weight | relURL }}">
 	<div class="card mx-3" id="{{.title}}">
 		<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
 	</div>
 	<div class="card-body">
     <h5 class="card-title text-center">{{ .name | markdownify}} </h5>
   </div>
+  </a>
 </div>

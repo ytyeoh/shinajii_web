@@ -9502,7 +9502,7 @@ body {
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-decoration: underline; }
+    text-decoration: none; }
   #main-nav .navbar-nav .nav-item .active {
     color: #02FD34;
     text-decoration-color: white; }

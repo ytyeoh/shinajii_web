@@ -1,3 +1,19 @@
 name: 'ff0X320N'
 image: 'images/helmet/b1.png'
 type: 'flip_up'
+spec:
+  size:
+    size: 'm'
+    diameter: '58'
+    size: 'l'
+    diameter: '60'
+    size: 'xl'
+    diameter: '64'
+  graphice:
+    images: '1.png'
+  color:
+    images: '2.png'
+    images: '3.png'
+images_total: 3
+image_folder: 'a'
+weight: 1
