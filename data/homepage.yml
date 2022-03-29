@@ -34,7 +34,7 @@ vision:
   section : "EXPLORE OUR HELMET LINE-UP"
   vision_item:
   - title : "FULL FACE"
-    image : "images/vision/helmet.png"
+    image : "images/helmet/a3.png"
     content : "<br> | <br>LEARN MORE>"
     link : "/product/#full face"
     
@@ -44,7 +44,7 @@ vision:
     link : "/product/#flip up"
     
   - title : "open face"
-    image : "images/vision/helmet.png"
+    image : "images/helmet/a5.png"
     content : "<br> | <br>LEARN MORE>"
     link : "/product/#open face"
 

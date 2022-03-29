@@ -1,10 +1,11 @@
 {{ define "main" }}
-
+{{ with .Params.spec }}
 <section class="section" id='item'>
   <div class="container">
     <div class="row">
       <div class="col-6">
-        {{.Name }}
+      	frf
+        {{.image_folder }}
       </div>
       <div class="col-6">
         {{.Name }}
@@ -12,5 +13,5 @@
     </div>
   </div>
 </section>
-
+{{ end }}
 {{ end }}

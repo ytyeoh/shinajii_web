@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://test.mhrracing.com/categories/</loc>
+    <loc>https://mhrracing.com/flip-up/1/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/contact/</loc>
+    <loc>https://mhrracing.com/full-face/1/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/full_face/</loc>
+    <loc>https://mhrracing.com/open-face/1/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/</loc>
+    <loc>https://mhrracing.com/flip-up/2/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/product/</loc>
+    <loc>https://mhrracing.com/full-face/2/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/tags/</loc>
+    <loc>https://mhrracing.com/open-face/2/</loc>
   </url><url>
-    <loc>https://test.mhrracing.com/technology/</loc>
+    <loc>https://mhrracing.com/flip-up/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mhrracing.com/full-face/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mhrracing.com/open-face/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mhrracing.com/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mhrracing.com/categories/</loc>
+  </url><url>
+    <loc>https://mhrracing.com/contact/</loc>
+  </url><url>
+    <loc>https://mhrracing.com/product/</loc>
+  </url><url>
+    <loc>https://mhrracing.com/tags/</loc>
+  </url><url>
+    <loc>https://mhrracing.com/technology/</loc>
   </url>
 </urlset>

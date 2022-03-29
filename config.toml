@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-# baseURL = "https://test.mhrracing.com/"
+# baseURL = "https://mhrracing.com/"
 baseURL = "https://ytyeoh.github.io/mhr/"
-title = "Home"
+title = "MHR Racing"
 theme = "omega"
 # google analytics
 googleAnalytics = "" # example : UA-123-45
@@ -46,7 +46,7 @@ weight = 5
 logo = "images/mhr_logo.svg"
 logo_width = "70px"
 # Meta data
-description = "This is meta description"
+description = "MHR racing Helmet"
 author = "Themefisher"
 # contact info
 contact_info = "1001 Brickell bay <br>Dr. Miami, <br>FL 33131"

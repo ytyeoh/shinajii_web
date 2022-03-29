@@ -1,5 +1,5 @@
 <div class="col-12 col-sm-4 py-2 px-0">
-	<a href="{{ .weight | relURL }}">
+	<a href="helmet/{{ .type | relURL }}/{{ .weight }}">
 	<div class="card mx-3" id="{{.title}}">
 		<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
 	</div>

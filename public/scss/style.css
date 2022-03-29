@@ -9357,6 +9357,15 @@ body {
 .section {
   padding: 100px 0; }
 
+.modal-backdrop {
+  z-index: -1; }
+
+.bg-grey {
+  background: #CCD1D1 !important; }
+
+.bg-black {
+  background: black !important; }
+
 .video {
   position: relative; }
   .video:before {
@@ -9493,7 +9502,7 @@ body {
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-decoration: underline; }
+    text-decoration: none; }
   #main-nav .navbar-nav .nav-item .active {
     color: #02FD34;
     text-decoration-color: white; }
@@ -10076,6 +10085,37 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#dealer p {
+  margin-bottom: 0.1rem; }
+  @media (max-width: 575px) {
+    #dealer p {
+      font-size: 1rem; } }
+#dealer .card {
+  background: black;
+  color: white; }
+  @media (max-width: 575px) {
+    #dealer .card {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 575px) {
+    #dealer .card .card-body {
+      padding-left: 0;
+      padding-right: 0; } }
+  #dealer .card .card-header {
+    color: white;
+    background: #ccd1d1;
+    font-size: 1.25rem; }
+
+#dealer a .card-header {
+  color: black !important;
+  text-transform: uppercase; }
+
+#dealer a:hover {
+  text-decoration: none; }
+
+#modal h5, #modal button {
+  color: black; }
 
 .map-div iframe {
   border-radius: 60px; }

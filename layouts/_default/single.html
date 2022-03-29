@@ -1,13 +1,20 @@
 {{ define "main" }}
-
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {{.Content }}
-      </div>
-    </div>
-  </div>
+{{ with .Params.spec }}
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6 bg-grey">
+				<span class="lp-lg-5 text-uppercase">
+					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b>{{.name}}</b>
+					
+				</span>
+				<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+			</div>
+			<div class="col-6 bg-grey">
+				
+			</div>
+		</div>
+	</div>
 </section>
-
+{{ end }}
 {{ end }}
