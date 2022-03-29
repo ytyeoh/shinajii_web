@@ -3,11 +3,11 @@ image: 'images/helmet/c4.png'
 type: 'full_face'
 spec:
   size:
-    size: 'm'
+    -size: 'm'
     diameter: '58'
-    size: 'l'
+    -size: 'l'
     diameter: '60'
-    size: 'xl'
+    -size: 'xl'
     diameter: '64'
   graphice:
     images: '1.png'

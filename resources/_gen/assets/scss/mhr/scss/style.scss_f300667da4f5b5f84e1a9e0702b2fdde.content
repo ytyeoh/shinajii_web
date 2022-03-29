@@ -9360,6 +9360,9 @@ body {
 .modal-backdrop {
   z-index: -1; }
 
+.text-black {
+  color: black; }
+
 .bg-grey {
   background: #CCD1D1 !important; }
 
@@ -9964,6 +9967,38 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+#single h2 {
+  font-size: 7rem; }
+
+#single h3 {
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+#single p {
+  color: black;
+  font-size: 1.5rem; }
+
+#single a {
+  color: grey; }
+
+#single .size {
+  width: 100%;
+  height: 200px; }
+  #single .size p {
+    line-height: 200px;
+    font-size: 4rem;
+    text-transform: uppercase; }
+  @media (max-width: 991px) {
+    #single .size {
+      height: 100px; }
+      #single .size p {
+        line-height: 100px; } }
+  @media (max-width: 575px) {
+    #single .size {
+      width: 100px;
+      height: 100px; }
+      #single .size p {
+        line-height: 100px; } }
 .product1 h2 {
   font-size: 64px !important; }
 

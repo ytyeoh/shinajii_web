@@ -1,17 +1,16 @@
 {{ define "main" }}
 {{ with .Params.spec }}
-<section>
+<section id='single'>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6 bg-grey">
-				<span class="lp-lg-5 text-uppercase">
+			<div class="col-12 col-md-6 bg-grey py-5">
+				<span class="pl-lg-5 text-uppercase ">
 					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b>{{.name}}</b>
-					
 				</span>
-				<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+				<img loading="lazy" src="{{ .image | absURL }}" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
 			</div>
-			<div class="col-6 bg-grey">
-				
+			<div class="col-12 col-md-6 py-5 bg-grey">
+				{{ partial "partials/product/product.html" . }}
 			</div>
 		</div>
 	</div>
