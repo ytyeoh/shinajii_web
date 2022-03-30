@@ -5,9 +5,12 @@
     display: table;
     width: 100%;
     text-align: center;
-    
+    .owl-thumb-item{
+      background: #CCD1D1;
+      margin: 5px;
+    }
     img {
-      width: 150px;
+      width: 140px;
       height: auto;
   }
 }

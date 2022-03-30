@@ -9971,8 +9971,11 @@ body {
   display: table;
   width: 100%;
   text-align: center; }
+  .owl-thumbs .owl-thumb-item {
+    background: #CCD1D1;
+    margin: 5px; }
   .owl-thumbs img {
-    width: 150px;
+    width: 140px;
     height: auto; }
 
 #single h2 {
