@@ -9978,6 +9978,16 @@ body {
     width: 140px;
     height: auto; }
 
+.white {
+  background: white; }
+  .white h2, .white p {
+    color: black; }
+
+.grey {
+  background: #CCD1D1; }
+  .grey h2, .grey p {
+    color: black; }
+
 #single h2 {
   font-size: 7rem; }
 

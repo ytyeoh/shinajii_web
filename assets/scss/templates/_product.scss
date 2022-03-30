@@ -6,12 +6,24 @@
     width: 100%;
     text-align: center;
     .owl-thumb-item{
-      background: #CCD1D1;
+      background: $grey;
       margin: 5px;
     }
     img {
       width: 140px;
       height: auto;
+  }
+}
+.white{
+  background: white;
+  h2,p{
+    color: black;
+  }
+}
+.grey{
+  background: $grey;
+  h2,p{
+    color: black;
   }
 }
 #single{
