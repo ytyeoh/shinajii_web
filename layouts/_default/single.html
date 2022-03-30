@@ -7,10 +7,22 @@
 				<span class="pl-lg-5 text-uppercase ">
 					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b>{{.name}}</b>
 				</span>
-				<img loading="lazy" src="{{ .image | absURL }}" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
+				<div class="owl-carousel owl-theme" data-slider-id="1">
+					{{ range $num := (seq .images_total) }}
+						<img loading="lazy" src="{{ "images/helmet" | absURL }}/c{{.}}.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
+					{{ end }}
+				</div>
+				<div class="owl-thumbs" data-slider-id="1">
+					
+					{{ range $num := (seq .images_total) }}
+				    {{ end }}
+				</div>
 			</div>
 			<div class="col-12 col-md-6 py-5 bg-grey">
 				{{ partial "partials/product/product.html" . }}
+			</div>
+			<div class="col-12">
+				
 			</div>
 		</div>
 	</div>

@@ -9967,6 +9967,14 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+.owl-thumbs {
+  display: table;
+  width: 100%;
+  text-align: center; }
+  .owl-thumbs img {
+    width: 150px;
+    height: auto; }
+
 #single h2 {
   font-size: 7rem; }
 

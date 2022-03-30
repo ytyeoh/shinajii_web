@@ -1,3 +1,16 @@
+.owl-thumbs {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+    
+    img {
+      width: 150px;
+      height: auto;
+  }
+}
 #single{
   h2{
     font-size: 7rem;
