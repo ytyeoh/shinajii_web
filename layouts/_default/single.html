@@ -1,5 +1,8 @@
 {{ define "main" }}
 {{ with .Params.spec }}
+{{ $.Scratch.Set "image" "images/type/" }}
+{{ $.Scratch.Add "image" .type }}
+{{ $.Scratch.Add "image" ".png" }}
 <section id='single'>
 	<div class="container-fluid">
 		<div class="row">
@@ -30,7 +33,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" .imaeg_1 "bg_color" "white") }}
+				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "white") }}
 			</div>
 			<div class="col-12">
 				{{ partial "partials/product/btm_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2a  "img_2" .imaeg_2a "bg_color" "grey") }}
