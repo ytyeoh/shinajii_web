@@ -1,20 +1,15 @@
 
 <section class="section technology-featured pt-0">
   <div class="container">
-    <div class="row">
-    	<div class="col-sm-12  col-12 col-lg-4 my-lg-auto">
-        <img src="{{ .Type | absURL }}" class="img-fluid" alt="slider-image">
-      </div>
-      <div class="col-sm-12  col-12 col-lg-8 technology-featured my-lg-5 py-3 px-4 text-left">
-        <div class="block">
-          <!-- written-content -->
-          <div class="content py-lg-5 title-case rev">
-            <!-- technology heading -->
-            <h2 class="text-uppercase ">{{ .Title}}</h2>
-          </div>
-          <!-- Promo Video -->
-        </div>
-      </div>
+    <div class="row px-3">
+    	<div class="col-sm-12  col-12 my-lg-auto px-0">
+        <img src="{{ .Params.image_1 | absURL }}" class="img-fluid " id="image-100" alt="slider-image">
+	    </div>
+	    <div class="col-6 my-lg-auto px-0">
+        <img src="{{ .Params.image_2 | absURL }}" class="img-fluid" alt="slider-image">
+	    </div><div class="col-6 my-lg-auto px-0">
+        <img src="{{ .Params.image_3 | absURL }}" class="img-fluid" alt="slider-image">
+	    </div>
     </div>
   </div>
 </section>
