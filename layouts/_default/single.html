@@ -3,6 +3,8 @@
 {{ $.Scratch.Set "image" "images/type/" }}
 {{ $.Scratch.Add "image" .type }}
 {{ $.Scratch.Add "image" ".png" }}
+{{ $.Scratch.Set "img_url" "images/" }}
+{{ $.Scratch.Add "img_url" .type }}
 <section id='single'>
 	<div class="container-fluid">
 		<div class="row">
@@ -10,15 +12,18 @@
 				<span class="pl-lg-5 text-uppercase ">
 					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b>{{.name}}</b>
 				</span>
-				<div class="owl-carousel owl-theme" data-slider-id="1">
-					{{ range $num := (seq .images_total) }}
-						<img loading="lazy" src="{{ "images/helmet" | absURL }}/c{{.}}.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
-					{{ end }}
+				<div id="slider">
+					<div class="owl-carousel owl-theme" data-slider-id="1">
+						{{ range $num := (seq .images_total) }}
+							<img loading="lazy" src="{{ "images/helmet" | absURL }}/c{{.}}.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
+						{{ end }}
+					</div>
 				</div>
-				<div class="owl-thumbs bg-grey" data-slider-id="1">
-					
-					{{ range $num := (seq .images_total) }}
-				    {{ end }}
+				<div id="thumb_slider">
+					<div class="owl-thumbs bg-grey" data-slider-id="1">
+						{{ range $num := (seq .images_total) }}
+					    {{ end }}
+					</div>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 py-5 bg-grey">

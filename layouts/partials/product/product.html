@@ -21,7 +21,7 @@
 		<div class="row">
 			{{ range .graphice }}
 			<div class="col-4">
-				<img src="{{ .images | absURL }}" class="img-fluid">
+				<img src="{{ .images | absURL }}" class="img-fluid img-replace" alt="{{ .count}}" name= "{{ .name | absURL }}">
 			</div>
 			{{ end }}
 		</div>
@@ -31,9 +31,12 @@
 		<div class="row">
 			{{ range .color }}
 			<div class="col-4">
-				<img src="{{ .images | absURL }}" class="img-fluid">
+				<img src="{{ .images | absURL }}" class="img-fluid img-replace" alt="{{ .count}}" name= "{{ .name | absURL }}">
 			</div>
 			{{ end }}
 		</div>
 	</div>
 </div>
+<script>
+
+</script>

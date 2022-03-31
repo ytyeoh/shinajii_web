@@ -59,14 +59,17 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	// -----------------------------
 	// Document Ready Function
 	// -----------------------------
+
 	$(document).ready(function(){
+    
 		// Video Play
 		$('.video-play').click(function() {
 			var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
 			$(this).replaceWith(video);
 		});
     // owl carousel
-    $('.owl-carousel').owlCarousel({
+    function owl(){
+      $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -91,7 +94,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
                 items:1
             }
         }
-    })
+      })
+    }
+    owl();
 		// -----------------------------
 		//  Video Replace
 		// -----------------------------
@@ -164,8 +169,24 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 			offset: 'bottom-in-view'
 		});
 		// -----------------------------
-		// Smmoth Scroll
+		// replace image
 		// -----------------------------
+    function replaceImg(){
+      
+      $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
+      $('#thumb_slider').html('<div class="owl-thumbs bg-grey" data-slider-id="1"></div>');
+      for (let i = 0; i < parseInt(this.alt); i++) {
+         $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');
+         
+      }
+      
+      
+      owl();
+    };
+    $('.img-replace').click(replaceImg);
+        // -----------------------------
+    // Smmoth Scroll
+    // -----------------------------
 		function smoothScroll() {
 			$('a.page-scroll').on('click', function (event) {
 				var $anchor = $(this);
@@ -179,7 +200,11 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
 		// google map
 		window.marker = null;
+
+
+
 		function initialize() {
+
 			var map;
 			var dataCenterLat = $('#map').attr('data-center-lat');
 			var dataCenterLng = $('#map').attr('data-center-lng');
