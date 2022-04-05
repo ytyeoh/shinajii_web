@@ -171,19 +171,49 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 		// -----------------------------
 		// replace image
 		// -----------------------------
-    function replaceImg(){
-      
+    // function replaceColor(aa){
+    //   var index = aa.id[1];
+    //   var id = parseInt(aa.id[0]) +1;
+    //   var dd = aa.id.substring(2).split(',');
+    //   debugger;
+
+    //   $('#color').html('<h3 class="text-black">color</h3><div class="row color-img" ></div>');
+    //   for (let i = 0; i < parseInt(index); i++) {
+    //      $(".color-img").append('<div class="col-4"><img src="'+aa.name+'/color/'+String(id)+'/1.png" class="img-fluid img-replace" alt="'+dd[i]+'" name= "'+aa.name+'/color/'+String(id)+'/"></div>');
+    //   }
+    //       };
+    // function replaceImg(){
+    //   $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
+    //   $('#thumb_slider').html('<div class="owl-thumbs bg-grey" data-slider-id="1"></div>');
+    //   for (let i = 0; i < parseInt(this.alt); i++) {
+    //      $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');  
+    //   }
+    //   owl();
+    // };
+    $('.color-replace').on("click", function(){
+      $('#color').html('<h3 class="text-black">color</h3><div class="row color-img" ></div>');
+      for (let i = 0; i < parseInt(this.id[1]); i++) {
+         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-4"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+      }
+    });
+
+    $(document).on("click", "a.delete" , function() {
+      $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
+      $('#thumb_slider').html('<div class="owl-thumbs bg-grey" data-slider-id="1"></div>');
+      for (let i = 0; i < parseInt(this.children[0].alt); i++) {
+         $(".owl-carousel").append('<img loading="lazy" src="'+this.children[0].name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');  
+      }
+      owl();
+        });
+
+    $('.img-replace').on("click", function(){
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs bg-grey" data-slider-id="1"></div>');
       for (let i = 0; i < parseInt(this.alt); i++) {
-         $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');
-         
+         $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');  
       }
-      
-      
       owl();
-    };
-    $('.img-replace').click(replaceImg);
+    });
         // -----------------------------
     // Smmoth Scroll
     // -----------------------------

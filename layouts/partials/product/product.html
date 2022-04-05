@@ -19,19 +19,22 @@
 	<div class="col-12">
 		<h3 class="text-black">graphic</h3>
 		<div class="row">
-			{{ range .graphic }}
+			{{ range $index, $element :=.graphic }}
 			<div class="col-4">
-				<img src="{{ .images | absURL }}" class="img-fluid img-replace" alt="{{ .count}}" name= "{{ .name | absURL }}">
+				<img src="{{ $element.images | absURL }}" class="img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}}{{$element.color }}{{ $element.color_count }}'>
 			</div>
 			{{ end }}
 		</div>
 	</div>
-	<div class="col-12">
+	<div class="col-12" id="color">
 		<h3 class="text-black">color</h3>
-		<div class="row">
-			{{ range .color }}
+		<div class="row color-img">
+			{{ $name := .color_name }}
+			{{ $count := split .color_count "," }}
+
+			{{ range $num := (seq .colors ) }}
 			<div class="col-4">
-				<img src="{{ .images | absURL }}" class="img-fluid img-replace" alt="{{ .count}}" name= "{{ .name | absURL }}">
+				<img src="{{ $name | absURL }}color/{{.}}/1.png" class="img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
 			</div>
 			{{ end }}
 		</div>
