@@ -1,12 +1,12 @@
 <div class="row">
 	<div class="col-12">
-		<h2 class="text-black">RF</h2>
+		<h2 class=""><img src = "{{.title | absURL }}" alt="{{ .name }}"/></h2>
 	</div>
 	<div class="col-12">
-		<h3 class="text-black">{{.name}}</h3>
+		<h3 class="">{{.name}}</h3>
 	</div>
 	<div class="col-12">
-		<h3 class="text-black">Sizes</h3>
+		<h3 class="">Sizes</h3>
 		<div class="row">
 			{{ range .size }}
 				<div class="col-4 text-center">
@@ -17,23 +17,23 @@
 		</div>
 	</div>
 	<div class="col-12">
-		<h3 class="text-black">graphic</h3>
+		<h3 class="">graphic</h3>
 		<div class="row">
 			{{ range $index, $element :=.graphic }}
-			<div class="col-4">
+			<div class="col-3">
 				<img src="{{ $element.images | absURL }}" class="img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}}{{$element.color }}{{ $element.color_count }}'>
 			</div>
 			{{ end }}
 		</div>
 	</div>
 	<div class="col-12" id="color">
-		<h3 class="text-black">color</h3>
+		<h3 class="">color</h3>
 		<div class="row color-img">
 			{{ $name := .color_name }}
 			{{ $count := split .color_count "," }}
 
 			{{ range $num := (seq .colors ) }}
-			<div class="col-4">
+			<div class="col-3">
 				<img src="{{ $name | absURL }}color/{{.}}/1.png" class="img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
 			</div>
 			{{ end }}

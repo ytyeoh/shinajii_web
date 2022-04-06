@@ -9972,8 +9972,13 @@ body {
   width: 100%;
   text-align: center; }
   .owl-thumbs .owl-thumb-item {
-    background: #CCD1D1;
-    margin: 5px; }
+    background: grey;
+    margin: 5px;
+    -webkit-appearance: media-slider;
+    filter: opacity(50%); }
+  .owl-thumbs .active {
+    background: black;
+    filter: none; }
   .owl-thumbs img {
     width: 140px;
     height: auto; }
@@ -9992,11 +9997,11 @@ body {
   font-size: 7rem; }
 
 #single h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 #single p {
-  color: black;
+  color: white;
   font-size: 1.5rem; }
 
 #single a {

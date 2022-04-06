@@ -6,12 +6,19 @@
     width: 100%;
     text-align: center;
     .owl-thumb-item{
-      background: $grey;
+      background: grey;
       margin: 5px;
+      -webkit-appearance: media-slider;
+      filter: opacity(50%);
+    }
+    .active{
+      background: black;
+      filter: none;
     }
     img {
       width: 140px;
       height: auto;
+      
   }
 }
 .white{
@@ -31,11 +38,11 @@
     font-size: 7rem;
   }
   h3{
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   p{
-    color: black;
+    color: white;
     font-size: 1.5rem;
   }
   a{
