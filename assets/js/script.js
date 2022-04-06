@@ -212,6 +212,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       for (let i = 0; i < parseInt(this.alt); i++) {
          $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');  
       }
+      $('#graphice-img .img-active').removeClass('img-active');
+      $(this).addClass('img-active');
       owl();
     });
         // -----------------------------

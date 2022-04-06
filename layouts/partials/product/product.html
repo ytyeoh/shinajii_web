@@ -10,7 +10,7 @@
 		<div class="row">
 			{{ range .size }}
 				<div class="col-4 text-center">
-					<div class='size ' style="background: {{ .color}};"><p>{{ .size }}</p></div>
+					<button type="button" class="btn btn-50 btn-lg rounded-pill text-uppercase" style="background: {{ .color}};">{{ .size }}</button>
 					<p>{{ .diameter}}cm</p>
 				</div>
 			{{ end }}
@@ -18,11 +18,15 @@
 	</div>
 	<div class="col-12">
 		<h3 class="">graphic</h3>
-		<div class="row">
+		<div class="row" id='graphice-img'>
 			{{ range $index, $element :=.graphic }}
-			<div class="col-3">
-				<img src="{{ $element.images | absURL }}" class="img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}}{{$element.color }}{{ $element.color_count }}'>
-			</div>
+				<div class="col-3 py-2">
+					{{ if eq $index 0 }}
+						<img src="{{ $element.images | absURL }}" class="img-active img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}}{{$element.color }}{{ $element.color_count }}'>
+					{{ else }}
+						<img src="{{ $element.images | absURL }}" class="img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}}{{$element.color }}{{ $element.color_count }}'>
+					{{ end }}
+				</div>
 			{{ end }}
 		</div>
 	</div>

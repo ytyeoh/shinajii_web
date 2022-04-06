@@ -10,7 +10,7 @@
 		<div class="row">
 			<div class="col-12 col-md-6 py-5">
 				<span class="pl-lg-5 text-uppercase ">
-					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b>{{.name}}</b>
+					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b class='text-white'>{{.name}}</b>
 				</span>
 				<div id="slider">
 					<div class="owl-carousel owl-theme" data-slider-id="1">
@@ -38,14 +38,23 @@
 <section id="spec">
 	<div class="container-fluid">
 		<div class="row">
+			<div class="col-12 title-case text-center">
+				<h2>{{ .title }}</h2>
+			</div>
 			<div class="col-12">
 				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/btm_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2a  "img_2" .imaeg_2a "bg_color" "black") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_3  "desc" .desc_3 "img" .imaeg_3 "bg_color" "black") }}
+			</div>
+			<div class="col-12">
+				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black") }}
 			</div>
 			<div class="col-12">
 				{{ partial "partials/product/left_img.html" (dict "title" .title_3  "desc" .desc_3 "img" .imaeg_3 "bg_color" "black") }}
+			</div>
+			<div class="col-12">
+				{{ partial "partials/product/btm_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2a  "img_2" .imaeg_2a "bg_color" "black") }}
 			</div>
 			<div class="col-12">
 		        {{ partial "partials/product/right_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .imaeg_4 "bg_color" "black") }}
