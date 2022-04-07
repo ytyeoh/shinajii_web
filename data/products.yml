@@ -6,8 +6,8 @@ imaeg_1: 'images/helmet/c1.png'
 
 title_2: 'side view'
 desc_2: "The shield system provides innovative features and the vast field of vision that today's top racers demand. Protecting against 99% of the sun's damaging UV rays, the shield offers a distortion-free view throughout the entire range."
-imaeg_2a: 'images/helmet/c1.png'
-imaeg_2b: 'images/helmet/c1.png'
+imaeg_2: 'images/helmet/c1.png'
+
 
 title_3: 'back view'
 desc_3: 'Few characteristics of a motorcycle helmet are as critically important as its first and second layers of defense, which is precisely why MHR offer TOP quality safety'
@@ -19,7 +19,9 @@ imaeg_4: 'images/helmet/c1.png'
 
 title_5: 'shield system'
 desc_5: 'Equipped with a fully removable, washable, replaceable and adjustable padding features'
-imaeg_5: 'images/helmet/c1.png'
+imaeg_5a: 'images/helmet/c1.png'
+imaeg_5b: 'images/helmet/c1.png'
+
 
 title_6: 'comfort'
 desc_6: 'Equipped with a fully removable, washable, replaceable and adjustable padding features'

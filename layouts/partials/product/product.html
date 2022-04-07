@@ -37,9 +37,13 @@
 			{{ $count := split .color_count "," }}
 
 			{{ range $num := (seq .colors ) }}
-			<div class="col-3">
-				<img src="{{ $name | absURL }}color/{{.}}/1.png" class="img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
-			</div>
+			<a href="javascript:void(0);" class=" delete col-3">
+				{{ if eq $num 1 }}
+					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="img-active img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
+				{{ else }}
+					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="img-fluid py-2 img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
+				{{ end }}
+			</a>
 			{{ end }}
 		</div>
 	</div>

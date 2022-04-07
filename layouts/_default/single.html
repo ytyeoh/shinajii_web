@@ -36,28 +36,28 @@
 {{ end }}
 {{with $.Site.Data.products}}
 <section id="spec">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-12 title-case text-center">
 				<h2>{{ .title }}</h2>
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black") }}
+				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_3  "desc" .desc_3 "img" .imaeg_3 "bg_color" "black") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2 "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black") }}
+				{{ partial "partials/product/right_img.html" (dict "title" .title_3  "desc" .desc_4 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_3  "desc" .desc_3 "img" .imaeg_3 "bg_color" "black") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .imaeg_4 "bg_color" "black") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/btm_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2a  "img_2" .imaeg_2a "bg_color" "black") }}
+				{{ partial "partials/product/btm_img.html" (dict "title" .title_5  "desc" .desc_5 "img" .imaeg_5a  "img_2" .imaeg_5b "bg_color" "black") }}
 			</div>
 			<div class="col-12">
-		        {{ partial "partials/product/right_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .imaeg_4 "bg_color" "black") }}
+		        {{ partial "partials/product/right_img.html" (dict "title" .title_6  "desc" .desc_6 "img" .imaeg_6 "bg_color" "black") }}
 		    </div>
 		</div>
 	</div>

@@ -193,7 +193,11 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $('.color-replace').on("click", function(){
       $('#color').html('<h3 class="">color</h3><div class="row color-img" ></div>');
       for (let i = 0; i < parseInt(this.id[1]); i++) {
-         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+        if (i==0){
+         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="img-active img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+        } else {
+          $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+        }
       }
     });
 
@@ -203,10 +207,12 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       for (let i = 0; i < parseInt(this.children[0].alt); i++) {
          $(".owl-carousel").append('<img loading="lazy" src="'+this.children[0].name+'/'+String(i+1)+'.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">');  
       }
+      $('#color .img-active').removeClass('img-active');
+      $(this).addClass('img-active');
       owl();
         });
 
-    $('.img-replace').on("click", function(){
+    $('#graphice-img .img-replace').on("click", function(){
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
       for (let i = 0; i < parseInt(this.alt); i++) {

@@ -9375,6 +9375,9 @@ body {
 .bg-black {
   background: black !important; }
 
+.text-decoration-none {
+  text-decoration: none !important; }
+
 .video {
   position: relative; }
   .video:before {
@@ -10035,7 +10038,11 @@ body {
       #single .size p {
         line-height: 100px; } }
 #spec h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+#spec h2, #spec h3 {
+  font-size: 40px; }
 
 .product1 h2 {
   font-size: 64px !important; }
