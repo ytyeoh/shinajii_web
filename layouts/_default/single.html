@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ with .Params.spec }}
-{{ $.Scratch.Set "image" "images/type/" }}
+{{ $.Scratch.Set "image" "images/specs/" }}
 {{ $.Scratch.Add "image" .type }}
-{{ $.Scratch.Add "image" ".png" }}
+{{ $.Scratch.Add "image" "/a1.png" }}
 {{ $.Scratch.Set "img_url" "images/" }}
 {{ $.Scratch.Add "img_url" .type }}
 <section id='single'>
@@ -45,19 +45,19 @@
 				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .imaeg_2 "bg_color" "black" "h2_class" "text-decoration-none") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .image_2 "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
 				{{ partial "partials/product/right_img.html" (dict "title" .title_3  "desc" .desc_4 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .imaeg_4 "bg_color" "black") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .image_4 "bg_color" "black") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/btm_img.html" (dict "title" .title_5  "desc" .desc_5 "img" .imaeg_5a  "img_2" .imaeg_5b "bg_color" "black") }}
+				{{ partial "partials/product/btm_img.html" (dict "title" .title_5  "desc" .desc_5 "img" .image_5a  "img_2" .image_5b "bg_color" "black") }}
 			</div>
 			<div class="col-12">
-		        {{ partial "partials/product/right_img.html" (dict "title" .title_6  "desc" .desc_6 "img" .imaeg_6 "bg_color" "black") }}
+		        {{ partial "partials/product/right_img.html" (dict "title" .title_6  "desc" .desc_6 "img" .image_6 "bg_color" "black") }}
 		    </div>
 		</div>
 	</div>
