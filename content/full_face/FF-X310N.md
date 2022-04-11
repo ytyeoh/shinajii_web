@@ -24,7 +24,7 @@ spec:
     diameter: '60'
     color: '#C5061A'
   - size: 'xl'
-    diameter: '64'
+    diameter: '62'
     color: '#D6E12D'
   graphic:
   - images: 'images/graphice/full_face/FF-X310N/1/1.png'
