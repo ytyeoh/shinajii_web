@@ -286,14 +286,6 @@ dealer:
 
     - name : 'Kedah'
       d: 
-        - name: 'VR 46 ENTERPRISE'
-          id: 33
-          address1: 'NO.12-D'
-          address2: 'KG.BANGGOL BELIMBING'
-          address3: 'JALAN JENUN'
-          address4: '06700 PENDANG,'
-          phone: '013-4539218 MR.YAP'
-          google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.1063539907186!2d100.46973051476792!3d5.980090995668493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b483af2dafdc9%3A0x2e1d296f4bda66d4!2sVr%2046%20Enterprise!5e0!3m2!1sen!2smy!4v1648180441643!5m2!1sen!2smy'
         - name: 'LEAN HUAT MOTOR GROUP SDN. BHD. (KULIM)'
           id: 34
           address1: 'NO.65-68'
