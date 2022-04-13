@@ -24,7 +24,7 @@
 					{{ if eq $index 0 }}
 						<img src="{{ $element.images | absURL }}" class=" p-2 img-active img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}} {{$element.color }} {{ $element.color_count }}'>
 					{{ else }}
-						<img src="{{ $element.images | absURL }}" class="p-2 img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}} {{$element.color }} {{ $element.color_count }}' na="{{$element.color }}">
+						<img src="{{ $element.images | absURL }}" class="p-lg-2 img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}} {{$element.color }} {{ $element.color_count }}' na="{{$element.color }}">
 					{{ end }}
 				</div>
 			{{ end }}

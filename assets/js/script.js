@@ -196,9 +196,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       for (let i = 0; i < parseInt(array[1]); i++) {
 
         if (i==0){
-         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class=" p-2 img-active img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class=" p-lg-2 img-active img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
         } else {
-          $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="p-2 img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+          $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="p-lg-2 img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
         }
       }
     });
@@ -207,7 +207,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
       for (let i = 0; i < parseInt(this.children[0].alt); i++) {
-         $(".owl-carousel").append('<img loading="lazy" src="'+this.children[0].name+'/'+String(i+1)+'.png" class="p-10 mt-5 card-img-top img-fluid" alt="vision-thumb">');  
+         $(".owl-carousel").append('<img loading="lazy" src="'+this.children[0].name+'/'+String(i+1)+'.png" class=" mt-5 card-img-top img-fluid px-10 " alt="vision-thumb">');  
       }
       $('#color .img-active').removeClass('img-active');
       $(this).addClass('img-active');
@@ -218,7 +218,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
       for (let i = 0; i < parseInt(this.alt); i++) {
-         $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class="p-10 mt-5 card-img-top img-fluid" alt="vision-thumb">');  
+         $(".owl-carousel").append('<img loading="lazy" src="'+this.name+'/'+String(i+1)+'.png" class=" mt-5 card-img-top img-fluid px-10" alt="vision-thumb">');  
       }
       $('#graphice-img .img-active').removeClass('img-active');
       $(this).addClass('img-active');
