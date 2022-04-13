@@ -192,11 +192,13 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     // };
     $('.color-replace').on("click", function(){
       $('#color').html('<h3 class="">color</h3><div class="row color-img" ></div>');
-      for (let i = 0; i < parseInt(this.id[1]); i++) {
+      var array = this.id.split(" ");
+      for (let i = 0; i < parseInt(array[1]); i++) {
+
         if (i==0){
-         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class=" p-2 img-active img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+         $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class=" p-2 img-active img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
         } else {
-          $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="p-2 img-fluid img-replace" alt="'+this.id.substring(2).split(',')[i]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
+          $(".color-img").append('<a href="javascript:void(0);" class=" delete col-3"><img src="'+this.name+'/color/'+String(i+1)+'/1.png" class="p-2 img-fluid img-replace" alt="'+array[2]+'" name= "'+this.name+'/color/'+String(i+1)+'/"></a>');
         }
       }
     });
