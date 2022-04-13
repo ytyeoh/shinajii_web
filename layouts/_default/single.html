@@ -16,7 +16,7 @@
 					<div class="owl-carousel owl-theme" data-slider-id="1">
 						{{ $img:= .image }}
 						{{ range $num := (seq .images_total) }}
-							<img loading="lazy" src="{{ $img | absURL }}/{{.}}.png" class="mt-5 card-img-top img-fluid" alt="vision-thumb">
+							<img loading="lazy" src="{{ $img | absURL }}/{{.}}.png" class="mt-5 card-img-top img-fluid p-10" alt="vision-thumb">
 						{{ end }}
 					</div>
 				</div>

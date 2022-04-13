@@ -9369,6 +9369,9 @@ body {
 .text-black {
   color: black; }
 
+.p-10 {
+  padding: 10rem; }
+
 .bg-grey {
   background: #CCD1D1 !important; }
 
