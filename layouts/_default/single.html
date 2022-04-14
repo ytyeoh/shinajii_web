@@ -3,8 +3,12 @@
 {{ $.Scratch.Set "image" "images/specs/" }}
 {{ $.Scratch.Add "image" .type }}
 {{ $.Scratch.Add "image" "/a1.png" }}
-{{ $.Scratch.Set "img_url" "images/" }}
-{{ $.Scratch.Add "img_url" .type }}
+{{ $.Scratch.Set "image_2" "images/specs/" }}
+{{ $.Scratch.Add "image_2" .type }}
+{{ $.Scratch.Add "image_2" "/a2.png" }}
+{{ $.Scratch.Set "image_3" "images/specs/" }}
+{{ $.Scratch.Add "image_3" .type }}
+{{ $.Scratch.Add "image_3" "/a3.png" }}
 <section id='single'>
 	<div class="container-fluid">
 		<div class="row">
@@ -45,10 +49,10 @@
 				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" .image_2 "bg_color" "black" "h2_class" "text-decoration-none") }}
+				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" ($.Scratch.Get "image_2") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_3  "desc" .desc_4 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
+				{{ partial "partials/product/right_img.html" (dict "title" .title_3  "desc" .desc_4 "img" ($.Scratch.Get "image_3") "bg_color" "black" "h2_class" "text-decoration-none") }}
 			</div>
 			<div class="col-12">
 				{{ partial "partials/product/left_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .image_4 "bg_color" "black") }}
