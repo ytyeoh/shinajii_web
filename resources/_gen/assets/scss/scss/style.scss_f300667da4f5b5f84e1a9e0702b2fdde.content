@@ -9351,8 +9351,17 @@ label {
   font-weight: 600;
   border: none; }
 
+.btn-50 {
+  width: 50%; }
+
+.rounded-pill {
+  border-radius: 50rem !important; }
+
 body {
   background: #000; }
+
+.hidden {
+  display: none; }
 
 .section {
   padding: 100px 0; }
@@ -9360,11 +9369,30 @@ body {
 .modal-backdrop {
   z-index: -1; }
 
+.text-black {
+  color: black; }
+
+.p-10 {
+  padding: 10rem; }
+
+.px-10 {
+  padding-left: 10rem;
+  padding-right: 10rem; }
+  @media (max-width: 991px) {
+    .px-10 {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
+.pt-10 {
+  padding-top: 10rem; }
+
 .bg-grey {
   background: #CCD1D1 !important; }
 
 .bg-black {
   background: black !important; }
+
+.text-decoration-none {
+  text-decoration: none !important; }
 
 .video {
   position: relative; }
@@ -9964,6 +9992,74 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+.owl-thumbs {
+  display: table;
+  width: 100%;
+  text-align: center; }
+  .owl-thumbs .owl-thumb-item {
+    background: grey;
+    margin: 5px;
+    -webkit-appearance: media-slider;
+    filter: opacity(50%); }
+  .owl-thumbs .active {
+    background: black;
+    filter: none; }
+  .owl-thumbs img {
+    width: 140px;
+    height: auto; }
+
+.white {
+  background: white; }
+  .white h2, .white p {
+    color: black; }
+
+.grey {
+  background: #CCD1D1; }
+  .grey h2, .grey p {
+    color: black; }
+
+#single h2 {
+  font-size: 7rem; }
+
+#single h3 {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+#single p {
+  color: white;
+  font-size: 1.5rem; }
+
+#single a {
+  color: grey; }
+
+#single .img-active {
+  background: grey; }
+
+#single .size {
+  width: 50%;
+  height: 100px; }
+  #single .size p {
+    line-height: 100px;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  @media (max-width: 991px) {
+    #single .size {
+      height: 100px; }
+      #single .size p {
+        line-height: 100px; } }
+  @media (max-width: 575px) {
+    #single .size {
+      width: 100px;
+      height: 100px; }
+      #single .size p {
+        line-height: 100px; } }
+#spec h2 {
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+#spec h2, #spec h3 {
+  font-size: 40px; }
+
 .product1 h2 {
   font-size: 64px !important; }
 
@@ -9980,6 +10076,8 @@ body {
     color: black; }
   #helmet h3 {
     font-size: 60px; }
+  #helmet .card {
+    background: black; }
   #helmet #line {
     height: 10rem;
     border-left: 2px solid black; }

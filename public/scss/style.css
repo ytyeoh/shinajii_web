@@ -9360,6 +9360,9 @@ label {
 body {
   background: #000; }
 
+.hidden {
+  display: none; }
+
 .section {
   padding: 100px 0; }
 
