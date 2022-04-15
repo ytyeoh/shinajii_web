@@ -17,9 +17,9 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Technology"
+name = "Feature"
 pre = "/"
-url = "technology"
+url = "feature"
 weight = 2
 
 [[menu.main]]
