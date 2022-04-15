@@ -202,7 +202,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
         }
       }
     });
-
+    // $('collapsible').on("click", function(){
+      
+    // });
     $(document).on("click", "a.delete" , function() {
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
@@ -212,7 +214,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       $('#color .img-active').removeClass('img-active');
       $(this).addClass('img-active');
       owl();
-        });
+    });
 
     $('#graphice-img .img-replace').on("click", function(){
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
