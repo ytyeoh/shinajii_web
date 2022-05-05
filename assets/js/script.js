@@ -467,8 +467,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 			google.maps.event.addDomListener(window, 'load', initialize);
 		}
 	});
-
+  
 	$(window).on('load', function () {
-		$('.preloader').fadeOut(2000);
+		$('.preloader').fadeOut('slow');
 	});
 })(jQuery);

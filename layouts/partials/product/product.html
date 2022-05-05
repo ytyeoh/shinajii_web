@@ -22,9 +22,11 @@
 			{{ range $index, $element :=.graphic }}
 				<div class="col-3 py-2">
 					{{ if eq $index 0 }}
-						<img src="{{ $element.images | absURL }}" class=" p-2 img-active img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}} {{$element.color }} {{ $element.color_count }}'>
+						{{ partial "image.html" (dict "image" $element.images "class" "p-2 img-active img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color) "name" $element.name "alt" $element.count ) }}
+						
 					{{ else }}
-						<img src="{{ $element.images | absURL }}" class="p-lg-2 img-fluid img-replace color-replace" alt="{{ $element.count}}" name= "{{ $element.name | absURL }}" id='{{ $index}} {{$element.color }} {{ $element.color_count }}' na="{{$element.color }}">
+						{{ partial "image.html" (dict "image" $element.images "class" "p-lg-2 img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color)  "name" $element.name "alt" $element.count ) }}
+						
 					{{ end }}
 				</div>
 			{{ end }}
@@ -38,9 +40,12 @@
 
 			{{ range $num := (seq .colors ) }}
 			<a href="javascript:void(0);" class=" delete col-3">
+				{{ $b := index ( $count) (sub $num 1) }}
 				{{ if eq $num 1 }}
+				{{ partial "image.html" (dict "image"  (printf "%scolor/%d/1.png" $name .) "class" "p-2 img-fluid img-replace"  "name" (printf "%scolor/%d/" $name .) "alt" $b ) }}
 					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="p-2 img-active img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
 				{{ else }}
+					{{ partial "image.html" (dict "image"  (printf "%scolor/%d/1.png" $name .) "class" "p-2 img-fluid img-replace"   "name" (printf "%scolor/%d/" $name .) "alt" $b ) }}
 					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="p-2 img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
 				{{ end }}
 			</a>

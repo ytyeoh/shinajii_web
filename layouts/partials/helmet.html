@@ -3,12 +3,13 @@
   <div class="container">
     <div class="row px-3">
     	<div class="col-sm-12  col-12 my-lg-auto px-0">
-        <img src="{{ .Params.image_1 | absURL }}" class="img-fluid " id="image-100" alt="slider-image">
+    		{{ partial "image.html" (dict "image" .Params.image_1 "class" "img-fluid" "id" "image-100" ) }}
 	    </div>
 	    <div class="col-6 my-lg-auto px-0">
-        <img src="{{ .Params.image_2 | absURL }}" class="img-fluid" alt="slider-image">
+	    	{{ partial "image.html" (dict "image" .Params.image_2 "class" "img-fluid" ) }}
+        
 	    </div><div class="col-6 my-lg-auto px-0">
-        <img src="{{ .Params.image_3 | absURL }}" class="img-fluid" alt="slider-image">
+        {{ partial "image.html" (dict "image" .Params.image_3 "class" "img-fluid" ) }}
 	    </div>
     </div>
   </div>

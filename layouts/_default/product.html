@@ -24,7 +24,8 @@
         </div>
       </div>
       <div class="col-sm-12  col-12 col-lg-4 my-lg-auto">
-	      <img src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+      	{{ partial "image.html" (dict "image" .image "class" "img-fluid" ) }}
+	      
       </div>
     </div>
   </div>
@@ -50,7 +51,7 @@
             <div class="card mx-3 bg-white" id="{{.title}}">
             	<div class="row">
             		<div class="col-12 col-lg-4 col-sm-12">
-            			<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+            			{{ partial "image.html" (dict "image" .image "class" "card-img-top img-fluid" ) }}
             		</div>
             		<div class="col-12 col-lg-8 col-sm-12">
             			<div class="card-body text-left">
@@ -127,7 +128,8 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" id="image-100" style="animation-delay: 2s;">
-              <img loading="lazy" src="{{ .image | absURL }}" alt="slider-image">
+            	{{ partial "image.html" (dict "image" .image "class" "" ) }}
+              
             </div>
             <div class="content text-white" id="content-50">
               <h2><span class="rev">{{ .title | markdownify}}</span></h2>

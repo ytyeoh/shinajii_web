@@ -2,6 +2,7 @@
 
 {{ if site.Data.homepage.banner.enable }}
 {{ with site.Data.homepage.banner }}
+
 <section class="hero-slider">
   <div class="container-fluid p-0 m-0 ">
     <div class="row m-0">
@@ -9,13 +10,14 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" style="animation-delay: 2s;">
-              <img src="{{ .image | absURL }}" alt="slider-image">
+            	{{ partial "image.html" (dict "image" .image ) }}
             </div>
             <div class="content">
               {{ if .button.enable }}
               {{ with .button }}
-
-              <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll"><img loading="lazy" src="{{ .label }}" alt="slider-image"></a>
+              {{ $image := resources.Get .label }}
+							{{ $image := $image.Resize "600x webp picture"  }}
+              <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll">{{ partial "image.html" (dict "image" .label ) }}</a>
               {{ end }}
               {{ end }}
             </div>
@@ -26,7 +28,7 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image-2 image-reveal mr-auto ml-0" style="animation-delay: 2s;">
-              <img loading="lazy" src="{{ .image_2 | absURL }}" alt="slider-image">
+            	{{ partial "image.html" (dict "image" .image_2 ) }}
             </div>
           </div>
         </div>
@@ -100,7 +102,7 @@
           {{ range .vision_item }}
           <div class="col-lg-4 col-12 col-sm-12 py-2 px-0">
             <div class="card mx-3 ">
-	             <img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+            	{{ partial "image.html" (dict "image" .image "class" "card-img-top img-fluid" ) }}
             
 	            <div class="card-body text-center">
 	              <h3>{{ .title | markdownify }}</h3>

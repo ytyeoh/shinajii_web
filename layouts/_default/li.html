@@ -2,7 +2,7 @@
 	<a href="{{.Permalink}}">
 		{{ with .Params.spec }}
 		<div class="pt-lg-2 pt-xl-5  px-lg-2 px-xl-5 card mx-3" id="{{.title}}">
-			<img loading="lazy" src="{{ .image | absURL }}/1.png" class=" card-img-top img-fluid" alt="vision-thumb">
+			{{ partial "image.html" (dict "image" .image "class" "card-img-top img-fluid" ) }}
 		</div>
 		<div class="card-body">
 	    <h5 class="card-title text-center">{{ .name | markdownify}} </h5>

@@ -1,7 +1,7 @@
 <div class="col-12 col-sm-4 py-2 px-0">
 	<a href="helmet/{{ .type | relURL }}/{{ .weight }}">
 	<div class="card mx-3" id="{{.title}}">
-		<img loading="lazy" src="{{ .image | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+		{{ partial "image.html" (dict "image" .img "class" "card-img-top img-fluid" ) }}
 	</div>
 	<div class="card-body">
     <h5 class="card-title text-center">{{ .name | markdownify}} </h5>

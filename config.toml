@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://mhrracing.com/"
-# baseURL = "https://ytyeoh.github.io/mhr/"
+# baseURL = "https://mhrracing.com/"
+baseURL = "https://ytyeoh.github.io/mhr/"
 title = "MHR Racing"
 theme = "omega"
 # google analytics

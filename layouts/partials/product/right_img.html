@@ -4,6 +4,6 @@
 		<p>{{ .desc}} </p>
 	</div>
 	<div class="col-12 col-lg-4">
-		<img loading="lazy" src="{{ .img | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+		{{ partial "image.html" (dict "image" .img "class" "card-img-top img-fluid" ) }}
 	</div>
 </div>

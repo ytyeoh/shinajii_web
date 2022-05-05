@@ -6,10 +6,10 @@
   <div class="col-12 ">
     <div class="row">
       <div class="col-6">
-        <img loading="lazy" src="{{ .img | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+      	{{ partial "image.html" (dict "image" .img "class" "card-img-top img-fluid" ) }}
       </div>
       <div class="col-6">
-        <img loading="lazy" src="{{ .img_2 | absURL }}" class="card-img-top img-fluid" alt="vision-thumb">
+      	{{ partial "image.html" (dict "image" .img_2 "class" "card-img-top img-fluid" ) }}
       </div>
     </div>
     

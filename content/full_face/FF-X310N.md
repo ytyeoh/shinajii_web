@@ -7,7 +7,7 @@ weight: 2
 spec:
   title: 'images/graphice/title/GT6.svg'
   name: 'FF-X310N'
-  image: 'images/graphice/full_face/FF-X310N/1/'
+  image: 'images/graphice/full_face/FF-X310N/1/1.png'
   images_total: 3
   image_folder: 'Color 1'
   type: 'full_face'
