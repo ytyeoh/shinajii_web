@@ -3,13 +3,15 @@
   <div class="container">
     <div class="row px-3">
     	<div class="col-sm-12  col-12 my-lg-auto px-0">
-    		{{ partial "image.html" (dict "image" .Params.image_1 "class" "img-fluid" "id" "image-100" ) }}
+    		
+    		 <!-- .Params.image_1 -->
+    		{{ partial "image.html" (dict "image" "images/main_page/full_face/a1.png" "class" "img-fluid" "id" "image-100" ) }}
 	    </div>
 	    <div class="col-6 my-lg-auto px-0">
-	    	{{ partial "image.html" (dict "image" .Params.image_2 "class" "img-fluid" ) }}
+	    	{{ partial "image.html" (dict "image" "images/main_page/full_face/a2.png" "class" "img-fluid" ) }}
         
 	    </div><div class="col-6 my-lg-auto px-0">
-        {{ partial "image.html" (dict "image" .Params.image_3 "class" "img-fluid" ) }}
+        {{ partial "image.html" (dict "image" "images/main_page/full_face/a3.png" "class" "img-fluid" ) }}
 	    </div>
     </div>
   </div>
