@@ -208,8 +208,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $(document).on("click", "a.delete" , function() {
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
+       var img = this.name.split(",")
       for (let i = 0; i < parseInt(this.children[0].alt); i++) {
-         $(".owl-carousel").append('<img src="'+this.children[0].name+'/'+String(i+1)+'.png" class=" mt-5 card-img-top img-fluid px-10 " alt="vision-thumb">');  
+        var rimg = img[i].split("+");
+         $(".owl-carousel").append('<picture><source media="(min-width:650px)" srcset="'+rimg[1]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[1]+' 200w,'+rimg[1]+' 768w,'+rimg[1]+' 1024w,'+rimg[1]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture>');  
       }
       $('#color .img-active').removeClass('img-active');
       $(this).addClass('img-active');
@@ -219,8 +221,11 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $('#graphice-img .img-replace').on("click", function(){
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
+      var img = this.name.split(",")
       for (let i = 0; i < parseInt(this.alt); i++) {
-         $(".owl-carousel").append('<img src="'+this.name+'/'+String(i+1)+'.png" class=" mt-5 card-img-top img-fluid px-10" alt="vision-thumb">');  
+        var rimg = img[i].split("+");
+
+         $(".owl-carousel").append('<picture><source media="(min-width:650px)" srcset="'+rimg[1]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[1]+' 200w,'+rimg[1]+' 768w,'+rimg[1]+' 1024w,'+rimg[1]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture>');  
       }
       $('#graphice-img .img-active').removeClass('img-active');
       $(this).addClass('img-active');

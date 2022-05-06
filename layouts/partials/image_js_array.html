@@ -1,0 +1,50 @@
+{{ $ii := .image }}
+{{ $img := (printf "%s/1.png" .image)}}
+{{- $image := resources.Get $img -}}
+{{ $tiny := ($image.Resize "400x q90") }}
+{{ $small := ($image.Resize "600x q90") }}
+{{ $medium := ($image.Resize "700x q90") }}
+{{ $large := ($image.Resize "900x q90") }}
+{{ $webp1 := $image.Resize "300x webp picture"  }}
+{{ $webp2 := $image.Resize "600x webp picture"  }}
+{{ $name := ""}}
+{{ $alt := ""}}
+{{ range $num := (seq .alt) }}
+	{{ $imginfo := "" }}
+	{{ $aa := (printf "%s/%d.png" $ii .) }}
+	{{- $image1 := resources.Get  $aa -}}
+	{{ $tiny1 := ($image1.Resize "400x q90") }}
+	{{ $small1 := ($image1.Resize "600x q90") }}
+	{{ $medium1 := ($image1.Resize "700x q90") }}
+	{{ $large1 := ($image1.Resize "900x q90") }}
+	{{ $webp11 := $image1.Resize "300x webp picture"  }}
+	{{ $webp21 := $image1.Resize "600x webp picture"  }}
+	{{ $imginfo := (printf "%s+%s+%s+%s+%s+%s" $tiny1.RelPermalink $small1.RelPermalink $medium1.RelPermalink $large1.RelPermalink $webp11.RelPermalink $webp21.RelPermalink)}}
+	{{ $name = (printf "%s,%s" $name $imginfo) }}
+{{ end }}
+
+{{ range $num := (seq .alt) }}
+	{{ $imginfo := "" }}
+	{{ $aa := (printf "%s/%d.png" $ii .) }}
+	{{- $image1 := resources.Get  $aa -}}
+	{{ $tiny1 := ($image1.Resize "400x q90") }}
+	{{ $small1 := ($image1.Resize "600x q90") }}
+	{{ $medium1 := ($image1.Resize "700x q90") }}
+	{{ $large1 := ($image1.Resize "900x q90") }}
+	{{ $webp11 := $image1.Resize "300x webp picture"  }}
+	{{ $webp21 := $image1.Resize "600x webp picture"  }}
+	{{ $imginfo := (printf "%s+%s+%s+%s+%s+%s" $tiny1.RelPermalink $small1.RelPermalink $medium1.RelPermalink $large1.RelPermalink $webp11.RelPermalink $webp21.RelPermalink)}}
+	{{ $name = (printf "%s,%s" $name $imginfo) }}
+{{ end }}
+
+<picture>
+    <source media="(min-width:650px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
+    <source media="(min-width:300px)" srcset="{{ $webp1.RelPermalink }}" type="image/webp">
+    <img 
+    srcset="
+    {{- with $tiny.RelPermalink -}}{{.}} 200w{{- end -}}
+    {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
+    {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
+    {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
+    img loading="lazy" src="{{ $small.RelPermalink }}" class="{{.class}}"  alt="{{ .alt}}" name= "{{ strings.TrimLeft "," $name }}" id="{{.id}}">
+</picture>
