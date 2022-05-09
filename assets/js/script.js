@@ -201,10 +201,16 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
         var abc = img[i].split(",");
         
         var rimg = abc[0].split("+");
+        for(var iiii=0; iiii < abc.length; iiii++) {
+          var xyz = abc[iiii].split("+");
+          for(var ii=0; ii < xyz.length; ii++) {
+            xyz[ii] = xyz[ii].replace(/\[|\]/g, "").trim();
+          }
+        }
         if (i==0){
-         $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w" img loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" class=" p-lg-2 img-active img-fluid img-replace" ></picture></a>');
+         $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w"  loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+abc+'" class=" p-lg-2 img-active img-fluid img-replace" ></picture></a>');
         } else {
-          $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w" img loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" class=" p-lg-2 img img-fluid img-replace" ></picture></a>');
+          $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w" loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+abc+'" class=" p-lg-2 img img-fluid img-replace" ></picture></a>');
         }
       }
     });
@@ -214,8 +220,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $(document).on("click", "a.delete" , function() {
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
-       var img = this.name.split(",")
-
+       var img = this.children[0].children[2].name.split(",");
+       if (img[img.length-1] == '] '){
+        img.pop();
+       }
       for (let i = 0; i < parseInt(img.length); i++) {
         var rimg = img[i].split("+");
          $(".owl-carousel").append('<picture><source media="(min-width:650px)" srcset="'+rimg[1]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[1]+' 200w,'+rimg[1]+' 768w,'+rimg[1]+' 1024w,'+rimg[1]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture>');  
