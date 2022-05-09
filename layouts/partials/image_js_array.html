@@ -1,4 +1,5 @@
 {{ $ii := .image }}
+{{ $cc := .color_count}}
 {{ $img := (printf "%s/1.png" .image)}}
 {{- $image := resources.Get $img -}}
 {{ $tiny := ($image.Resize "400x q90") }}
@@ -22,19 +23,31 @@
 	{{ $imginfo := (printf "%s+%s+%s+%s+%s+%s" $tiny1.RelPermalink $small1.RelPermalink $medium1.RelPermalink $large1.RelPermalink $webp11.RelPermalink $webp21.RelPermalink)}}
 	{{ $name = (printf "%s,%s" $name $imginfo) }}
 {{ end }}
-
-{{ range $num := (seq .alt) }}
-	{{ $imginfo := "" }}
-	{{ $aa := (printf "%s/%d.png" $ii .) }}
-	{{- $image1 := resources.Get  $aa -}}
-	{{ $tiny1 := ($image1.Resize "400x q90") }}
-	{{ $small1 := ($image1.Resize "600x q90") }}
-	{{ $medium1 := ($image1.Resize "700x q90") }}
-	{{ $large1 := ($image1.Resize "900x q90") }}
-	{{ $webp11 := $image1.Resize "300x webp picture"  }}
-	{{ $webp21 := $image1.Resize "600x webp picture"  }}
-	{{ $imginfo := (printf "%s+%s+%s+%s+%s+%s" $tiny1.RelPermalink $small1.RelPermalink $medium1.RelPermalink $large1.RelPermalink $webp11.RelPermalink $webp21.RelPermalink)}}
-	{{ $name = (printf "%s,%s" $name $imginfo) }}
+{{ $color_code := ""}}
+{{ $a := slice ""}}
+{{ range $num := (seq .color) }}
+	{{ $r := split (replace $cc "," " ") " "}}
+	{{ $cci := int (index $r (sub . 1)) }}
+	{{ $colori := .}}
+	
+	{{ $b := slice ""}}
+	{{ range $num := (seq $cci) }}
+	
+    {{- $vv := resources.Get (printf "%s/color/%d/%d.png" $ii $colori .) -}}
+    {{ $tiny1 := ($vv.Resize "400x q90") }}
+		{{ $small1 := ($vv.Resize "600x q90") }}
+		{{ $medium1 := ($vv.Resize "700x q90") }}
+		{{ $large1 := ($vv.Resize "900x q90") }}
+		{{ $webp11 := $vv.Resize "300x webp picture"  }}
+		{{ $webp21 := $vv.Resize "600x webp picture"  }}
+		{{ $imginfo := slice $tiny1.RelPermalink "+" $small1.RelPermalink "+" $medium1.RelPermalink "+" $large1.RelPermalink "+" $webp11.RelPermalink "+" $webp21.RelPermalink }}
+		
+	  {{ $b = $b | append $imginfo ","}}
+	  
+  {{ end }}
+  {{ $a = $a | append $b ">" }}
+   
+ 
 {{ end }}
 
 <picture>
@@ -46,5 +59,5 @@
     {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
     {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
     {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
-    img loading="lazy" src="{{ $small.RelPermalink }}" class="{{.class}}"  alt="{{ .alt}}" name= "{{ strings.TrimLeft "," $name }}" id="{{.id}}">
+    loading="lazy" src="{{ $small.RelPermalink }}" class="{{.class}}"  alt="{{ $a }}" name= "{{ strings.TrimLeft "," $name }}" id="{{.id}}">
 </picture>

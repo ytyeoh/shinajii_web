@@ -40,15 +40,15 @@
 			{{ $count := split .color_count "," }}
 
 			{{ range $num := (seq .colors ) }}
-			<a href="javascript:void(0);" class=" delete col-3">
+			<a href="javascript:void(0);" class="py-2 delete col-3">
 				{{ $b := index ( $count) (sub $num 1) }}
-				{{ if eq $num 1 }}
 
-				{{ partial "image.html" (dict "image"  (printf "%scolor/%d/1.png" $name .) "class" "p-2 img-fluid img-replace"  "name" (printf "%scolor/%d/" $name .) "alt" $b ) }}
-					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="p-2 img-active img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
+				{{ if eq $num 1 }}
+					{{ partial "image_js_array.html" (dict "image" (printf "%scolor/%d/" $name .) "class" "p-2 img-fluid img-replace img-active" "alt" $b ) }}
+
 				{{ else }}
-					{{ partial "image.html" (dict "image"  (printf "%scolor/%d/1.png" $name .) "class" "p-2 img-fluid img-replace"   "name" (printf "%scolor/%d/" $name .) "alt" $b ) }}
-					<img src="{{ $name | absURL }}color/{{.}}/1.png" class="p-2 img-fluid img-replace" alt="{{ index ( $count) (sub $num 1) }}" name= "{{ $name | absURL }}color/{{.}}/">
+					{{ partial "image_js_array.html" (dict "image" (printf "%scolor/%d/" $name .) "class" "p-2 img-fluid img-replace" "alt" $b ) }}
+					
 				{{ end }}
 			</a>
 			{{ end }}
