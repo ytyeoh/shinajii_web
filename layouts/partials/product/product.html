@@ -9,7 +9,7 @@
 		<h3 class="">Sizes</h3>
 		<div class="row">
 			{{ range .size }}
-				<div class="col-4 text-center">
+				<div class="col-12 col-md-4 text-center">
 					<button type="button" class="btn btn-50 btn-lg rounded-pill text-uppercase" style="background: {{ .color}};">{{ .size }}</button>
 					<p>{{ .diameter}}cm</p>
 				</div>
@@ -21,12 +21,12 @@
 		<div class="row" id='graphice-img'>
 			{{ range $index, $element :=.graphic }}
 			
-				<div class="col-3 py-2">
+				<div class="col-6 col-md-4 col-lg-3 py-2">
 					{{ if eq $index 0 }}
-						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-2 img-active img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color) "name" $element.name "alt" $element.count "color" $element.color "color_count" $element.color_count) }}
+						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-active img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color) "name" $element.name "alt" $element.count "color" $element.color "color_count" $element.color_count) }}
 						
 					{{ else }}
-						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-lg-2 img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color) "name" $element.name "alt" $element.count  "color" $element.color "color_count" $element.color_count ) }}
+						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-fluid img-replace color-replace" "id" ( printf "%d %d %d"  $index $element.color $element.color) "name" $element.name "alt" $element.count  "color" $element.color "color_count" $element.color_count ) }}
 						
 					{{ end }}
 				</div>
@@ -40,7 +40,7 @@
 			{{ $count := split .color_count "," }}
 
 			{{ range $num := (seq .colors ) }}
-			<a href="javascript:void(0);" class="py-2 delete col-3">
+			<a href="javascript:void(0);" class="py-2 delete col-6 col-md-4 col-lg-3 ">
 				{{ $b := index ( $count) (sub $num 1) }}
 
 				{{ if eq $num 1 }}

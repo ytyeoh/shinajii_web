@@ -19,10 +19,13 @@
   border: none;
 }
 .btn-50{
-  width: 50%;
+  width: 100%;
+  border-radius: 10rem;
+  @include tablet{
+      width: 50%;
+      border-radius: 50rem;
+  }
 }
 
-.rounded-pill {
-    border-radius: 50rem!important;
-}
+
 
