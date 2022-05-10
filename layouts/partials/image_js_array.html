@@ -31,18 +31,22 @@
 	{{ $colori := .}}
 	
 	{{ $b := slice ""}}
+	
 	{{ range $num := (seq $cci) }}
 	
     {{- $vv := resources.Get (printf "%s/color/%d/%d.png" $ii $colori .) -}}
-    {{ $tiny1 := ($vv.Resize "400x q90") }}
-		{{ $small1 := ($vv.Resize "600x q90") }}
-		{{ $medium1 := ($vv.Resize "700x q90") }}
-		{{ $large1 := ($vv.Resize "900x q90") }}
-		{{ $webp11 := $vv.Resize "300x webp picture"  }}
-		{{ $webp21 := $vv.Resize "600x webp picture"  }}
-		{{ $imginfo := slice $tiny1.RelPermalink "+" $small1.RelPermalink "+" $medium1.RelPermalink "+" $large1.RelPermalink "+" $webp11.RelPermalink "+" $webp21.RelPermalink }}
-		
-	  {{ $b = $b | append $imginfo ","}}
+    {{ with $vv }}
+	    {{ $tiny1 := ($vv.Resize "400x q90") }}
+			{{ $small1 := ($vv.Resize "600x q90") }}
+			{{ $medium1 := ($vv.Resize "700x q90") }}
+			{{ $large1 := ($vv.Resize "900x q90") }}
+			{{ $webp11 := $vv.Resize "300x webp picture"  }}
+			{{ $webp21 := $vv.Resize "600x webp picture"  }}
+			{{ $imginfo := slice $tiny1.RelPermalink "+" $small1.RelPermalink "+" $medium1.RelPermalink "+" $large1.RelPermalink "+" $webp11.RelPermalink "+" $webp21.RelPermalink }}
+			
+		  {{ $b = $b | append $imginfo ","}}
+
+	  {{ end }}
 	  
   {{ end }}
   {{ $a = $a | append $b ">" }}
