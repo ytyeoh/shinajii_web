@@ -236,6 +236,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $('#graphice-img .img-replace').on("click", function(){
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
+      var series = this.id.split(" "); 
+      $('#series')[0].innerHTML = series[3];
       var img = this.name.split(",")
       for (let i = 0; i < parseInt(img.length); i++) {
         var rimg = img[i].split("+");
