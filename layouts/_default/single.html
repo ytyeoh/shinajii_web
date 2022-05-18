@@ -25,7 +25,7 @@
 						
 						{{ $img:= .spec.image }}
 						{{ range $num := (seq .spec.images_total) }}
-							{{ partial "image.html" (dict "image" $img "class" " mt-5 card-img-top img-fluid px-10" ) }}
+							{{ partial "product/lightbox.html" (dict "image" $img "class" " mt-5 card-img-top img-fluid px-10" ) }}
 						{{ end }}
 					</div>
 				</div>
