@@ -1,39 +1,39 @@
 {{ define "main" }}
-{{ with .Params.spec }}
+{{ with .Params }}
 {{ $.Scratch.Set "image" "images/specs/" }}
-{{ $.Scratch.Add "image" .type }}
+{{ $.Scratch.Add "image" .spec.type }}
 {{ $.Scratch.Add "image" "/a1.png" }}
 {{ $.Scratch.Set "image_2" "images/specs/" }}
-{{ $.Scratch.Add "image_2" .type }}
+{{ $.Scratch.Add "image_2" .spec.type }}
 {{ $.Scratch.Add "image_2" "/a2.png" }}
 {{ $.Scratch.Set "image_3" "images/specs/" }}
-{{ $.Scratch.Add "image_3" .type }}
+{{ $.Scratch.Add "image_3" .spec.type }}
 {{ $.Scratch.Add "image_3" "/a3.png" }}
 <section id='single'>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12 col-md-6 py-5">
-				<span class="pl-lg-5 text-uppercase ">
-					<a href="{{.main | absURL }}">{{replace .main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .type "_" " "}}</a>/<b class='text-white'>{{.name}}</b>
+				<span class="pl-lg-5 text-uppercase text-white">
+					<a href="{{.main | absURL }}">{{replace .spec.main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .spec.type "_" " "}}</a>/<b class='text-white'>{{ .name}}</b>
 				</span>
 				<div id="slider">
 					<div class="owl-carousel owl-theme" data-slider-id="1">
 						
-						{{ $img:= .image }}
-						{{ range $num := (seq .images_total) }}
+						{{ $img:= .spec.image }}
+						{{ range $num := (seq .spec.images_total) }}
 							{{ partial "image.html" (dict "image" $img "class" " mt-5 card-img-top img-fluid px-10" ) }}
 						{{ end }}
 					</div>
 				</div>
 				<div id="thumb_slider">
 					<div class="owl-thumbs" data-slider-id="1">
-						{{ range $num := (seq .images_total) }}
+						{{ range $num := (seq .spec.images_total) }}
 					    {{ end }}
 					</div>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 py-5">
-				{{ partial "partials/product/product.html" . }}
+				{{ partial "partials/product/product.html" .Spec }}
 			</div>
 		</div>
 	</div>
