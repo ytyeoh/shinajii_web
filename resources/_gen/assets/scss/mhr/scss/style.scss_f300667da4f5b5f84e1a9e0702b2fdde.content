@@ -10034,7 +10034,8 @@ body {
   font-size: 1.5rem; }
 
 #single a {
-  color: grey; }
+  color: grey;
+  display: inline-block; }
 
 #single .img-active {
   background: grey; }
