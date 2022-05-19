@@ -190,7 +190,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     //   owl();
     // };
     $('.color-replace').on("click", function(){
+      var id = this.id.split(" ")[3];
       $('#color').html('<h3 class="">color</h3><div class="row color-img" ></div>');
+      $('#webstore')[0].href = "https://shop.mhrracing.com/index.php?route=product/product&product_id="+id;
       var array = this.id.split(" ");
 
       var img = this.alt.split(">");
@@ -218,6 +220,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $(document).on("click", "a.delete" , function() {
       $('#slider').html('<div class="owl-carousel owl-theme" data-slider-id="1"></div>');
       $('#thumb_slider').html('<div class="owl-thumbs" data-slider-id="1"></div>');
+
        var img = this.children[0].children[2].name.split(",");
        if (img[img.length-1] == '] '){
         img.pop();
