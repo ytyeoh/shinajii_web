@@ -194,11 +194,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       var array = this.id.split(" ");
 
       var img = this.alt.split(">");
-      
       for (let i = 0; i < parseInt(array[1]); i++) {
 
         var abc = img[i].split(",");
-        
+        var zzz = img[i].replace(/\[|\]/g, "").trim().replace(/,*$/, '');
         var rimg = abc[0].split("+");
         for(var iiii=0; iiii < abc.length; iiii++) {
           var xyz = abc[iiii].split("+");
@@ -207,9 +206,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
           }
         }
         if (i==0){
-         $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w"  loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+abc+'" class=" p-lg-2 img-active img-fluid img-replace" ></picture></a>');
+         $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w"  loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+zzz+'" class=" p-lg-2 img-active img-fluid img-replace" ></picture></a>');
         } else {
-          $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w" loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+abc+'" class=" p-lg-2 img img-fluid img-replace" ></picture></a>');
+          $(".color-img").append('<a href="javascript:void(0);" class=" py-2 delete col-3"><picture><source media="(min-width:650px)" srcset="'+rimg[0].replace(/\[|\]/g, "").trim()+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[2].replace(/\[|\]/g, "").trim()+' 200w,'+rimg[3].replace(/\[|\]/g, "").trim()+' 768w,'+rimg[4].replace(/\[|\]/g, "").trim()+' 1024w,'+rimg[5].replace(/\[|\]/g, "").trim()+' 1366w" loading="lazy" src="'+rimg[5].replace(/\[|\]/g, "").trim()+'" name="'+zzz+'" class=" p-lg-2 img img-fluid img-replace" ></picture></a>');
         }
       }
     });
