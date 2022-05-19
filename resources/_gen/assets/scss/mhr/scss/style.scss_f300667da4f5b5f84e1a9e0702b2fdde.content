@@ -9993,6 +9993,9 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+.lb-container {
+  background: black; }
+
 .owl-thumbs {
   display: table;
   width: 100%;

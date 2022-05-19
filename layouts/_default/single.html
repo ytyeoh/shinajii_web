@@ -22,10 +22,9 @@
 				</span>
 				<div id="slider">
 					<div class="owl-carousel owl-theme" data-slider-id="1">
-						
-						{{ $img:= .spec.image }}
+						{{ $img:= .spec.color_name }}
 						{{ range $num := (seq .spec.images_total) }}
-							{{ partial "product/lightbox.html" (dict "image" $img "class" " mt-5 card-img-top img-fluid px-10" ) }}
+							{{ partial "product/lightbox.html" (dict "image" (printf "%s%d.png" $img $num) "class" " mt-5 card-img-top img-fluid px-10" ) }}
 						{{ end }}
 					</div>
 				</div>
@@ -40,6 +39,7 @@
 				{{ partial "partials/product/product.html" .Spec }}
 
 				<div class="row">
+					<div class="col-12 mt-5"><h3>Buy Now</h3></div>
 					{{ partial "partials/product/btn_link.html" (dict "image" "images/Shopee.png" "url" "https://shopee.com.my/mhrhelmets") }}
 					{{ partial "partials/product/btn_link.html" (dict "image" "images/Lazada.png" "url" "https://www.lazada.com.my/shop/mhr-helmet/") }}
 					{{ partial "partials/product/btn_link.html" (dict "image" "images/Webstore.png" "url" ($.Scratch.Get "url")) }}

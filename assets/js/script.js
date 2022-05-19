@@ -70,7 +70,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     // owl carousel
     function owl(){
       $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         nav:false,
         thumbs: true,
@@ -78,7 +78,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
         thumbsPrerendered: true,
         thumbContainerClass: 'owl-thumbs',
         thumbItemClass: 'owl-thumb-item',
-        loop: true,
         navText: [
           "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
           "<i class='fa fa-chevron-right' aria-hidden='true'></i>"
@@ -226,7 +225,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
        }
       for (let i = 0; i < parseInt(img.length); i++) {
         var rimg = img[i].split("+");
-         $(".owl-carousel").append('<picture><source media="(min-width:650px)" srcset="'+rimg[1]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[1]+' 200w,'+rimg[1]+' 768w,'+rimg[1]+' 1024w,'+rimg[1]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture>');  
+         $(".owl-carousel").append('<a href="'+rimg[3]+'" data-lightbox="roadtrip"><picture><source media="(min-width:650px)" srcset="'+rimg[5]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[4]+'" type="image/webp"><img srcset="'+rimg[0]+' 200w,'+rimg[1]+' 768w,'+rimg[2]+' 1024w,'+rimg[3]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture></a>');
       }
       $('#color .img-active').removeClass('img-active');
       $(this).addClass('img-active');
@@ -242,7 +241,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       for (let i = 0; i < parseInt(img.length); i++) {
         var rimg = img[i].split("+");
 
-         $(".owl-carousel").append('<picture><source media="(min-width:650px)" srcset="'+rimg[1]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[1]+'" type="image/webp"><img srcset="'+rimg[1]+' 200w,'+rimg[1]+' 768w,'+rimg[1]+' 1024w,'+rimg[1]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture>'); 
+         $(".owl-carousel").append('<a href="'+rimg[3]+'" data-lightbox="roadtrip"><picture><source media="(min-width:650px)" srcset="'+rimg[5]+'" type="image/webp"><source media="(min-width:300px)" srcset="'+rimg[4]+'" type="image/webp"><img srcset="'+rimg[0]+' 200w,'+rimg[1]+' 768w,'+rimg[2]+' 1024w,'+rimg[3]+' 1366w" img loading="lazy" src="'+rimg[1]+'" class="mt-5 card-img-top img-fluid px-10" ></picture></a>');
 
       }
       $('#graphice-img .img-active').removeClass('img-active');

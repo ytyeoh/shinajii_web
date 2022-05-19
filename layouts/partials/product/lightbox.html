@@ -5,7 +5,7 @@
 {{ $large := ($image.Resize "900x q90") }}
 {{ $webp1 := $image.Resize "400x webp picture"  }}
 {{ $webp2 := $image.Resize "600x webp picture"  }}
-<a href="{{ $small.RelPermalink }}" data-lightbox="roadtrip">
+<a href="{{ $large.RelPermalink }}" data-lightbox="roadtrip">
 <picture>
     <source media="(min-width:650px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
     <source media="(min-width:300px)" srcset="{{ $webp1.RelPermalink }}" type="image/webp">
