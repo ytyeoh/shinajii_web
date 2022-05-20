@@ -23,10 +23,10 @@
 			
 				<div class="col-6 col-md-4 col-lg-3 py-2">
 					{{ if eq $index 0 }}
-						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-active img-fluid img-replace color-replace" "id" ( printf "%d %d %d %s"  $index $element.color $element.color $element.code) "name" $element.name "alt" $element.count "color" $element.color "color_count" $element.color_count) }}
+						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-active img-fluid img-replace color-replace" "id" ( printf "%d %d %d %s %d"  $index $element.color $element.color $element.code $element.id) "name" $element.name "alt" $element.count "color" $element.color "color_count" $element.color_count) }}
 						
 					{{ else }}
-						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-fluid img-replace color-replace" "id" ( printf "%d %d %d %s"  $index $element.color $element.color $element.code) "name" $element.name "alt" $element.count  "color" $element.color "color_count" $element.color_count ) }}
+						{{ partial "image_js_array.html" (dict "image" $element.name "class" "p-1 p-lg-2 img-fluid img-replace color-replace" "id" ( printf "%d %d %d %s %d"  $index $element.color $element.color $element.code $element.id) "name" $element.name "alt" $element.count  "color" $element.color "color_count" $element.color_count ) }}
 						
 					{{ end }}
 				</div>

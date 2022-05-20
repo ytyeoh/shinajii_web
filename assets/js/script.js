@@ -190,7 +190,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     //   owl();
     // };
     $('.color-replace').on("click", function(){
-      var id = this.id.split(" ")[3];
+      var id = this.id.split(" ")[4];
       $('#color').html('<h3 class="">color</h3><div class="row color-img" ></div>');
       $('#webstore')[0].href = "https://shop.mhrracing.com/index.php?route=product/product&product_id="+id;
       var array = this.id.split(" ");
