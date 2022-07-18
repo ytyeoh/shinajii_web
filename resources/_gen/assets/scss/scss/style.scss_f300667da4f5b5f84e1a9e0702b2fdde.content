@@ -9367,6 +9367,9 @@ body {
 .section {
   padding: 100px 0; }
 
+.w-90 {
+  width: 80%; }
+
 .modal-backdrop {
   z-index: -1; }
 
@@ -9993,6 +9996,9 @@ body {
   @media (max-width: 767px) {
     .vision-slider-wrapper .slick-prev {
       bottom: 0; } }
+.lb-container {
+  background: black; }
+
 .owl-thumbs {
   display: table;
   width: 100%;
@@ -10031,7 +10037,8 @@ body {
   font-size: 1.5rem; }
 
 #single a {
-  color: grey; }
+  color: grey;
+  display: inline-block; }
 
 #single .img-active {
   background: grey; }
