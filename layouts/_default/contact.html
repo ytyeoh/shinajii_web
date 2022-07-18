@@ -126,7 +126,7 @@
 				              </div>
 			              </a>
 	                </h5>
-		              <div id="{{.name}}" class="hidden" data-parent="#accordion" aria-labelledby="heading-{{.name}}">
+		              <div id="{{.name}}" class="hidden ccc" data-parent="#accordion" aria-labelledby="heading-{{.name}}">
 		                <div class="card-body">
 		                  <div class="row">
 		                  	{{ range .d }}
@@ -161,20 +161,30 @@
 </section>
 <script>
 		var coll = document.getElementsByClassName("collapsible");
+		var collection = document.getElementsByClassName("ccc");
+
       var i;
 
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-          
+
           this.classList.toggle("active");
           var content = this.parentElement.nextElementSibling;
-          console.log(content.className);
-          if (content.className === "hidden") {
-            content.classList.remove("hidden");
-          } else {
-            content.classList.add("hidden");
-          }
-          console.log(content.className);
+          for (let a = 0; a < collection.length; a++) {
+        		// debugger;
+        		// console.log(collection[a]);
+        		if (collection[a].id != content.id){
+				  collection[a].classList.add("hidden");
+        		}
+			}
+          // content.classList.add("hidden");
+          
+          // if (content.className === "hidden") {
+            content.classList.toggle("hidden");
+          // } else {
+          //   content.classList.add("hidden");
+          // }
+          // console.log(content.className);
         });
       }
 </script>

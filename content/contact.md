@@ -383,10 +383,21 @@ dealer:
           phone: '04-7206666'
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0491033655157!2d100.35840011409296!3d6.124094329378122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b44a8408ef8e3%3A0x5706ce3d62e79416!2sAs%20Jaya%20Motorsport%20Sdn.%20Bhd.!5e0!3m2!1sen!2smy!4v1649991945324!5m2!1sen!2smy'
 
+    - name : 'Sarawak'
+      d:
+        - name: 'HO HIN MOTORS '
+          id: 44
+          address1: 'Lot No. 8183, 8184'
+          address2: 'TOWN EAST BUILDING'
+          address3: 'JALAN PENDING'
+          address4: '93450 KUCHING'
+          phone: '082-480536'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15953.43949561975!2d110.374439!3d1.549243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x692fff8bac6ea1db!2sHo%20Hin%20Motors!5e0!3m2!1sen!2smy!4v1658130029600!5m2!1sen!2smy'
+
     - name : 'Sabah'
       d: 
         - name: 'EKO KEN MOTOR SDN. BHD. '
-          id: 44
+          id: 45
           address1: '3,TINGKAT BAWAH'
           address2: 'KEDAI GOLDEN PLAZA'
           address3: 'DONGGONGON PENAMPANG'
