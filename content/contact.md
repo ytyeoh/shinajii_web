@@ -9,7 +9,7 @@ dealer:
   enable: true
   stage:
     - name : 'PLATINUM'
-      d: 
+      d:
         - name: 'DFZ MOTORWORKS SDN. BHD.'
           id: 0
           address1: 'NO.20 & 21'
@@ -19,7 +19,7 @@ dealer:
           phone: '012-4178489 ABD HAFIZ'
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.7914129093047!2d100.39556351476544!3d5.44860519604857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac51f98a9c745%3A0x47384f90703a90ac!2sDFZ%20AGENCY%20SDN%20BHD!5e0!3m2!1sen!2smy!4v1648435039408!5m2!1sen!2smy'
     - name : 'Johor'
-      d: 
+      d:
         - name: 'MOY HUAT MOTOR TRADING SDN. BHD.'
           id:  1
           address1: 'NO.69 & 71'
@@ -94,7 +94,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.486862203837!2d103.75038271409154!3d1.480256261556534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6d358f727e03%3A0xc52d3f49b150ca34!2sWk%20Motorsport!5e0!3m2!1sen!2smy!4v1649992559208!5m2!1sen!2smy'
 
     - name : 'Selangor'
-      d: 
+      d:
         - name: 'GT-MAX MOTORS (M) SDN BHD'
           id: 10
           address1: 'NO.1'
@@ -153,7 +153,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.633655429303!2d101.6225398!3d3.1906214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc48a9d452c895%3A0x751750c4e259c9e1!2sPlaza%20Medan%20Putra!5e0!3m2!1sen!2smy!4v1648179903298!5m2!1sen!2smy'
 
     - name : 'KL'
-      d: 
+      d:
         - name: 'FARIT ISMETH HELMET AND ACCESSORIES '
           id: 17
           address1: 'NO.4-1'
@@ -194,7 +194,7 @@ dealer:
           address4: 'KL'
           phone: '012-3950613 SIMON'
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6969049766067!2d101.69063831475736!3d3.1742602976887606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4817032c1481%3A0x7023f807fcc9f84b!2sGerhana%20Motor%20Sport%20(Jamal%20Fz)!5e0!3m2!1sen!2smy!4v1648180057348!5m2!1sen!2smy'
-        - name: 'BIKERZ GARAGE'
+        - name: 'BIKERZ GARAJ'
           id: 22
           address1: 'NO. 25-G'
           address2: 'JALAN DANAU LUMAYAN 1'
@@ -220,7 +220,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9263948418434!2d101.72309731475727!3d3.114175997732328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc360bcae36a5d%3A0x5fea87af1322cf1f!2sKedai%20Motorsikal%20Tenaga%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1648180153565!5m2!1sen!2smy'
 
     - name : 'Perak'
-      d: 
+      d:
         - name: 'SWEE HUAT MOTOR SDN.BHD.'
           id: 25
           address1: 'SL-8 & SL-12'
@@ -232,7 +232,7 @@ dealer:
         - name: 'MEGA BIKE ENTERPRISE'
           id: 26
           address1: 'NO.22'
-          address2: ' JALAN TBC 2'
+          address2: 'JALAN TBC 2'
           address3: 'TAIPING BUSINESS CENTRE'
           address4: '34000 TAIPING'
           phone: '05-8072994'
@@ -247,7 +247,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.107004653345!2d100.65524291408967!3d4.199326946971656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cb2cfe75ef179f%3A0xed711e4d2012431f!2sSuzuka%20Motor!5e0!3m2!1sen!2smy!4v1649992398257!5m2!1sen!2smy'
 
     - name : 'Terengganu'
-      d: 
+      d:
         - name: 'LBT GEMILANG MOTOR'
           id: 28
           address1: 'NO.8,TINGKAT BAWAH'
@@ -258,7 +258,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.990421832635!2d103.42411891476058!3d4.222128296930643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c887c0c1caaca1%3A0xfcacbcaaf6acfbf8!2sLBT%20GEMILANG%20MOTOR!5e0!3m2!1sen!2smy!4v1648180217399!5m2!1sen!2smy'
 
     - name : 'Penang'
-      d: 
+      d:
         - name: 'KIEN LUM MOTOR SDN. BHD.'
           id: 29
           address1: 'NO.4451'
@@ -317,7 +317,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.562072573813!2d100.47878351476419!3d5.173909096245553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ab1cf6a76f623%3A0xa97289d061308e14!2sJiwon%20Motor!5e0!3m2!1sen!2smy!4v1648180413976!5m2!1sen!2smy'
 
     - name : 'Kedah'
-      d: 
+      d:
         - name: 'LEAN HUAT MOTOR GROUP SDN. BHD. (KULIM)'
           id: 36
           address1: 'NO.65-68'
@@ -395,7 +395,7 @@ dealer:
           google_map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15953.43949561975!2d110.374439!3d1.549243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x692fff8bac6ea1db!2sHo%20Hin%20Motors!5e0!3m2!1sen!2smy!4v1658130029600!5m2!1sen!2smy'
 
     - name : 'Sabah'
-      d: 
+      d:
         - name: 'EKO KEN MOTOR SDN. BHD. '
           id: 45
           address1: '3,TINGKAT BAWAH'
