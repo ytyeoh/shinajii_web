@@ -387,8 +387,8 @@ dealer:
       d:
         - name: 'HO HIN MOTORS '
           id: 44
-          address1: 'Lot No. 8183, 8184'
-          address2: 'TOWN EAST BUILDING'
+          address1: 'LOT 449'
+          address2: 'LORONG DATUK ABG ABDUL RAHIM 10'
           address3: 'JALAN PENDING'
           address4: '93450 KUCHING'
           phone: '082-480536'
