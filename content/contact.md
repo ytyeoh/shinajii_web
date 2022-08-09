@@ -393,11 +393,27 @@ dealer:
           address4: '93450 KUCHING'
           phone: '082-480536'
           google_map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15953.43949561975!2d110.374439!3d1.549243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x692fff8bac6ea1db!2sHo%20Hin%20Motors!5e0!3m2!1sen!2smy!4v1658130029600!5m2!1sen!2smy'
+        - name: 'SYARIKAT TECK SHEN MOTOR'
+          id: 45
+          address1: 'NO 5,LOT 10887,'
+          address2: 'MATANG RIA SHOPPING CENTRE'
+          address3: 'JALAN MATANG'
+          address4: '93050 KUCHING'
+          phone: '082-422462'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15953.38554894382!2d110.3217367!3d1.5563901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85f14c6c67f8e59!2sSyarikat%20Teck%20Shen%20Motor!5e0!3m2!1sen!2smy!4v1660017868064!5m2!1sen!2smy'
+        - name: 'HKB MOTOR HELMET WORLD'
+          id: 46
+          address1: 'LOT 773,'
+          address2: 'JALAN KWONG LEE BANK'
+          address3: 'PENDING HEIGHT I,'
+          address4: '93450 KUCHING'
+          phone: '082-288728'
+          google_map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3584363925706!2d110.37790531409136!3d1.5500063613330377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba77bf264e7d5%3A0x7b17c74f35e69328!2sHKB%20Motor%20Helmet%20World!5e0!3m2!1sen!2smy!4v1660017985085!5m2!1sen!2smy'
 
     - name : 'Sabah'
       d:
         - name: 'EKO KEN MOTOR SDN. BHD. '
-          id: 45
+          id: 47
           address1: '3,TINGKAT BAWAH'
           address2: 'KEDAI GOLDEN PLAZA'
           address3: 'DONGGONGON PENAMPANG'
