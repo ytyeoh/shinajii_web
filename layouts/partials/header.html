@@ -18,14 +18,15 @@
             </span>
           </button>
           <div class="collapse navbar-collapse" id="main-nav">
+          	<a class="navbar-brand d-none d-lg-block d-xl-block" href="{{ site.BaseURL | relLangURL }}">
+	            {{ if site.Params.logo }}
+	            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+	            {{ else }}
+	            {{site.Title}}
+	            {{ end }}
+	        </a>
             <ul class="navbar-nav mx-auto">
-            	<a class="navbar-brand d-none d-lg-block d-xl-block" href="{{ site.BaseURL | relLangURL }}">
-		            {{ if site.Params.logo }}
-		            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
-		            {{ else }}
-		            {{site.Title}}
-		            {{ end }}
-		          </a>
+            	
 		          {{ $current := . }}
               {{ range site.Menus.main }}
               {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}

@@ -1,7 +1,7 @@
 ######################## default configuration ####################
-baseURL = "https://mhrracing.com/"
+# baseURL = "https://mhrracing.com/"
 # baseURL = "https://test.mhrracing.com/"
-# baseURL = "https://ytyeoh.github.io/mhr/"
+baseURL = "https://ytyeoh.github.io/breathe_life/"
 title = "MHR Helmet"
 theme = "omega"
 # google analytics
@@ -18,25 +18,25 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Feature"
+name = "About US"
 pre = "/"
 url = "feature"
 weight = 2
 
 [[menu.main]]
-name = "Products"
+name = "how you can help"
 pre = "/"
 url = "product"
 weight = 3
 
 [[menu.main]]
-name = "E-Store"
+name = "testimonials"
 pre = ""
 url = "https://shop.mhrracing.com/"
 weight = 4
 
 [[menu.main]]
-name = "Contact"
+name = "Contact us"
 pre = "/"
 url = "contact"
 weight = 5
