@@ -16,6 +16,15 @@
 		</div>
 	</div>
 </footer>
+<!-- Back to top button -->
+<a href="/donate" class="btn btn-danger btn-floating btn-lg" id="btn-donate"><i class="fa fa-shopping-bag" aria-hidden="true"></i><br>donate</a>
+<button
+	type="button"
+	class="btn text-danger btn-light btn-floating btn-lg"
+	id="btn-back-to-top"
+	>
+	<i class="fa fa-chevron-up"></i>
+</button>
 {{ "<!-- Google Map API -->" | safeHTML }}
 {{ with site.Params.map.gmap_api }}
 <script src="{{ . | safeURL }}"></script>
@@ -48,7 +57,9 @@
 	})(jQuery);
 	
 </script>
-
+<script>
+	
+</script>
 <!-- cookie style -->
 <style>
 .cookie-box {

@@ -1,9 +1,24 @@
 #################### Banner #####################
 banner:
+  slide:
+    - title : 'yo can make a diference!'
+      desc1 : 'to raise <b>hope</b> and <b>support</b>'
+      desc2 : 'in pratical way in rohingya lives'
+      image : 'images/type/a1.jpeg'
+    - title : 'asdasnce!'
+      desc1 : 'tasfd support'
+      desc2 : 'in prasfngya lives'
+      image : 'images/type/a2.jpeg'
+    - title : 'yo csdfiference!'
+      desc1 : 'tosdfd support'
+      desc2 : 'in pratisf rohingya lives'
+      image : 'images/type/a3.jpeg'
+
   enable : true
   title : "MHR"
   content : "Helmet"
   image : "images/hero-image/7.png"
+  image_text: "assisting birthing famillies parctially, medically & financially"
   button:
     enable : true
     label : "images/hero-image/mhr.png"
@@ -12,6 +27,7 @@ banner:
   title_2 : "Advanced innovation"
   content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. <br>Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
   image_2 : "images/helmet/a2.png"
+  image_text_2: "assisting birthing famillies parctially, medically & financially"
   button_2:
     enable : true
     label : "Learn More"

@@ -25,6 +25,11 @@
 	            {{site.Title}}
 	            {{ end }}
 	        </a>
+	        <div class="navbar-nav">
+	        <span class="nav-item">
+	        <a class="nav-link page-scroll " href="{{ site.Params.menu | relLangURL }}">{{site.Params.menu}}</a>
+	        </span>
+	        </div>
             <ul class="navbar-nav mx-auto">
             	
 		          {{ $current := . }}
