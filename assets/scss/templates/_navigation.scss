@@ -14,6 +14,7 @@
 #main-nav{
     .navbar-nav{
         align-self: center;
+        font-family: $primary-font;
         @include desktop{
             text-align: center;
         }
@@ -21,16 +22,24 @@
             .nav-link{
                 padding-right: 25px;
                 padding-left: 25px;
-                color: #1b4568;
+                color: #1A4568;
                 font-size: 20px;
-                font-weight: 100;
+                font-weight: bold;
                 letter-spacing: 2px;
                 text-transform: capitalize;
                 text-decoration: none;
             }
+            .text-green{
+              color: $green;
+
+            }
+            .text-green:hover{
+              text-decoration: underline;
+            }
             .active {
               color: #02FD34;
               text-decoration-color: white;
+              text-decoration: underline;
             }
         }
         .music-icon{
