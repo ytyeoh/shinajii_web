@@ -14,8 +14,10 @@ banner:
       desc2 : 'in pratisf rohingya lives'
       image : 'images/type/a3.jpeg'
 
+
   enable : true
   title : "MHR"
+  subtitle: 'Imagine...'
   content : "Helmet"
   image : "images/hero-image/7.png"
   image_text: "assisting birthing famillies parctially, medically & financially"
@@ -25,7 +27,8 @@ banner:
     Pre: "#"
     URL : "advance"
   title_2 : "Advanced innovation"
-  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. <br>Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
+  subtitle_2: 'Imagine...'
+  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
   image_2 : "images/helmet/a2.png"
   image_text_2: "assisting birthing famillies parctially, medically & financially"
   button_2:
@@ -37,55 +40,78 @@ banner:
 #################### Mission #####################
 mission:
   enable : true
-  title : "Who are we?"
-  section : ""
-  content : "Staring from a humble family lineage motorcycle repair shop, motorcycle insurance, and then finally moving into motorcycle helmet industry. Hong Lun business is always closely related to the motorcycling industry<br><br>In 2012 Hong Lun venture into motorcycle helmet safety design and produce their very first helmet: The MHR OF571, with than the latest technologies taking into consideration consumer feedback, modern testing practices and advanced materials. To produce OF571<br><br>To increase awareness, MHR became a sponsor for Cup Prix team, providing helmet to riders while maintaining the company goal of providing an affordable high quality designed helmet for the public.<br><br>In most recent years, Hong Lun created a new brand: HEVO to cater and focus on local market as well as international market"
-  video_thumb: "images/video-thumb.jpg"
-  video_id: "ResipmZmpDU"
+  title : "MHR"
+  subtitle: 'Imagine...'
+  content : "Helmet"
+  image : "images/hero-image/7.png"
+  image_text: "assisting birthing famillies parctially, medically & financially"
+  button:
+    enable : true
+    label : "images/hero-image/mhr.png"
+    Pre: "#"
+    URL : "advance"
+  title_2 : "Advanced innovation"
+  subtitle_2: 'Imagine...'
+  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
+  image_2 : "images/helmet/a2.png"
+  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  button_2:
+    enable : true
+    label : "Learn More"
+    Pre: "/"
+    URL : "technology"
 
 
 #################### Vission #####################
 vision:
   enable : true
   section : "EXPLORE OUR HELMET LINE-UP"
-  vision_item:
-  - title : "FULL FACE"
-    image : "images/helmet/a3.png"
-    content : "<br> | <br>LEARN MORE>"
-    link : "/product/#full face"
-    
-  - title : "flip up"
-    image : "images/vision/helmet.png"
-    content : "<br> | <br>LEARN MORE>"
-    link : "/product/#flip up"
-    
-  - title : "open face"
-    image : "images/helmet/a5.png"
-    content : "<br> | <br>LEARN MORE>"
-    link : "/product/#open face"
+  title : "MHR"
+  subtitle: 'Imagine...'
+  content : "Helmet"
+  image : "images/hero-image/7.png"
+  image_text: "assisting birthing famillies parctially, medically & financially"
+  button:
+    enable : true
+    label : "images/hero-image/mhr.png"
+    Pre: "#"
+    URL : "advance"
+  title_2 : "Advanced innovation"
+  subtitle_2: 'Imagine...'
+  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
+  image_2 : "images/helmet/a2.png"
+  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  button_2:
+    enable : true
+    label : "Learn More"
+    Pre: "/"
+    URL : "technology"
 
 
 #################### product ####################
 product:
-  enable : false
+  enable : true
   section : "Products"
-  title : "Some Of Our Best Products"
-  content : "See the innovation that has come through the Rio way. As an advancement company, the goal is to continuously find areas to help business push forward. Below you can find the first product available to help you do so."
-  product_item:
-  - title : "Ecosystem"
-    image : "images/product/product-03.jpg"
-    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
-    project_url : "#"
-    
-  - title : "Objects"
-    image : "images/product/product-02.jpg"
-    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
-    project_url : "#"
-    
-  - title : "Publisher"
-    image : "images/product/product-03.jpg"
-    content : "Omega OS Version 2.0 is the world’s first and only cloud operating system. See how this revolutionarys oftware can become the center of your business."
-    project_url : "#"
+  title : "MHR"
+  subtitle: 'Imagine...'
+  content : "Helmet"
+  image : "images/hero-image/7.png"
+  image_text: "assisting birthing famillies parctially, medically & financially"
+  button:
+    enable : true
+    label : "images/hero-image/mhr.png"
+    Pre: "#"
+    URL : "advance"
+  title_2 : "Advanced innovation"
+  subtitle_2: 'Imagine...'
+  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
+  image_2 : "images/helmet/a2.png"
+  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  button_2:
+    enable : true
+    label : "Learn More"
+    Pre: "/"
+    URL : "technology"
 
 
 ###################### Contact ####################
