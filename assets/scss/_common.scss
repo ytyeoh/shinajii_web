@@ -2,11 +2,12 @@ body{
     background: #fafafa;
 }
 .rounded-1{
-  border-radius: 1rem;
+  border-radius: 40px;
 }
 .hidden{
   display: none;
 }
+
 .section {
     padding: 100px 0;
 }
@@ -119,7 +120,9 @@ body{
         }
     }
 }
-
+.inline-block{
+  display: inline-block!important;
+}
 .reveal-text {
 	position: relative;
 	white-space: nowrap;

@@ -7,14 +7,14 @@
   <div class="container-fluid p-0 m-0 ">
     <div class="row m-0">
       <div class="col-12 p-0 ml-auto ">
-      	<div class="owl-carousel owl-theme">
+      	<div class="owl-carousel owl-theme h-screen">
       		{{range .slide}}
 		    <div class="item text-center">
 		    	<div class="row">
-		    		<div class="col-12">{{ partial "image.html" (dict "image" .image ) }}</div>
-		    		<h2 class="col-12">{{ .title }}</h2>
+		    		<div class="col-12 ">{{ partial "image.html" (dict "image" .image ) }}</div>
+		    		<h2 class="col-12 mt-5">{{ .title }}</h2>
 		    		<h5 class="col-12">{{ .desc1 | markdownify }}</h5>
-		    		<h5 class="col-12">{{ .desc2 | markdownify }}</h5>
+		    		<h5 class="col-12 mb-5">{{ .desc2 | markdownify }}</h5>
 		    	</div>
 		    	
 		    </div>
@@ -41,7 +41,7 @@
   </div> -->
   <div class="container-fluid p-0 m-0">
     <div class="row">
-      {{ partial "module/left_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
+      {{ partial "module/left_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
     </div>
   </div>
 </section>
@@ -55,7 +55,7 @@
   <div class="container-fluid p-0 m-0">
     <div class="row m-0">
         
-          {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
+          {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
     </div>
   </div>
 </section>

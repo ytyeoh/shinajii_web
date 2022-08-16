@@ -5,8 +5,8 @@
           {{.title | markdownify}}
       
     </h2>
-    <h3>{{ .subtitle | markdownify }}</h3>
-    <p>{{ .content | markdownify }}</p>
+    <h3 class="mt-5 font-italic">{{ .subtitle | markdownify }}</h3>
+    <p class=mb-5>{{ .content | markdownify }}</p>
     <h3>{{ .subtitle_2 | markdownify }}</h3>
     <p>{{ .content_2 | markdownify }}</p>
     {{ if .button_2.enable }}
@@ -18,11 +18,11 @@
 </div>
 <div class="col-sm-12  col-12 col-lg-4 p-0 ml-auto  my-0 px-lg-5 py-lg-5" >
   <div class="hero-slider-wrapper">
-    <div class="item">
+    <div class="item py-lg-5 my-lg-5">
       <div class="item-image-2 image-reveal mr-auto ml-0 hh rounded-1" style="animation-delay: 2s;">
-        {{ partial "image.html" (dict "image" .image_2 "id" "img1" "class" "rounded-1") }}
+        {{ partial "image.html" (dict "image" .image "id" "img1" "class" "rounded-1") }}
         <div class="text1 rounded-1">{{.image_text | markdownify}}<span class="btm-right">see more...</span></div>
-        {{ partial "image.html" (dict "image" .image "id" "img2" "class" "rounded-1" ) }}
+        {{ partial "image.html" (dict "image" .image_2 "id" "img2" "class" "rounded-1" ) }}
         <div class="text2 rounded-1">{{.image_text_2 | markdownify}}</div>
       </div>
     </div>

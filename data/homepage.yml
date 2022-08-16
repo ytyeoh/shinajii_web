@@ -1,36 +1,36 @@
 #################### Banner #####################
 banner:
   slide:
-    - title : 'yo can make a diference!'
-      desc1 : 'to raise <b>hope</b> and <b>support</b>'
-      desc2 : 'in pratical way in rohingya lives'
+    - title : 'You can make a difference!'
+      desc1 : 'To raise <b>Hope</b> and  <b>upport</b>'
+      desc2 : 'in practical ways in Rohingya lives '
       image : 'images/slide/a1.png'
     - title : 'asdasnce!'
       desc1 : 'tasfd support'
       desc2 : 'in prasfngya lives'
-      image : 'images/type/a2.jpeg'
+      image : 'images/slide/a2.png'
     - title : 'yo csdfiference!'
       desc1 : 'tosdfd support'
       desc2 : 'in pratisf rohingya lives'
-      image : 'images/type/a3.jpeg'
+      image : 'images/slide/a3.png'
 
 
   enable : true
   title : "MHR"
   subtitle: 'Imagine...'
-  content : "Helmet"
-  image : "images/hero-image/7.png"
-  image_text: "assisting birthing famillies parctially, medically & financially"
+  content : "You are a refugee in a foreign country. Your baby is about to be born. Instead of excitement, you are filled with fear. The language barrier makes communication impossible, leaving you feeling isolated and afraid to go to a hospital. As a refugee, how will you be treated? Will your baby survive an unassisted home birth? And how will you pay the bill anyway?"
+  image : "images/home/baby.png"
+  image_text: "Assisting Birthing Families <br>Practically, Medically & <br>Financially"
   button:
     enable : true
     label : "images/hero-image/mhr.png"
     Pre: "#"
     URL : "advance"
-  title_2 : "Advanced innovation"
-  subtitle_2: 'Imagine...'
-  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
-  image_2 : "images/helmet/a2.png"
-  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  title_2 : "Educate and support Vulnerable Pregnant Women"
+  subtitle_2: 'With YOUR help'
+  content_2 : "Breathe Life can ensure a calm and <b>safe home labour</b>, a hospital birth providing <b>medical supervision</b> and <b>birth records</b>, and, with your financial generosity, <b>lessen the anxiety</b> upon discharge, by a <b>partial subsidy</b> of the hospital bill."
+  image_2 : "images/home/baby1.png"
+  image_text_2: "<ul><li>ensure safe labour and birth</li><li>give women emotional support  </li><li>allay fears of harsh treatment and arrest</li><li>bring comfort,  assurance and sound advise</li><li>lift their financial burden</li></ul>"
   button_2:
     enable : true
     label : "Learn More"
@@ -40,21 +40,21 @@ banner:
 #################### Mission #####################
 mission:
   enable : true
-  title : "MHR"
+  title : "Providing Education"
   subtitle: 'Imagine...'
-  content : "Helmet"
-  image : "images/hero-image/7.png"
-  image_text: "assisting birthing famillies parctially, medically & financially"
+  content : "These babies growing up and not having access to any education. All you want, is for them to have what you never did; the opportunity an education provides, to change their future"
+  image : "images/home/edu1.png"
+  image_text: "Partner with Equal Start to provide education for Childerm"
   button:
     enable : true
     label : "images/hero-image/mhr.png"
     Pre: "#"
     URL : "advance"
-  title_2 : "Advanced innovation"
-  subtitle_2: 'Imagine...'
-  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
-  image_2 : "images/helmet/a2.png"
-  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  title_2 : "Providing Education"
+  subtitle_2: 'With YOUR help'
+  content_2 : "Breathe Life, in partnership with Equal Start, can give them <b>education opportunities</b>, and <b>break the poverty cycle</b>."
+  image_2 : "images/home/edu2.png"
+  image_text_2: "<ul><li>provide them with education  to break the cycle of poverty  </li><li>digital, self paced programs help to accommodate older children ‘catching up’ </li><li>parents are encouraged to participate in community learning centres </li></ul>"
   button_2:
     enable : true
     label : "Learn More"
@@ -66,21 +66,21 @@ mission:
 vision:
   enable : true
   section : "EXPLORE OUR HELMET LINE-UP"
-  title : "MHR"
+  title : "Mental Health Improvement"
   subtitle: 'Imagine...'
-  content : "Helmet"
-  image : "images/hero-image/7.png"
-  image_text: "assisting birthing famillies parctially, medically & financially"
+  content : "Life feels intolerable. The suppressed traumas of genocide and refugee life, leaves you feeling numb. But eventually unhealthy responses unexpectedly begin to manifest."
+  image : "images/home/mental1.png"
+  image_text: "Mental Health Teams to facilitate healing traumas and restoring wellbeing"
   button:
     enable : true
     label : "images/hero-image/mhr.png"
     Pre: "#"
     URL : "advance"
   title_2 : "Advanced innovation"
-  subtitle_2: 'Imagine...'
-  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
-  image_2 : "images/helmet/a2.png"
-  image_text_2: "assisting birthing famillies parctially, medically & financially"
+  subtitle_2: 'With YOUR help'
+  content_2 : "With YOUR help Breathe Life hopes to engage mental health teams in the refugee communities, to <b>restore good mental well-being</b> and to build a <b>sense of belonging</b> and community."
+  image_2 : "images/home/mental2.png"
+  image_text_2: "<b>With YOUR help</b> Breathe Life hopes to engage mental health teams in the refugee communities, to restore good mental well-being and to build a sense of belonging and community."
   button_2:
     enable : true
     label : "Learn More"
