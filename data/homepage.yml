@@ -2,7 +2,7 @@
 banner:
   slide:
     - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>upport</b>'
+      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
       desc2 : 'in practical ways in Rohingya lives '
       image : 'images/slide/a1.png'
     - title : 'asdasnce!'
@@ -92,9 +92,9 @@ vision:
 product:
   enable : true
   section : "Products"
-  title : "MHR"
+  title : "Being a <zzz class='zzz'>refugee</zzz> is hard <br><span class='bbb'>Being a <span class='ccc'>birthing refugee</span> is even harder!</span>"
   subtitle: 'Imagine...'
-  content : "Helmet"
+  content : "Malaysian law <b>does not allow</b> for <b>home births</b> and thus medical expenses are beyond the means of these families. Together with <b>financial assistance</b>, we <b>advocate</b> and <b>defend</b> them when they are <b>most vulnerable</b>. There is a desperate need for families to be assisted as unemployment is high and  many have been laid off due to the Covid crisis. "
   image : "images/hero-image/7.png"
   image_text: "assisting birthing famillies parctially, medically & financially"
   button:
@@ -104,7 +104,7 @@ product:
     URL : "advance"
   title_2 : "Advanced innovation"
   subtitle_2: 'Imagine...'
-  content_2 : "Advance Innovation. In pursue of excellence and dare to innovate. Our promise is to deliver high quality products with great design at<br>affordable price for motorcyclist."
+  content_2 : "UNHCR assistance is given only to those who are documented - many are not documented and without a voice, can be arrested and imprisoned -  even during pregnancy and birth. <b>Our presence</b> and <b>advocacy protects them</b> to some extent.  "
   image_2 : "images/helmet/a2.png"
   image_text_2: "assisting birthing famillies parctially, medically & financially"
   button_2:

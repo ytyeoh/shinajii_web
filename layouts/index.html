@@ -40,7 +40,7 @@
     <img loading="lazy" src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
   </div> -->
   <div class="container-fluid p-0 m-0">
-    <div class="row">
+    <div class="row m-0">
       {{ partial "module/left_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
     </div>
   </div>
@@ -55,7 +55,7 @@
   <div class="container-fluid p-0 m-0">
     <div class="row m-0">
         
-          {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
+          {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
     </div>
   </div>
 </section>
@@ -68,7 +68,7 @@
   <div class="container-fluid p-0 m-0">
     <div class="row m-0">
         
-          {{ partial "module/left_video.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
+          {{ partial "module/left_video.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
     </div>
   </div>
 </section>
