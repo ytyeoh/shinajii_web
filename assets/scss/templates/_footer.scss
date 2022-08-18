@@ -17,6 +17,10 @@
   width: 6.875rem;
   height: 6.875rem;
   z-index: 55;
+  @include mobile {
+      width: 3.875rem;
+      height: 3.875rem;
+   }
   img{
     width: 90%;
   }
@@ -25,7 +29,10 @@
 footer{
   color: white;
   font-size: 40px;
-  padding: 0.5em 1em;
+  padding: 0.5em 10em;
+  @include tablet{
+      padding: 0.5em 1em;
+    }
   a{
     color: white;
     @include desktop{
