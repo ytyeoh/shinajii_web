@@ -34,6 +34,12 @@
 .btn-primary{
   background-color: $green;
 }
+.btn-primary:hover {
+    color: $green;
+    background-color: transparent;
+    border-color: $green;
+    // border-width: thick;
+}
 .btn-round-small{
   width: 2rem;
   height: 2rem;
