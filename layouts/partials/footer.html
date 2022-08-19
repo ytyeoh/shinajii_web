@@ -19,13 +19,13 @@
 			</div>
 			
 		</div>
-		<div class="col-lg-5 col-5 text-right px-0">
+		<div class="col-lg-5 col-5 text-right pr-6">
 			<div class="row text-left pl-lg-5">
 				{{  site.Params.contact.text | markdownify }}
 				<div class="col-12 mt-4">
 					<div class="row">
 						{{ range site.Params.aaa }}
-							<a href="{{ .url }}" class="col-4 text-red f-700">{{ .title }}</a>
+							<a href="{{ .url }}" class="col-4 px-0 text-red f-700">{{ .title }}</a>
 						{{ end }}
 					</div>
 				</div>
@@ -39,7 +39,7 @@
 	</div>
 </footer>
 <!-- Back to top button -->
-<a href="/donate" class="btn btn-danger btn-floating " id="btn-donate"><img src="./images/donate.svg" alt=""></a>
+<a href="/donate" class="btn btn-danger btn-floating " id="btn-donate"><img src="/images/donate.svg" alt=""></a>
 <button
 	type="button"
 	class="btn text-danger btn-light btn-floating btn-lg"

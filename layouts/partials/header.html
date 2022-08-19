@@ -6,7 +6,7 @@
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand d-lg-none d-xl-none" href="{{ site.BaseURL | relLangURL }}">
             {{ if site.Params.logo }}
-            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+            <img class="logo" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
             {{ else }}
             {{site.Title}}
             {{ end }}
@@ -20,17 +20,17 @@
           <div class="collapse navbar-collapse" id="main-nav">
           	<a class="navbar-brand d-none d-lg-block d-xl-block" href="{{ site.BaseURL | relLangURL }}">
 	            {{ if site.Params.logo }}
-	            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
+	            <img class="" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
 	            {{ else }}
 	            {{site.Title}}
 	            {{ end }}
 	        </a>
-	        <div class="navbar-nav mt-lg-3">
+	        <div class="navbar-nav mt-lg-5">
 	        <span class="nav-item ">
 	        <a class="nav-link page-scroll text-green f-700" href="{{ site.Params.menu | relLangURL }}">{{site.Params.menu}}</a>
 	        </span>
 	        </div>
-            <ul class="navbar-nav mx-auto mr-lg-5 mt-lg-3">
+            <ul class="navbar-nav mx-auto mr-lg-5 mt-lg-5">
             	
 		          {{ $current := . }}
               {{ range site.Menus.main }}

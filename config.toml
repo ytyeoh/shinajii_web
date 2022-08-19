@@ -17,9 +17,9 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "About US"
+name = "About"
 pre = "/"
-url = "feature"
+url = "about"
 weight = 2
 
 [[menu.main]]
@@ -44,7 +44,7 @@ weight = 5
 #################### default parameters ################################
 [params]
 logo = "images/logo.svg"
-logo_width = "70px"
+logo_width = "132px"
 menu = "donation"
 
 # Meta data
