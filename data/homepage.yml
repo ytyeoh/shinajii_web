@@ -80,7 +80,7 @@ vision:
   subtitle_2: 'With YOUR help'
   content_2 : "With YOUR help Breathe Life hopes to engage mental health teams in the refugee communities, to <b>restore good mental well-being</b> and to build a <b>sense of belonging</b> and community."
   image_2 : "images/home/mental2.png"
-  image_text_2: "<b>With YOUR help</b> Breathe Life hopes to engage mental health teams in the refugee communities, to restore good mental well-being and to build a sense of belonging and community."
+  image_text_2: "<b>With YOUR help</b><br> Breathe Life hopes to engage mental health teams in the refugee communities, to restore good mental well-being and to build a sense of belonging and community."
   button_2:
     enable : true
     label : "Learn More"

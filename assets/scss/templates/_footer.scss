@@ -29,10 +29,11 @@
 footer{
   margin-top: 3rem;;
   color: $text-color;
-  font-size: 1.25rem;
-  padding: 0.5em 10em;
-  @include tablet{
-      padding: 0.5em 1em;
+  font-size: 1.4rem;
+  padding: 0.5em 8em;
+  @include desktop-xxl{
+      padding: 0.5em 10em;
+      font-size: 1.25rem;
   }
   .center{
     padding-left: 5rem;
@@ -46,9 +47,9 @@ footer{
     margin-right: 1rem;
   }
   a{
-    color: white;
-    @include desktop{
-      font-size: 20px;
+    font-size: 1.25rem;
+    @include desktop-xxl{
+      font-size: 1.25rem;
     }
   }
   
