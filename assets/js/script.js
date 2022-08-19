@@ -70,7 +70,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     // owl carousel
     function owl(){
       $('.owl-carousel').owlCarousel({
-        loop:false,
+        loop: true,
         margin:10,
         nav: true,
         thumbs: true,
@@ -79,8 +79,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
         thumbContainerClass: 'owl-thumbs',
         thumbItemClass: 'owl-thumb-item',
         navText: [
-          "<i class='fa fa-chevron-left' aria-hidden='true'></i>",
-          "<i class='fa fa-chevron-right' aria-hidden='true'></i>"
+          "<img src='/images/slide/left.svg'>",
+          "<img src='/images/slide/right.svg'>"
         ],
         responsive:{
             0:{

@@ -44,7 +44,7 @@ p {
   }
 }
 h1,h3,h4,h5,h6 {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   color: $text-color;
 }
 
@@ -65,8 +65,14 @@ h1, h2, h3, h4, h5, h6 {
 .f-900{
   font-weight: 900!important;
 }
+.font-3{
+  font-size: 2.188rem;
+}
 .text-blue{
   color: $blue;
+}
+.text-red{
+  color: $red;
 }
 .text-green{
   color: $green;

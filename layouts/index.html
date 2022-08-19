@@ -11,7 +11,7 @@
       		{{range .slide}}
 		    <div class="item text-center">
 		    	<div class="row">
-		    		<div class="col-12 ">{{ partial "image.html" (dict "image" .image ) }}</div>
+		    		<div class="col-12 ">{{ partial "full_width_image.html" (dict "image" .image ) }}</div>
 		    		<h2 class="col-12 mt-5">{{ .title }}</h2>
 		    		<h5 class="col-12">{{ .desc1 | markdownify }}</h5>
 		    		<h5 class="col-12 mb-5">{{ .desc2 | markdownify }}</h5>
@@ -82,7 +82,7 @@
     <div class="row m-0">
     	<div class="col col-12 bg-grey py-5">
     		<h3>Seize the opportunity to bring light into their darkness....</h3>
-    		<a href="/donate" class="btn btn-danger">donate here!</a>
+    		<a href="/donate" class="font-3 btn btn-danger text-capitalize rounded-1 mt-5">donate here!</a>
     	</div>
         <div class="col col-12 bg text-center py-5">
         	{{ partial "image.html" (dict "image" .image "id" "img1" "class" "") }}

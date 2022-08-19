@@ -31,5 +31,18 @@
     min-width: 3rem;
     min-height: 3rem;
 }
+.btn-primary{
+  background-color: $green;
+}
+.btn-round-small{
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  @include desktop-xxl{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.875rem;
+  }
+}
 
 

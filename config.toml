@@ -1,6 +1,4 @@
 ######################## default configuration ####################
-# baseURL = "https://mhrracing.com/"
-# baseURL = "https://test.mhrracing.com/"
 baseURL = "/"
 title = "Breathe Life"
 theme = "omega"
@@ -71,15 +69,27 @@ map_marker = "images/map-marker.png"
 enable = false
 expire_days = 2
 
+[params.contact]
+phone= '+6017 413 0454'
+email="penangbirths@gmail.com"
+text= "We welcome your involvement in the support of our refugee families; Finances are crucial in serving them well.<br><br>Trained midwives/doulas, educators (any level) and social workers can contact us via email to volunteer services."
+
+[[params.aaa]]
+title = 'Security'
+url= "#"
+[[params.aaa]]
+title = 'Privacy'
+url= "#"
+[[params.aaa]]
+title = 'Term of Use'
+url= "#"
+
+[params.footer]
+title = 'Copyright © BREATHE LIFE (123456-A)<br>Website managed by <img src="/images/shinajii.svg">. All rights reserved.'
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
 icon = "fa-facebook" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-link = "#"
-
-[[params.social]]
-title = "twitter"
-icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "#"
 
 [[params.social]]
@@ -88,11 +98,7 @@ icon = "fa-instagram" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.
 link = "#"
 
 [[params.social]]
-title = "github"
-icon = "fa-github" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+title = "twitter"
+icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "#"
 
-[[params.social]]
-title = "linkedin"
-icon = "fa-linkedin" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-link = "#"
