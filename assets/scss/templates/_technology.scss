@@ -16,49 +16,14 @@
     }
   }
 }
-.technology-featured{
-	.block{
-		display: flex;
-		@include tablet {
-	        flex-wrap: wrap;
-		}
-		.content{
-	        flex-basis: 100%;
-            align-self: center;
-            margin-right: 20px;
-		    @include tablet {
-    	        flex-grow: 1;
-		        width: 100%;
-		        margin: 0;
-		        text-align: center;
-		    }
-		    h2{
-          font-size: 84px;
-          margin-bottom: 20px;
-          font-weight: 700;
-          @include  tablet {
-            font-size: 3rem;
-          }
-          span{
-              clip-path: inset(0 100% 0 0);
-          }
-        }
-        p{
-            letter-spacing: 1px;
-        }
-		}
-		.video{
-	        justify-content: center;
-            align-self: center;
-	        flex-basis: 100%;
-            margin-left: 10px;
-            overflow: hidden;
-		     @include tablet {
-    	        flex-grow: 1;
-		        width: 100%;
-		    }
-		}
-	}
+.desc{
+  h2{
+    font-size: 2.3rem;
+    @include desktop-xxl{
+      font-size: 2.813rem;
+    }
+  }
+	
 }
 
 .company-fun-facts{

@@ -23,15 +23,16 @@ banner:
       image : 'images/about/slide3.png'
 
 ########### Gallery ##########
-gallery:
+desc:
   enable : true
-  title : "LIGHT WEIGHT."
-  content : "Weighting under 1.4 Kilograms, MHR helmets is comfortable for long rides and road trips. The lightweight materials leaves little to no stress on the neck of the rider."
-  image : "images/helmet/b2.png"
-  images:
-  - "images/gallery/gallery-01.png"
-  - "images/gallery/gallery-02.png"
-  - "images/gallery/gallery-03.png"
+  title : "We seek to love, honour and respect every Rohingya family we serve."
+  logo : "images/about/logo.png"
+  image : "images/about/staff@2x.png"
+  content:
+  - title: 'Founder of Breathe Life '
+    content: 'My heart broke every time I heard the sad stories of birthing refugees whohad attempted to give birth alone and outside of medical care. I could notbear the unnecessary pain and loss of these families. I felt compelled tobring change. I could use my training and experience and help to avoidmaternal and infant mortalities and bring HOPE and LOVING CARE to thesewomen and their families.I began to provide services on my own - one family at a time. Numbers grewand the impact of the ‘little I provided’ was greatly appreciated and broughtthe change I had hoped for. I began to partner with other service providers toincrease the assistance we could provide. In time a team of dedicatedvolunteers, each one bearing the same compassion and desire for change,formed.In order to meet the growing challenge, Breathe Life wasestablished. Empowered by support from people like yourself, Hope and Change can be inspired in the lives of thousands of needy families. '
+  - title: 'Credentials of Breathe Life'
+    content: 'Breathe Life is a registered non-profit organisation which has been set up to provide the assistance and care needed for Rohingya families in Penang, Malaysia.<br><br>Our team is made up of volunteers in the areas of Birthing, Education and eventually to support Mental Health in Rohingya communities.We are qualified in the fields we serve in and foster good ethics and standards.<br><br>Our Rohingya translators and helpers are paid for their services and we seek to develop them in knowledge and skills.'
 
 
 ########### funfacts ##########
