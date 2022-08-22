@@ -77,13 +77,13 @@ image = "/images/contact/1.png"
 
 [[params.aaa]]
 title = 'Security'
-url= "#"
+url= "/tnc"
 [[params.aaa]]
 title = 'Privacy'
-url= "#"
+url= "/tnc"
 [[params.aaa]]
 title = 'Term of Use'
-url= "#"
+url= "/tnc"
 
 [params.footer]
 title = 'Copyright © BREATHE LIFE (123456-A)<br>Website managed by <img src="/images/shinajii.svg">. All rights reserved.'
