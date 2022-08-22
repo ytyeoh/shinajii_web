@@ -20,8 +20,8 @@
         }
         .nav-item{
             .nav-link{
-                padding-right: 25px;
-                padding-left: 25px;
+                margin-right: 25px;
+                margin-left: 25px;
                 color: #1A4568;
                 font-size: 20px;
                 font-weight: bold;
@@ -37,9 +37,10 @@
               text-decoration: underline;
             }
             .active {
-              color: #02FD34;
+              
               text-decoration-color: white;
-              text-decoration: underline;
+              border-bottom: 2px solid #1A4568;
+              padding-bottom: 3px
             }
         }
         .music-icon{
