@@ -45,11 +45,17 @@ body{
   }
   
 }
+.shadow{
+  box-shadow: 3px 3px 10px #534ca0;
+}
 .pt-10{
   padding-top: 10rem;
 }
 .bg-grey{
   background: #CCD1D1!important;
+}
+.bg-green{
+  background: $green;
 }
 .bg-black{
   background: black!important;

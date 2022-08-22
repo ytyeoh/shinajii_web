@@ -1,195 +1,52 @@
 {{ define "main" }}
-{{ if .Params.dealer.enable }}
-	{{ with .Params.dealer }}
-		<div id="modal">
-		{{ range .stage }}
-    	{{ range .d }}
-				<div class="modal fade my-1" id="{{.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">{{.name}}</h5>
-				      </div>
-				      <div class="modal-body">
-				        <iframe src="{{.google_map}}" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-			{{ end }}
-		{{ end }}
-	 </div>
-	{{ end }}
-{{ end }}
 {{ if site.Data.homepage.contact.enable }}
 {{ with site.Data.homepage.contact }}
 <div class="contact" id="contact">
-  <div class="container mb-5">
+  <div class="container-fluid mb-5 ">
     <div class="row title-case mb-lg-5">
-			<div class="col-12">
-				<h2 class='f-700 text-capitalize'>Contact Us</h2>
-			</div>
-      <div class="col-12 col-lg-8">
-         <div id="contact-message"></div>
-
-            <form class="contact-form-ajax" method="post" action="{{ .formspree_action }}">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="email" autocomplete="email" class="form-control" placeholder="Email" name="email" id="email" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Your Message" class="form-control" name="message" required rows="10"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 ">
-                      <button type="submit" class="btn btn-white">Submit</button>
-
+    	<div class="col-12 col-lg-6 mt-5 mt-lg-0 p-0">
+    		{{ partial "image.html" (dict "image" .image "id" "img1" "class" "img-responsive img-fluid w-100") }}
+    	</div>
+      <div class="col-12 col-lg-6">
+        <form class="contact-form-ajax" method="post" action="{{ .formspree_action }}">
+            <div class="row bg-green px-3 py-5 rounded-1 shadow">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                     </div>
                 </div>
-                <!-- /.row -->
-            </form>
-      </div>
-      <div class="col-12 col-lg-4 mt-5 mt-lg-0">
-        <div class="row">
-        	<div class="col-sm-2 mb-3"><i class="fa fa-map-marker fa-5" aria-hidden="true"></i></div>
-        	<div class="col-sm-10">
-        		<p>{{ .address | markdownify }}</p>
-        	</div>
-        	<div class="col-12 my-3"></div>
-        	<div class="col-sm-2 mb-3"><i class="fa fa-phone fa-5" aria-hidden="true"></i></div>
-        	<div class="col-sm-10">
-        		<p>{{ .phone | markdownify }}</p>
-        	</div>
-        </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="email" autocomplete="email" class="form-control" placeholder="Email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Dear Breathe Life, I have some questions to ask..." class="form-control" name="message" required rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 text-center pt-5">
+                  <button type="submit" class="btn btn-danger rounded-1 px-6">Submit</button>
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </form>
       </div>
     </div>
   </div>
-  <div class="map-div px-lg-5 my-5 px-4 pt-lg-5 title-case">
-  	<h2 class="text-capitalize">
-  		{{ if site.Params.logo }}
-            <img loading="lazy"class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
-        {{end}}
-	    {{ .sub_title | markdownify }}
-		</h2>
-  	{{ with site.Params.map }}
-  	<iframe src="{{.gmap_api}}" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    {{ end }}
-  </div>
+  
 </div>
 {{ end }}
 {{ end }}
 
 
-{{ if .Params.dealer.enable }}
-{{ with .Params.dealer }}
-<section id="dealer">
-	<div class="px-lg-5 my-5 px-4 pt-lg-5 title-case">
-		<h2 class='f-700 text-capitalize'>
-			{{ if site.Params.logo }}
-        <img loading="lazy"class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
-      {{end}}
-      authorized dealer
-    </h2>
-		<div class="card">
-		  <div class="card-header text-left bg-black">
-        <span class="">Malaysia</span>
-		  </div>
-		  <div class="card-body">
-		    <div class="flex flex-column mb-5 mt-4 faq-section">
-		  {{ range .stage }}
-		  
-		      <div class="row">
-		        <div class="col-md-12">
-		          <div id="accordion">
-		            <div class="card ">
-		            	<h5 class="mb-0">
-	                  <a role="button" class="collapsible" data-toggle="collapse" href="" aria-expanded="true" aria-controls="collapse-1">
-				              <div class="card-header" id="heading-{{.name}}">
-				              	{{ .name }}
-				              </div>
-			              </a>
-	                </h5>
-		              <div id="{{.name}}" class="hidden ccc" data-parent="#accordion" aria-labelledby="heading-{{.name}}">
-		                <div class="card-body">
-		                  <div class="row">
-		                  	{{ range .d }}
-		                  	<div class="card col-12 col-sm-6">
-		                  		<div class="card-body text-center">
-		                  			<h3 class="card-title">{{.name}}</h3>
-		                  			<p>{{ .address1 }}</p>
-		                  			<p>{{ .address2 }}</p>
-		                  			<p>{{ .address3 }}</p>
-		                  			<p>{{ .address4 }}</p>
-		                  			<p>{{ .phone }}</p>
-		                  		</div>
-		                  		<button type="button" class="btn btn-primary my-2 mx-2" data-toggle="modal" data-target="#{{.id}}">Map</button>
-		                  	</div>
-		                  	
-		                  	{{ end }}
-		                  </div>
-		                </div>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-		        
-		      </div>
-		    
-		  {{ end }}
-		  </div>
-		  </div>
-		</div>
-	</div>
-	
-</section>
-<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var collection = document.getElementsByClassName("ccc");
-
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-
-          this.classList.toggle("active");
-          var content = this.parentElement.nextElementSibling;
-          for (let a = 0; a < collection.length; a++) {
-        		// debugger;
-        		// console.log(collection[a]);
-        		if (collection[a].id != content.id){
-				  collection[a].classList.add("hidden");
-        		}
-			}
-          // content.classList.add("hidden");
-          
-          // if (content.className === "hidden") {
-            content.classList.toggle("hidden");
-          // } else {
-          //   content.classList.add("hidden");
-          // }
-          // console.log(content.className);
-        });
-      }
-</script>
-{{ end }}
-{{ end }}
 
 
 {{ end }}

@@ -52,6 +52,32 @@
     color: white;
     font-size: 3rem;
   }
+  form{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    @include desktop-xl{
+      padding-left: 6rem;
+      padding-right: 9rem;;
+    }
+    input, textarea{
+      border-radius:16px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $blue;
+      opacity: 1; /* Firefox */
+      padding-left: 1rem;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $blue;
+      padding-left: 2rem;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: $blue;
+      padding-left: 1rem;
+    }
+  }
   .title-case p{
     font-size: 0.9rem;
     @include mobile{

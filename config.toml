@@ -31,7 +31,7 @@ weight = 3
 [[menu.main]]
 name = "testimonials"
 pre = ""
-url = "https://shop.mhrracing.com/"
+url = "testimonials"
 weight = 4
 
 [[menu.main]]
@@ -73,6 +73,7 @@ expire_days = 2
 phone= '+6017 413 0454'
 email="penangbirths@gmail.com"
 text= "We welcome your involvement in the support of our refugee families; Finances are crucial in serving them well.<br><br>Trained midwives/doulas, educators (any level) and social workers can contact us via email to volunteer services."
+image = "/images/contact/1.png"
 
 [[params.aaa]]
 title = 'Security'
