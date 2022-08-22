@@ -36,7 +36,7 @@ weight = 4
 
 [[menu.main]]
 name = "Contact us"
-pre = "/"
+pre = ""
 url = "contact"
 weight = 5
 
