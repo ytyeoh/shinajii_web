@@ -38,7 +38,7 @@ weight = 4
 name = "Contact us"
 pre = ""
 url = "contact"
-weight = 5
+weight = 6
 
 
 #################### default parameters ################################
