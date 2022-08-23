@@ -80,7 +80,7 @@ title = 'Security'
 url= "/tnc"
 [[params.aaa]]
 title = 'Privacy'
-url= "/tnc"
+url= "/privacy"
 [[params.aaa]]
 title = 'Term of Use'
 url= "/tnc"

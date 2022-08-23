@@ -69,7 +69,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 		});
     // owl carousel
     function owl(){
-      $('.owl-carousel').owlCarousel({
+      $('.owl1').owlCarousel({
         loop: true,
         margin:10,
         nav: true,
@@ -96,6 +96,34 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       })
     }
     owl();
+    function owl2(){
+      $('.owl2').owlCarousel({
+        loop: true,
+        margin:10,
+        nav: true,
+        thumbs: false,
+        thumbImage: false,
+        thumbsPrerendered: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item',
+        navText: [
+          "<img src='/images/slide/left1.svg'>",
+          "<img src='/images/slide/right1.svg'>"
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+      })
+    }
+    owl2();
 		// -----------------------------
 		//  Video Replace
 		// -----------------------------
