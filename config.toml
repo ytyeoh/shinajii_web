@@ -77,7 +77,7 @@ image = "/images/contact/1.png"
 
 [[params.aaa]]
 title = 'Security'
-url= "/tnc"
+url= "/security"
 [[params.aaa]]
 title = 'Privacy'
 url= "/privacy"

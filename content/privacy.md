@@ -1,7 +1,7 @@
 ---
 title : "privacy"
 layout: "info"
-description: "Technologies is about advancement, and innovation is to come out with something original and unique, and MHR is combining this tow terms together, to make high quality and affordable helmet for all motorcycle riders."
+description: "This policy sets out how BreatheLife will handle personal information in accordance with the Data Protection Act 2010 and Payment Card Industry Data Security Standard in light of who we are and who we aspire to be as an organisation. "
 image : "images/helmet/b1.png"
 
 
