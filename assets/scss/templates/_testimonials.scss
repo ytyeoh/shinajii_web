@@ -22,6 +22,43 @@
   // //   }
   // }
 }
+.teams{
+  .bg-green{
+    min-height: 24rem;;
+  }
+  .text{
+    position: absolute;
+    top: 30%;
+    
+    h2{
+      font-size: 3.4rem;
+      color: #1A4568;
+      margin-bottom: 1.5rem;;
+    }
+    h3{
+      font-size: 2.8rem;
+      color: #F9F9F9;
+      font-weight: normal;
+    }
+  }
+  img{
+    width: 30%;
+    position: absolute;
+    top: -20%;
+  }
+  .text-left{
+    left:50%;
+  }
+  .img-left img{
+    left: 15%;
+  }
+  .text-right{
+    right:50%;
+  }
+  .img-right img{
+    right: 15%;
+  }
+}
 #image-100{
   margin: 0;
   width: 100%;

@@ -5,14 +5,18 @@
 ===================================-->
 
 {{ with .Params.banner }}
-<section class="testimonials">
+<section class="testimonials bg-white mx-lg-5">
   <div class="container-fluid p-0 m-0 ">
     <div class="row m-0">
       <div class="col-12 p-0 ml-auto ">
       	<div class="owl-carousel owl2 owl-theme h-screen" >
       		{{range .slide}}
 		    <div class="item text-center">
-		    	{{ partial "full_width_image.html" (dict "image" .image ) }}
+		    	<div class="row">
+		    		
+		    		<div class="col-6 col-sm-12">{{ partial "full_width_image.html" (dict "image" .image ) }}</div>
+		    	</div>
+		    	
 		    </div>
 		    {{ end }}
 		</div>
@@ -25,26 +29,25 @@
 </section>
 {{ end }}
 
-{{ if .Params.about.enable }}
-{{ with .Params.about }}
-<section class="section technology-featured pt-0">
+{{ if .Params.teams.enable }}
+{{ with .Params.teams }}
+<section class="pt-0 teams">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12  col-12 col-lg-4 py-lg-5">
-				{{ partial "image.html" (dict "image" .image "class" " img-fluid" ) }}
-			</div>
-			<div class="col-sm-12  col-12 col-lg-8 technology-featured py-3 px-4 text-left">
-				<div class="block">
-					<!-- written-content -->
-					<div class="content py-lg-5 title-case">
-						<!-- technology heading -->
-						<h2 class="text-uppercase">{{ .title }}</h2>
-						<!-- technology Description -->
-						<p>{{ .content | markdownify }}</p>
-					</div>
-					<!-- Promo Video -->
+			<div class="col-12 m-5 pt-5"><h2 class="text-center">{{ .title }}</h2></div>
+			
+		{{ range .members}}
+		
+
+		{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
+			<div class="col-12 m-5  bg-green rounded-1">
+				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
+					<h2>{{ .name }}</h2>
+					<h3>{{ .pose | markdownify }}</h3>
 				</div>
+				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
 			</div>
+		{{ end }}
 		</div>
 	</div>
 </section>
@@ -53,97 +56,7 @@
 
 <!--====  End of technology Promo  ====-->
 
-<!--=============================
-=            Gallery            =
-==============================-->
-{{ if .Params.gallery.enable }}
-{{ with .Params.gallery }}
-<section class="section technology-featured  gallery bg-white ">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12  col-12 col-lg-6 technology-featured px-4 text-left">
-				<div class="block">
-					<!-- written-content -->
-					<div class="content title-case">
-						<!-- technology heading -->
-						<h2 class="text-uppercase">{{ .title }}</h2>
-						<!-- technology Description -->
-						<p>{{ .content | markdownify }}</p>
-					</div>
-					<!-- Promo Video -->
-				</div>
-			</div>
-			<div class="col-sm-12  col-12 col-lg-6">
-				{{ partial "image.html" (dict "image" .image "class" " img-fluid" ) }}
-			</div>
-		</div>
-	</div>
-</section>
-{{ end }}
-{{ end }}
-<!--====  End of Gallery  ====-->
 
-<!--===============================
-=            Fun Facts            =
-================================-->
-
-{{ if .Params.funfacts.enable }}
-{{ with .Params.funfacts }}
-<section class="section technology-featured ">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12  col-12 col-lg-7">
-				{{ partial "image.html" (dict "image" .image "class" " img-fluid" ) }}
-			</div>
-			<div class="col-sm-12  col-12 col-lg-5 technology-featured px-4 text-left">
-				<div class="block">
-					<!-- written-content -->
-					<div class="content title-case">
-						<!-- technology heading -->
-						<h2 class="text-uppercase">{{ .title }}</h2>
-						<!-- technology Description -->
-						<p>{{ .content | markdownify }}</p>
-					</div>
-					<!-- Promo Video -->
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-{{ end }}
-{{ end }}
-
-<!--====  End of Fun Facts  ====-->
-
-<!--===============================
-=            Job lists            =
-================================-->
-{{ if .Params.career.enable }}
-{{ with .Params.career }}
-<section class="hero-slider">
-  <div class="container-fluid p-0 m-0 ">
-    <div class="row m-0">
-      <div class="col-12 p-0 ml-auto my-5">
-        <div class="hero-slider-wrapper">
-          <div class="item">
-            <div class="item-image image-reveal" id="image-100" style="animation-delay: 2s;">
-            	{{ partial "image.html" (dict "image" .image "class" "" ) }}
-            </div>
-            <div class="content text-white" id="content-50">
-            	<h2>{{ .title | markdownify}}</h2>
-	            <p>{{ .content | markdownify }}</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!--====  End of Job lists  ====-->
 
 
 {{ end }}
