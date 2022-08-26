@@ -35,7 +35,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 m-5 pt-5"><h2 class="text-center">{{ .title }}</h2></div>
-			
+			<div class="col-12 m-5  bg-green rounded-1">
+				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
+				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
+					<h2>{{ .name }}</h2>
+					<h3>{{ .pose | markdownify }}</h3>
+				</div>
+				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pt-0 teams">
+	<div class="container">
+		<div class="row">
 		{{ range .members}}
 		
 

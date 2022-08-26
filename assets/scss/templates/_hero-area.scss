@@ -63,7 +63,7 @@
   padding-right: 0.5rem;
   position: absolute;
   font-weight: bold;
-  bottom: -4px;
+  bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
@@ -71,10 +71,10 @@
   background-color: rgba(83,76,160,0.6);
 }
 .text2{
-  display: none;
+  display: none;  
 }
 .text2 li{
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   text-align: left;
   @include desktop-xxl{
     font-size: 2.5rem;
@@ -83,10 +83,10 @@
 .hh:hover .text2{
   color: white;
   text-align: left;
-  font-size: 2rem;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: block;
   position: absolute;
   top: 0;
@@ -108,6 +108,7 @@
   bottom: 8px;
   right: 16px;
   font-size: 1.125rem;
+  font-weight: normal;
 }
 .story{
   h3{

@@ -21,11 +21,11 @@ banner:
 teams:
   enable : true
   title : 'Our Team Members'
+  name : "Glyn"
+  pose : "Midwife/Doula"
+  img : 'images/teams/1.png'
+  position : 'left'
   members:
-  - name : "Glyn"
-    pose : "Midwife/Doula"
-    img : 'images/teams/1.png'
-    position : 'left'
   - name : "Lynne"
     pose : "Educator/<br>Doula Assistant"
     img : 'images/teams/2.png'
