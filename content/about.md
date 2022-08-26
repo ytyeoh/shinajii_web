@@ -25,7 +25,7 @@ banner:
 ########### Gallery ##########
 desc:
   enable : true
-  title : "We seek to love, honour and respect every Rohingya family we serve. "
+  title : "We seek to love, honour and respect every Rohingya family we serve.."
   logo : "images/about/logo.png"
   image : "images/about/staff@2x.png"
   content:
