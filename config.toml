@@ -45,7 +45,7 @@ weight = 6
 [params]
 logo = "images/logo.svg"
 logo_width = "132px"
-menu = "donation"
+menu = "donate"
 
 # Meta data
 description = "breathe life"
@@ -71,7 +71,7 @@ expire_days = 2
 
 [params.contact]
 phone= '+6017 413 0454'
-email="penangbirths@gmail.com"
+email="info@breathelife.org.my"
 text= "We welcome your involvement in the support of our refugee families; Finances are crucial in serving them well.<br><br>Trained midwives/doulas, educators (any level) and social workers can contact us via email to volunteer services."
 image = "/images/contact/1.png"
 

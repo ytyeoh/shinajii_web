@@ -5,10 +5,9 @@
     <div class="row">
       <div class="col-12 col-lg-6 mt-5 p-3">
         <div class="container">
-          <h2 class="text-center">{{ .title }}</h2>
-          <div class="container bg-green p-3">
+          <div class="container bg-green p-3 rounded-2">
 
-	          <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+	          <ul class="nav nav-pills justify-content-center " id="myTab" role="tablist">
 	          	<div class="bg-white" id="flex">
 				  <li class="nav-item">
 				    <a class="nav-link active px-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">One Time</a>
@@ -19,11 +18,19 @@
 				  </div>
 				</ul>
 				<div class="tab-content py-4 mt-3" id="myTabContent">
-					<h5 class="text-center">Choose an amount to donate</h5>
+					<h5 class="text-center mb-3 pb-4">Choose an amount to donate</h5>
 				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				  	{{ range .one}}
-				  		<a href="{{ .url}}" class="btn btn-white rounded-1 m-1 px-4">{{ .amount}}</a>
-				  	{{ end }}
+				  	<div class="row px-5 ">
+				  		{{ range .one}}
+					  		<div class="col-4 mb-5">
+						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
+					  		</div>
+					  	{{ end }}
+					  	<div class="offset-4 col-4">
+						  	<a href="{{ .one_custom.url}}" class="btn btn-white rounded-2  p-53">{{ .one_custom.amount |markdownify}}</a>
+						</div>
+				  	</div>
+				  	
 				  </div>
 				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 				  	{{ range .monthly}}

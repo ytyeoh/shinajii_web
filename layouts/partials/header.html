@@ -27,16 +27,19 @@
 	        </a>
 	        <div class="navbar-nav mt-lg-5">
 	        <span class="nav-item ">
-	        <a class="nav-link page-scroll text-green f-700" href="{{ site.Params.menu | relLangURL }}">{{site.Params.menu}}</a>
+	        	{{ $active :=  "" }}
+	        	{{ $active = or $active (and (eq site.Params.menu "donation") (eq .Title "donation")) }}
+	        <a class="nav-link page-scroll text-green f-700 {{ if $active }}active{{ end }}" href="{{ site.Params.menu | relLangURL }}">{{site.Params.menu}}</a>
 	        </span>
 	        </div>
             <ul class="navbar-nav mx-auto mr-lg-5 mt-lg-5">
             	
 		          {{ $current := . }}
+
               {{ range site.Menus.main }}
               {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
 						  {{ $active = or $active (eq .Name $current.Title) }}
-						  {{ $active = or $active (and (eq .Name "technology") (eq $current.Section "post")) }}
+						  {{ $active = or $active (and (eq .Name "Home") (eq $current.Title "Breathe Life")) }}
 						  {{ $active = or $active (and (eq .Name "home") (eq $current.Section "tags")) }}
               <li class="nav-item">
                 <a class="nav-link page-scroll {{ if $active }}active{{ end }}"
