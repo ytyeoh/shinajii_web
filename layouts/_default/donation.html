@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ with .Params }}
+<section class="donate">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 mt-5 p-5">
+        <div class="container">
+          <h2 class="text-center">{{ .title }}</h2>
+          <div class="container bg-green p-5">
+	          <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">One Time</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Monthly</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				  	{{ range .one}}
+				  		<a href="{{ .url}}" class="btn">{{ .amount}}</a>
+				  	{{ end }}
+				  </div>
+				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				  	{{ range .monthly}}
+				  		<a href="{{ .url}}" class="btn">{{ .amount}}</a>
+				  	{{ end }}
+				  </div>
+				</div>
+	          <a href="/donation" class="btn btn-danger rounded-1 px-5 f-700">Donate Here!</a>
+			</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mt-5">
+        {{ partial "image.html" (dict "image" .image "class" "img-fluid w-100" ) }}
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
