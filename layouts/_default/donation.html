@@ -3,32 +3,35 @@
 <section class="donate">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-lg-6 mt-5 p-5">
+      <div class="col-12 col-lg-6 mt-5 p-3">
         <div class="container">
           <h2 class="text-center">{{ .title }}</h2>
-          <div class="container bg-green p-5">
-	          <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
-				  <li class="nav-item">
-				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">One Time</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Monthly</a>
-				  </li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
+          <div class="container bg-green p-3">
 
+	          <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+	          	<div class="bg-white" id="flex">
+				  <li class="nav-item">
+				    <a class="nav-link active px-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">One Time</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link px-6" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Monthly</a>
+				  </li>
+				  </div>
+				</ul>
+				<div class="tab-content py-4 mt-3" id="myTabContent">
+					<h5 class="text-center">Choose an amount to donate</h5>
 				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 				  	{{ range .one}}
-				  		<a href="{{ .url}}" class="btn">{{ .amount}}</a>
+				  		<a href="{{ .url}}" class="btn btn-white rounded-1 m-1 px-4">{{ .amount}}</a>
 				  	{{ end }}
 				  </div>
 				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 				  	{{ range .monthly}}
-				  		<a href="{{ .url}}" class="btn">{{ .amount}}</a>
+				  		<a href="{{ .url}}" class="btn btn-white rounded-1 m-1 px-4">{{ .amount}}</a>
 				  	{{ end }}
 				  </div>
 				</div>
-	          <a href="/donation" class="btn btn-danger rounded-1 px-5 f-700">Donate Here!</a>
+	          
 			</div>
         </div>
       </div>
@@ -41,3 +44,4 @@
 </section>
 {{ end }}
 {{ end }}
+

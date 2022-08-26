@@ -3,6 +3,10 @@
   .nav{
     border-radius: 21px;
   }
+  h5{
+     font-size: 1.25rem;
+     color: #1A4568;
+  }
   .nav-item{
     background: white;
     color: black;
@@ -18,4 +22,8 @@
 
     }
   }
+}
+#flex{
+  display: flex;
+  border-radius: 21px;
 }

@@ -547,4 +547,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	$(window).on('load', function () {
 		$('.preloader').fadeOut('slow');
 	});
+  $('#myTab a').on('click', function (e) {
+    e.preventDefault()
+    $(".nav-link").removeClass( 'active' )
+    $(this).tab('show')
+  })
 })(jQuery);
