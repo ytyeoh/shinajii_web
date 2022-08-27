@@ -552,4 +552,24 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $(".nav-link").removeClass( 'active' )
     $(this).tab('show')
   })
+
+  function sendContact() {
+    var valid;  
+    valid = validateContact();
+    if(valid) {
+        jQuery.ajax({
+            url: "mail.php",
+            data:'a='+$("#a").val()+'&b='+
+            $("#b").val()+'&c='+
+            $("#c").val()+'&d='+
+            $(d).val()+'&e='+
+            $(e).val(),
+            type: "POST",
+            success:function(data){
+                $("#mail-status").html(data);
+            },
+            error:function (){}
+        });
+    }
+}
 })(jQuery);

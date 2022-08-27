@@ -33,9 +33,16 @@
 				  	
 				  </div>
 				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-				  	{{ range .monthly}}
-				  		<a href="{{ .url}}" class="btn btn-white rounded-1 m-1 px-4">{{ .amount}}</a>
-				  	{{ end }}
+				  	<div class="row px-5 ">
+				  		{{ range .monthly}}
+					  		<div class="col-4 mb-5">
+						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
+					  		</div>
+					  	{{ end }}
+					  	<div class="offset-4 col-4">
+						  	<a href="{{ .one_custom.url}}" class="btn btn-white rounded-2  p-53">{{ .monthly_custom.amount |markdownify}}</a>
+						</div>
+				  	</div>
 				  </div>
 				</div>
 	          
