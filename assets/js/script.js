@@ -563,14 +563,17 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     $('#mail-ss').on('click', function (e) {
 
     
-        jQuery.ajax({
+        $.ajax({
             url: "mail.php",
-            data:'a='+$("#a").val()+'&b='+
-            $("#b").val()+'&c='+
-            $("#c").val()+'&d='+
-            $(d).val()+'&e='+
-            $(e).val(),
+            data: {
+              a: $("#a").val(),
+              b: $("#b").val(),
+              c: $("#c").val(),
+              d: $("#d").val(),
+              e: $("#e").val(),
+            },
             type: "POST",
+            dataType: "text",
             success:function(data){
               $('#nn')[0].html($("#a").val());
               $('#nn2').html($("#c").val());
