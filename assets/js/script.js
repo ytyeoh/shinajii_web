@@ -561,10 +561,13 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
   function sendContact() {
     $('#mail-ss').on('click', function (e) {
-
+      $('#nn').html($("#a").val());
+              $('#nn2').html($("textarea#c").val());
+             $('#myModal').modal();
     
         $.ajax({
             url: "/mail.php",
+            // url: "https://breathelife.org.my/mail.php",
             data: {
               a: $("#a").val(),
               b: $("#b").val(),
@@ -576,9 +579,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
             type: "POST",
             dataType: "text",
             success:function(data){
-              $('#nn')[0].html($("#a").val());
-              $('#nn2').html($("textarea#c").val());
-             $('#myModal').modal();
+              
              
             },
             error:function (){}
