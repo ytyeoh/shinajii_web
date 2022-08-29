@@ -72,7 +72,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       $('.owl1').owlCarousel({
         loop: true,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         margin:10,
         nav: true,
@@ -103,7 +103,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       $('.owl2').owlCarousel({
         loop: true,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         margin:10,
         nav: true,
@@ -561,7 +561,8 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
   function sendContact() {
     $('#mail-ss').on('click', function (e) {
-      $('#myModal').modal();
+
+    
         jQuery.ajax({
             url: "https://breathelife.org.my/mail.php",
             data:'a='+$("#a").val()+'&b='+
@@ -571,8 +572,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
             $(e).val(),
             type: "POST",
             success:function(data){
+              $('#nn')[0].html($("#a").val());
+              $('#nn2').html($("#c").val());
              $('#myModal').modal();
-             console.log(data);
+             
             },
             error:function (){}
         });
