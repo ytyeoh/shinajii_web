@@ -71,6 +71,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     function owl(){
       $('.owl1').owlCarousel({
         loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         margin:10,
         nav: true,
         thumbs: true,
@@ -99,6 +102,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     function owl2(){
       $('.owl2').owlCarousel({
         loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         margin:10,
         nav: true,
         thumbs: false,
