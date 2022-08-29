@@ -4,19 +4,17 @@ layout: "testimonials"
 description: "Technologies is about advancement, and innovation is to come out with something original and unique, and MHR is combining this tow terms together, to make high quality and affordable helmet for all motorcycle riders."
 image : "images/helmet/b1.png"
 banner:
-  slide:
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/testimonials/T1.png'
-    - title : 'asdasnce!'
-      desc1 : 'tasfd support'
-      desc2 : 'in prasfngya lives'
-      image : 'images/testimonials/a2.png'
-    - title : 'yo csdfiference!'
-      desc1 : 'tosdfd support'
-      desc2 : 'in pratisf rohingya lives'
-      image : 'images/testimonials/a3.png'
+  slide: 
+    - image : 'images/testimonials/T1.png'
+    - image : 'images/testimonials/T2.png'
+    - image : 'images/testimonials/T3.png'
+    - image : 'images/testimonials/T4.png'
+    - image : 'images/testimonials/T5.png'
+    - image : 'images/testimonials/T6.png'
+    - image : 'images/testimonials/T7.png'
+    - image : 'images/testimonials/T8.png'
+    - image : 'images/testimonials/T9.png'
+    - image : 'images/testimonials/T10.png'
 
 teams:
   enable : true

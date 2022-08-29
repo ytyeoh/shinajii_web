@@ -554,11 +554,10 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   })
 
   function sendContact() {
-    var valid;  
-    valid = validateContact();
-    if(valid) {
+    $('#mail-ss').on('click', function (e) {
+      $('#myModal').modal();
         jQuery.ajax({
-            url: "mail.php",
+            url: "https://breathelife.org.my/mail.php",
             data:'a='+$("#a").val()+'&b='+
             $("#b").val()+'&c='+
             $("#c").val()+'&d='+
@@ -566,10 +565,13 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
             $(e).val(),
             type: "POST",
             success:function(data){
-                $("#mail-status").html(data);
+             $('#myModal').modal();
+             console.log(data);
             },
             error:function (){}
         });
-    }
-}
+    })
+  }
+  sendContact()
+
 })(jQuery);
