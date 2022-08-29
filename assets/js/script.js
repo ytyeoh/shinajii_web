@@ -564,7 +564,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
     
         $.ajax({
-            url: "mail.php",
+            url: "/mail.php",
             data: {
               a: $("#a").val(),
               b: $("#b").val(),
