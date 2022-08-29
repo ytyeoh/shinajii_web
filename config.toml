@@ -45,7 +45,7 @@ weight = 6
 [params]
 logo = "images/logo.svg"
 logo_width = "132px"
-menu = "donate"
+menu = "donation"
 
 # Meta data
 description = "breathe life"
