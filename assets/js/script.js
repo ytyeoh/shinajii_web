@@ -568,15 +568,16 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
             data: {
               a: $("#a").val(),
               b: $("#b").val(),
-              c: $("#c").val(),
+              c: $("textarea#c").val(),
               d: $("#d").val(),
-              e: $("#e").val(),
+              a1: $("#a1").val(),
+              a2: $("#a2").val(),
             },
             type: "POST",
             dataType: "text",
             success:function(data){
               $('#nn')[0].html($("#a").val());
-              $('#nn2').html($("#c").val());
+              $('#nn2').html($("textarea#c").val());
              $('#myModal').modal();
              
             },
