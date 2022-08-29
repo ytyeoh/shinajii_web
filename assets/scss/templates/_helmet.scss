@@ -8,10 +8,16 @@
   .nav{
     border-radius: 21px;
   }
+  .align-mid{
+    display: flex; 
+  align-items: center;  /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+  }
   .p-53{
     white-space: normal;
-    padding: 4.5rem 2rem;
+    padding: 6rem 2rem;
     font-size: 1.5rem;
+    max-height: 15rem;
     @inlcude desktop-xxl{
       padding: 6rem 2rem;
       font-size: 2em;

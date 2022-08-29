@@ -8,7 +8,7 @@ banner:
     - title : 'You can make a difference!'
       desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
       desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/testimonials/a1.png'
+      image : 'images/testimonials/T1.png'
     - title : 'asdasnce!'
       desc1 : 'tasfd support'
       desc2 : 'in prasfngya lives'
@@ -34,7 +34,7 @@ teams:
     pose : "Midwife/Doula"
     img : 'images/teams/3.png'
     position : 'left'
-  - name : "Stacy"
+  - name : "Staci"
     pose : "Trainee Doula/<br>Team Builder"
     img : 'images/teams/4.png'
     position : 'right'
@@ -42,7 +42,7 @@ teams:
     pose : "Translator/<br>Assistant Doulaa"
     img : 'images/teams/5.png'
     position : 'left'
-  - name : "Jah"
+  - name : "Sadia"
     pose : "Translator/<br>Assistant"
     img : 'images/teams/6.png'
     position : 'right'

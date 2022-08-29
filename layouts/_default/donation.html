@@ -20,15 +20,12 @@
 				<div class="tab-content py-4 mt-3" id="myTabContent">
 					<h5 class="text-center mb-3 pb-4">Choose an amount to donate</h5>
 				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				  	<div class="row px-5 ">
+				  	<div class="row px-5 row-eq-height">
 				  		{{ range .one}}
-					  		<div class="col-4 mb-5">
+					  		<div class="col-4 mb-5 align-mid">
 						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
-					  	<div class="offset-4 col-4">
-						  	<a href="{{ .one_custom.url}}" class="btn btn-white rounded-2  p-53">{{ .one_custom.amount |markdownify}}</a>
-						</div>
 				  	</div>
 				  	
 				  </div>
@@ -39,9 +36,6 @@
 						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
-					  	<div class="offset-4 col-4">
-						  	<a href="{{ .one_custom.url}}" class="btn btn-white rounded-2  p-53">{{ .monthly_custom.amount |markdownify}}</a>
-						</div>
 				  	</div>
 				  </div>
 				</div>
