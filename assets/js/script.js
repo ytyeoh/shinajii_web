@@ -564,7 +564,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
     
         jQuery.ajax({
-            url: "https://breathelife.org.my/mail.php",
+            url: "mail.php",
             data:'a='+$("#a").val()+'&b='+
             $("#b").val()+'&c='+
             $("#c").val()+'&d='+
