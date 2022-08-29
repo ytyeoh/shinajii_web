@@ -39,11 +39,11 @@ teams:
     img : 'images/teams/4.png'
     position : 'right'
   - name : "Dee"
-    pose : "Translator/<br>Assitant Doulaa"
+    pose : "Translator/<br>Assistant Doulaa"
     img : 'images/teams/5.png'
     position : 'left'
   - name : "Jah"
-    pose : "Translator/<br>Assitant"
+    pose : "Translator/<br>Assistant"
     img : 'images/teams/6.png'
     position : 'right'
 
