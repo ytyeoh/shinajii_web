@@ -18,12 +18,12 @@
   height: 6.875rem;
   z-index: 55;
   @include mobile {
-      width: 3.575rem;
-      height: 3.575rem;
-   }
-   @include desktop-xl {
-      bottom: 30%;
-   }
+    width: 3.575rem;
+    height: 3.575rem;
+  }
+  @include desktop-xl {
+    bottom: 30%;
+  }
   svg{
     width: 90%;
     @include mobile{
