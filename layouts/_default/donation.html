@@ -22,7 +22,7 @@
 				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 				  	<div class="row px-5 row-eq-height">
 				  		{{ range .one}}
-					  		<div class="col-4 mb-5 align-mid">
+					  		<div class="col-6  mb-5 align-mid">
 						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
@@ -32,7 +32,7 @@
 				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 				  	<div class="row px-5 ">
 				  		{{ range .monthly}}
-					  		<div class="col-4 mb-5">
+					  		<div class="col-6  mb-5">
 						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
