@@ -41,7 +41,7 @@
 						  {{ $active = or $active (eq .Name $current.Title) }}
 						  {{ $active = or $active (and (eq .Name "Home") (eq $current.Title "Breathe Life")) }}
 						  {{ $active = or $active (and (eq .Name "home") (eq $current.Section "tags")) }}
-              <li class="nav-item">
+              <li class="nav-item px-3">
                 <a class="nav-link page-scroll {{ if $active }}active{{ end }}"
                   href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               </li>

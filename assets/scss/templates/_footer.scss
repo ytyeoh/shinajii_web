@@ -12,7 +12,7 @@
 #btn-donate{
   padding: 1rem;
   position: fixed;
-  bottom: 30%;
+  bottom: 25%;
   right: 20px;
   width: 6.875rem;
   height: 6.875rem;
@@ -20,6 +20,9 @@
   @include mobile {
       width: 3.575rem;
       height: 3.575rem;
+   }
+   @include desktop-xl {
+      bottom: 30%;
    }
   svg{
     width: 90%;
@@ -33,10 +36,12 @@ footer{
   margin-top: 3rem;;
   color: $text-color;
   font-size: 1.1rem;
-  padding: 0.5em 8em;
+  padding: 0.5em 3em;
   @include tablet{
     padding: 0.5em 1em;
-    font-size: 0.8rem
+  }
+  @include desktop-xl{
+    padding: 0.5em 8em;
   }
   @include desktop-xxl{
       padding: 0.5em 10em;
