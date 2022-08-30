@@ -35,7 +35,7 @@
 footer{
   margin-top: 3rem;;
   color: $text-color;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0.5em 3em;
   @include tablet{
     padding: 0.5em 1em;
@@ -49,7 +49,7 @@ footer{
   }
   .center{
     padding-left: 5rem;
-    @include tablet{
+    @include desktop-lg{
       padding-left: 1rem;
     }
     @include desktop-xxl{

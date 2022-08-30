@@ -140,6 +140,14 @@
     display: flex;
 }
 #helmet{
+  .mx-x8{
+    margin: 0 4.1111%;
+    @include tablet{
+      margin: 0 8.333%;
+    }
+
+  }
+  
   background: $body;
   .container{
     @include desktop-xxl{
@@ -163,24 +171,24 @@
   }
   .card{
     background: $green;
-    min-height: 450px;
+    // min-height: 450px;
     filter: drop-shadow(5px 8px 6px #90afc4);
     @include desktop-xxl{
-      min-height: 437px;
+      // min-height: 437px;
     }
     @include tablet{
       min-height: 0;
     }
     @include desktop-xl{
-      min-height: 400px;
+      // min-height: 400px;
     }
     img{
       padding: 0 30%;
-      min-height: 175px;
+      // min-height: 175px;
       max-width: 100%;
-      @include tablet{
-
-      }
+    }
+    .card-body{
+      padding: 1.25rem 0;
     }
   }
   #line{
