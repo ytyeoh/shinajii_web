@@ -5,6 +5,9 @@
 }
 .donate{
   font-size: 1.25rem;
+  @include mobile{
+    font-size: 1.15rem;
+  }
   .nav{
     border-radius: 21px;
   }

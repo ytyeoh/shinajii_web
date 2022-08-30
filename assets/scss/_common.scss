@@ -33,8 +33,12 @@ body{
   padding: 10rem;
 }
 .px-6{
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @include desktop-xl{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   @include mobile{
     padding-left: 1rem;
     padding-right: 1rem;

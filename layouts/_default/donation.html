@@ -2,12 +2,12 @@
 {{ with .Params }}
 <section class="donate">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-lg-6 mt-5 p-3">
-        <div class="container">
-          <div class="container bg-green p-3 rounded-2">
+    <div class="row row-eq-height">
+      <div class="col-12 col-lg-6 mt-5 ">
+        <div class="container bg-green">
+          <div class="container  p-3 rounded-2">
 
-	          <ul class="nav nav-pills justify-content-center " id="myTab" role="tablist">
+	          <ul class="nav nav-pills justify-content-center mt-5 " id="myTab" role="tablist">
 	          	<div class="bg-white" id="flex">
 				  <li class="nav-item">
 				    <a class="nav-link active px-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">One Time</a>
@@ -20,20 +20,20 @@
 				<div class="tab-content py-4 mt-3" id="myTabContent">
 					<h5 class="text-center mb-3 pb-4">Choose an amount to donate</h5>
 				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				  	<div class="row px-5 row-eq-height">
+				  	<div class="row px-md-5 row-eq-height">
 				  		{{ range .one}}
-					  		<div class="col-6  mb-5 align-mid">
-						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
+					  		<div class="col-md-6 col-12  mb-5 align-mid">
+						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 py-3">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
 				  	</div>
 				  	
 				  </div>
 				  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-				  	<div class="row px-5 ">
+				  	<div class="row px-md-5 row-eq-height">
 				  		{{ range .monthly}}
-					  		<div class="col-6  mb-5">
-						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 p-53">{{ .amount}}</a>
+					  		<div class="col-md-6 col-12  mb-5 align-mid">
+						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 py-3">{{ .amount}}</a>
 					  		</div>
 					  	{{ end }}
 				  	</div>
