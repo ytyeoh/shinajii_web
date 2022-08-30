@@ -42,6 +42,12 @@
   color: $white;
   font-size: 5rem;
   width: 100%;
+  @include desktop{
+    top: 5%;
+  }
+  @include mobile{
+    top: -5%;
+  }
 }
 .owl-nav .owl-next{
   position: absolute;
