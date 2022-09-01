@@ -32,13 +32,9 @@
   width: 6.875rem;
   height: 6.875rem;
   z-index: 55;
-  -webkit-animation: linear;
-  -webkit-animation-name: run;
-  -webkit-animation-duration: 3s;
   @include mobile {
     width: 3.575rem;
     height: 3.575rem;
-    -webkit-animation-duration: 2s;
   }
   @include desktop-xl {
     bottom: 30%;
