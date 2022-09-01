@@ -220,30 +220,6 @@
       p{
         font-weight: 100;
       }
-			// h2 {
-			// 	font-weight: 600;
-			// 	line-height: 110px;
-			// 	font-size: 80px;
-			// 	letter-spacing: 1px;
-			// 	line-height: 1;
-			// 	margin-bottom: 20px;
-   //      font-weight: 900;;
-
-			// 	span {
-			// 		clip-path: inset(0 100% 0 0);
-			// 	}
-
-			// 	@include desktop-lg {
-			// 		font-size: 60px;
-			// 		line-height: 70px;
-			// 		letter-spacing: 1px;
-			// 	}
-
-			// 	@include tablet {
-			// 		font-size: 35px;
-			// 		line-height: 40px;
-			// 	}
-			// }
 
 			h3 {
 				margin-bottom: 95px;
@@ -336,74 +312,5 @@
 		bottom: 5%;
 	}
 }
-.content_2{
- 
-  // h2{
-  //   color: black;
-  //   text-transform: uppercase;
-  //   font-size: 84px;
-  //   font-weight: 900;
-  // }
 
-  .hero-btn {
-    padding: 25px 50px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 3rem;
-    border: none;
-    letter-spacing: 2px;
-    // width: 70%;
-    background: black;
-}
-  @include desktop {
-    width: 50%;
-  }
 
-  @include mobile {
-    // h2{
-    //   font-size: 3rem!important;
-    //   line-height: 4.2rem!important;
-    //   font-weight: 900;
-
-    // }
-    width:50%;
-  }
-}
-.scroll {
-	height: 70px;
-	overflow: hidden;
-
-	h6 {
-		transform: rotate(-90deg);
-		letter-spacing: 2px;
-		position: relative;
-		font-size: 13px;
-		margin-top: 20px;
-		font-family: $secondary-font;
-
-		&::before {
-			position: absolute;
-			content: '';
-			width: 30px;
-			height: 1px;
-			background: #9ea0c9;
-			left: 48%;
-			top: -4px;
-			overflow: hidden;
-			// animation-name: scroll_animation;
-			// animation-duration: 1s;
-			// animation-iteration-count: infinite;
-			// animation-timing-function: ease-in-out;
-		}
-	}
-}
-
-// @keyframes scroll_animation {
-// 	from {
-// 		transform: translateX(0);
-// 	}
-
-// 	to {
-// 		transform: translateX(-200%);
-// 	}
-// }

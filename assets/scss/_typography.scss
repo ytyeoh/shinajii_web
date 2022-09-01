@@ -58,6 +58,7 @@ p {
 h1,h3,h4,h5,h6 {
   font-family: $secondary-font;
   color: $text-color;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,6 +124,10 @@ h2 {
   text-transform: capitalize;
   font-family: $secondary-font;
   color: $blue;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
   @include desktop-xxl{
       font-size: 3.375rem;
   }
@@ -134,6 +139,10 @@ h3{
   color: #383737;
   font-size: 1.75rem;
   font-weight: 900;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
   @include tablet{
       font-size: 1rem;
   }
@@ -144,8 +153,17 @@ h3{
 h5{
   font-size: 1.875rem;
   font-weight: normal;
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
 }
-
+p{
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+}
 label{
   font-size: 15px;
   margin-bottom: 5px;

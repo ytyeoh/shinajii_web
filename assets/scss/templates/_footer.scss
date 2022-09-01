@@ -13,6 +13,17 @@
     height: 3.575rem;
   }
 }
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 80%;
+  }
+}
 #btn-donate{
   padding: 1rem;
   position: fixed;
@@ -21,9 +32,13 @@
   width: 6.875rem;
   height: 6.875rem;
   z-index: 55;
+  -webkit-animation: linear;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 3s;
   @include mobile {
     width: 3.575rem;
     height: 3.575rem;
+    -webkit-animation-duration: 2s;
   }
   @include desktop-xl {
     bottom: 30%;
