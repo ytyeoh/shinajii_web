@@ -52,7 +52,7 @@ p {
       font-size: 1.75rem;
   }
   @include tablet{
-      font-size: 1.5rem;
+      font-size: 1rem;
   }
 }
 h1,h3,h4,h5,h6 {
@@ -132,7 +132,7 @@ h2 {
       font-size: 3.375rem;
   }
   @include tablet{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
   }
 }
 h3{
@@ -144,7 +144,7 @@ h3{
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
   @include tablet{
-      font-size: 1rem;
+      font-size: 1.1rem;
   }
 }
 // h4 {
@@ -157,6 +157,9 @@ h5{
   animation-name: animate-fade;
   animation-delay: 0.9s;
   animation-fill-mode: backwards;
+  @include mobile{
+    font-size: 1.2rem;
+  }
 }
 p{
   animation-duration: 1s;
