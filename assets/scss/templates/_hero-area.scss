@@ -10,7 +10,7 @@
     text-transform: none;
     color: $black;
     @include mobile{
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
   }
   h2 .zzz{
@@ -18,19 +18,22 @@
     text-transform: uppercase;
     color: $green;
     @include mobile{
-      font-size: 2.2rem;
+      font-size: 1.2rem;
     }
   }
   h2 .bbb{
     font-size: 2.188rem;
     @include mobile{
-      font-size: 2rem;
+      font-size: 1.14rem;
     }
   }
   span .ccc{
     font-size: 2.813rem;
     text-transform: uppercase;
     color: $green;
+     @include mobile{
+      font-size: 1.3rem;
+    }
   }
   .vv{
     width: 100%;

@@ -111,18 +111,7 @@
     }
   }
 }
-.desc{
-  h2{
-    font-size: 1.8rem;
-    @include desktop-xxl{
-      font-size: 2.813rem;
-    }
-    @include desktop-xl{
-      font-size: 2.3rem;
-    }
-  }
-	
-}
+
 
 .company-fun-facts{
 	h2{
