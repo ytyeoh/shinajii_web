@@ -16,7 +16,7 @@ one:
     url: "https://donate.stripe.com/8wM5nMdYG4Z3avSbJ0"
   - amount: "USD 500"
     url: "https://donate.stripe.com/14k8zY8Em3UZavS14n"
-  - amount: "All Other Amounts"
+  - amount: "Any Amounts"
     url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
 monthly:
   - amount: "USD 20"
@@ -29,6 +29,6 @@ monthly:
     url: "https://buy.stripe.com/fZe4jIaMu3UZeM83co"
   - amount: "USD 500"
     url: "https://buy.stripe.com/8wM8zY7Ai2QVcE0dR3"
-  - amount: "All Other Amounts"
+  - amount: "Any Amounts"
     url: "https://buy.stripe.com/aEU7vU4o6ezDgUg14i"
 ---
