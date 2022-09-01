@@ -14,7 +14,7 @@
 		    <div class="item text-center">
 		    	<div class="row">
 		    		
-		    		<div class="col-6 col-sm-12">{{ partial "full_width_image.html" (dict "image" .image ) }}</div>
+		    		<div class="col-12">{{ partial "full_width_image.html" (dict "image" .image ) }}</div>
 		    	</div>
 		    	
 		    </div>
@@ -33,11 +33,11 @@
 {{ with .Params.teams }}
 <section class="pt-0 teams bg-white">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 m-5 pt-5"><h2 class="text-center">{{ .title }}</h2></div>
-			<div class="col-12 m-5  bg-green rounded-1">
+		<div class="row px-1 px-sm-5">
+			<div class="col-12  my-5 pt-5"><h2 class="text-center">{{ .title }}</h2></div>
+			<div class="col-12 my-5 bg-green rounded-1">
 				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
-				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
+				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
 					<h2>{{ .name }}</h2>
 					<h3>{{ .pose | markdownify }}</h3>
 				</div>
@@ -48,12 +48,12 @@
 </section>
 <section class="pt-0 teams">
 	<div class="container">
-		<div class="row">
+		<div class="row px-1 px-sm-5">
 		{{ range .members}}
 		
 
 		{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
-			<div class="col-12 m-5  bg-green rounded-1">
+			<div class="col-12 my-5  bg-green rounded-1">
 				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
 					<h2>{{ .name }}</h2>
 					<h3>{{ .pose | markdownify }}</h3>

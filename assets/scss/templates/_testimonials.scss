@@ -5,6 +5,16 @@
     color: #fff;
     font-size: 5rem;
     width: 100%;
+    @include mobile{
+        top: 0%;
+        
+      }
+    img{
+      @include mobile{
+        width: 30px;
+
+      }
+    }
   }
   // .owl-stage{
   //    padding: 0 20px !important;
@@ -25,6 +35,9 @@
 .teams{
   .bg-green{
     min-height: 24rem;;
+    @include mobile{
+      min-height: 15rem;;
+    }
   }
   .text{
     position: absolute;
@@ -34,29 +47,50 @@
       font-size: 3.4rem;
       color: #1A4568;
       margin-bottom: 1.5rem;;
+      @include mobile{
+        font-size: 2.5rem;
+      }
     }
     h3{
       font-size: 2.8rem;
       color: #F9F9F9;
       font-weight: normal;
+      @include mobile{
+        font-size: 1.8rem;
+      }
     }
   }
   img{
     width: 30%;
     position: absolute;
     top: -20%;
+    @include mobile{
+      top: -10%;
+    }
   }
   .text-left{
     left:50%;
+    @include mobile{
+      left: 10%;
+    }
   }
   .img-left img{
     left: 15%;
+    @include mobile{
+      left: 50%;
+    }
   }
   .text-right{
     right:50%;
+    @include mobile{
+      right: 10%;
+    }
   }
   .img-right img{
     right: 15%;
+    @include mobile{
+      right: 50%;
+    }
   }
 }
 #image-100{

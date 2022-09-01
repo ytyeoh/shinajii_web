@@ -53,11 +53,15 @@
     font-size: 3rem;
   }
   .contact-form-ajax{
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
     @include desktop-xl{
       padding-left: 6rem;
-      padding-right: 9rem;;
+      padding-right: 9rem;
+      padding-top: 20%;
+    padding-bottom: 20%;
     }
     input, textarea{
       border-radius:16px;
