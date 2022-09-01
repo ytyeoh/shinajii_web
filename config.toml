@@ -86,7 +86,7 @@ title = 'Term of Use'
 url= "/tnc"
 
 [params.footer]
-title = 'Copyright © BREATHE LIFE (123456-A)<br>Website managed by <img src="/images/shinajii.svg">. All rights reserved.'
+title = 'Copyright © BREATHE LIFE 202201014862 (1460559-H)<br>Website managed by <img src="/images/shinajii.svg">. <br>All rights reserved.'
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
