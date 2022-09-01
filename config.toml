@@ -44,7 +44,7 @@ weight = 6
 #################### default parameters ################################
 [params]
 logo = "images/logo.svg"
-logo_width = "132px"
+logo_width = ""
 menu = "donation"
 
 # Meta data

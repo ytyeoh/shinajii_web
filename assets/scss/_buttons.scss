@@ -24,7 +24,9 @@
   }
   // filter: invert(26%) sepia(30%) saturate(5075%) hue-rotate(334deg) brightness(98%) contrast(89%);
 }
-
+button:focus {
+  outline: none;
+}
 #stupid-donate{
   @include mobile{
     

@@ -1,6 +1,12 @@
 body{
     background: #F3F1F1;
 }
+.logo{
+  width: 132px;
+  @include mobile{
+    width: 80px;
+  }
+}
 .rounded-1{
   border-radius: 55px;
 }
