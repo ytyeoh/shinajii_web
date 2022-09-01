@@ -25,7 +25,13 @@
   // filter: invert(26%) sepia(30%) saturate(5075%) hue-rotate(334deg) brightness(98%) contrast(89%);
 }
 
+#stupid-donate{
+  @include mobile{
+    
+    margin: 0 10%;
 
+  }
+}
 .btn-50{
   width: 100%;
   border-radius: 10rem;
