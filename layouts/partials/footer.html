@@ -65,7 +65,7 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $js := resources.Get "js/script.js" }}
 {{ $script := $js | resources.Minify }}
-<script src="{{ $js.Permalink }}"></script>
+<script src="{{ $js.Permalink }}" async></script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
