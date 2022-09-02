@@ -32,6 +32,10 @@
   width: 6.875rem;
   height: 6.875rem;
   z-index: 55;
+  animation-duration: 2s;
+  animation-name: animate-fade;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
   @include mobile {
     width: 3.575rem;
     height: 3.575rem;
