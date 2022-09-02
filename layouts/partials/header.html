@@ -1,5 +1,5 @@
 {{ "<!-- navigation -->" | safeHTML }}
-<header class="nav-section">
+<header class="nav-section" id="nav">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -41,8 +41,9 @@
 						  {{ $active = or $active (eq .Name $current.Title) }}
 						  {{ $active = or $active (and (eq .Name "Home") (eq $current.Title "Breathe Life")) }}
 						  {{ $active = or $active (and (eq .Name "home") (eq $current.Section "tags")) }}
-              <li class="nav-item px-3">
-                <a class="nav-link page-scroll {{ if $active }}active{{ end }}"
+	        	{{ $white := or ( eq $current.Title "Home") (eq $current.Title "About") (eq $current.Title "Breathe Life") }}
+              <li class="nav-item px-2">
+                <a class="nav-link page-scroll {{ if $active }}active{{ end }} {{ if $white }}white-text{{ end }}"
                   href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               </li>
               {{ end }}

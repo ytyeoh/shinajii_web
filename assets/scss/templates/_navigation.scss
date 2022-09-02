@@ -12,6 +12,7 @@
 }
 
 #main-nav{
+  z-index:1000;
     .navbar-nav{
         align-self: center;
         font-family: $primary-font;
@@ -19,6 +20,7 @@
             text-align: center;
         }
         .nav-item{
+
             .nav-link{
                 
                 color: #1A4568;
@@ -48,6 +50,27 @@
               text-decoration-color: white;
               border-bottom: 2px solid #1A4568;
               padding-bottom: 3px
+            }
+            .active.white-text{
+              color: $red;
+              border-bottom: 2px solid $red;
+              @include mobile{
+                 color: #1A4568;
+                 border-bottom: 2px solid #1A4568;
+              }
+            }
+            .white-text{
+              @include mobile{
+                 color: #1A4568;
+              }
+              color: white;
+            }
+            
+            .white-text:hover{
+              @include mobile{
+                border-bottom: 2px solid #1A4568;
+              }
+              border-bottom: 2px solid white;
             }
         }
         .music-icon{
