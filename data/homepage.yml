@@ -140,6 +140,7 @@ product:
   content_2 : "UNHCR assistance is given only to those who are documented - many are not documented and without a voice, can be arrested and imprisoned -  even during pregnancy and birth. <b>Our presence</b> and <b>advocacy protects them</b> to some extent.  "
   image_2 : "images/helmet/a2.png"
   video: "7lYwaQf9ahU"
+  video_thumb: "images/home/video.jpeg"
   image_text_2: "assisting birthing famillies parctially, medically & financially"
   button_2:
     enable : true

@@ -34,7 +34,7 @@
 <section class="pt-0 teams bg-white">
 	<div class="container">
 		<div class="row px-1 px-sm-5">
-			<div class="col-12  my-5 pt-5"><h2 class="text-center">{{ .title }}</h2></div>
+			<div class="col-12  my-lg-5 pt-lg-5 my-4"><h2 class="text-center">{{ .title }}</h2></div>
 			<div class="col-12 my-5 bg-green rounded-1">
 				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
 				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
