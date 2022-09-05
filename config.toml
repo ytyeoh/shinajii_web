@@ -41,11 +41,13 @@ url = "contact"
 weight = 6
 
 
+
 #################### default parameters ################################
 [params]
 logo = "images/logo.svg"
 logo_width = ""
-menu = "donation"
+menu = "GIVE"
+menu_url = "donate"
 
 # Meta data
 description = "breathe life"

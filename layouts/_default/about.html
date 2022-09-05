@@ -50,13 +50,52 @@
       	{{ end }}
       </div>
       <div class="col-12">
-      	{{ partial "image.html" (dict "image" .logo "class" "w-30" ) }}
+      	<h2 class="text-center">{{ .subtitle }}</h2>
+      	<!-- {{ partial "image.html" (dict "image" .logo "class" "w-30" ) }} -->
       </div>
       <div class="col-12 my-5">
       	{{ partial "image.html" (dict "image" .image "class" "w-90"  ) }}
       </div>
     </div>
   </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if .Params.teams.enable }}
+{{ with .Params.teams }}
+<section class="pt-0 teams bg-white">
+	<div class="container">
+		<div class="row px-1 px-sm-5">
+			<div class="col-12  my-lg-5 pt-lg-5 my-4"><h2 class="text-center">{{ .title }}</h2></div>
+			<div class="col-12 my-5 bg-green rounded-1">
+				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
+				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
+					<h2>{{ .name }}</h2>
+					<h3>{{ .pose | markdownify }}</h3>
+				</div>
+				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pt-0 teams">
+	<div class="container">
+		<div class="row px-1 px-sm-5">
+		{{ range .members}}
+		
+
+		{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
+			<div class="col-12 my-5  bg-green rounded-1">
+				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
+					<h2>{{ .name }}</h2>
+					<h3>{{ .pose | markdownify }}</h3>
+				</div>
+				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
+			</div>
+		{{ end }}
+		</div>
+	</div>
 </section>
 {{ end }}
 {{ end }}

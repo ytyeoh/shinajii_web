@@ -9,7 +9,7 @@ image : "images/helmet/c1.png"
 ########### Goal ##########
 goal:
   enable : true
-  section : "EXPLORE OUR HELMET LINE-UP"
+  section : ""
   title: 'Goals and Objectives'
   item:
   - index: '01'
@@ -39,25 +39,5 @@ goal:
   - index: '09'
     image : "images/goal/9.svg"
     content : "Promote honour, respect and kindness toward them and amongst their community. "
-  
-
-
-    
-  
-
-
-########### funfacts ##########
-funfacts:
-  enable : false
-  title : "AERO DYNAMIC."
-  content : "Give refugee women the opportunity to have an informed pregnancy, a supported labour and a safe birth, and encourage the best nurturing of their infants."
-  image : "images/hero-image/7.png"
-    
-########### Career ############
-career:
-  enable : false
-  title : "DURABLE."
-  content : "Any good helmet should be able to withstand wear, pressure and damage. MHR's helmet will protect you from the environment you’re riding in, whether it be inclement weather or debris and bugs hitting your visor."
-  image : "images/technical/4.png"
 
 ---

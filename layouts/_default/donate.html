@@ -8,14 +8,15 @@
         	<h2 class="text-center">{{ .title }}</h2>
         	{{ range .desc }}
 	        	<div class="mb-5">
-        		<h4>{{ .title }}</h4>
+        		<h4>{{ .title }}</h4><a href="/donation" class="btn btn-danger rounded-1 px-5 f-700" id='stupid-donate'>Give</a><br>
         		{{ .desc | markdownify }}
         		</div>
         	{{ end }}
-        	<a href="/donation" class="btn btn-danger rounded-1 px-5 f-700" id='stupid-donate'>Donate Here!</a>
+        	
         </div>
       </div>
       <div class="col-12 col-lg-6 mt-5">
+      	<h1>Give USD 35 button on image</h1>
         {{ partial "image.html" (dict "image" .image "class" "img-fluid w-100" ) }}
       </div>
 

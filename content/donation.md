@@ -6,8 +6,8 @@ image : "images/donate/1.png"
 
 
 one:
-  - amount: "USD 20"
-    url: "https://donate.stripe.com/dR68zY5sacrvdI43cr"
+  # - amount: "USD 20"
+  #   url: "https://donate.stripe.com/dR68zY5sacrvdI43cr"
   - amount: "USD 50"
     url: "https://book.stripe.com/fZe9E21bU9fj1Zm14k"
   - amount: "USD 100"
@@ -19,8 +19,8 @@ one:
   - amount: "Any Amounts"
     url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
 monthly:
-  - amount: "USD 20"
-    url: "https://buy.stripe.com/7sI9E25sabnrfQc28i"
+  # - amount: "USD 20"
+  #   url: "https://buy.stripe.com/7sI9E25sabnrfQc28i"
   - amount: "USD 50"
     url: "https://buy.stripe.com/8wMeYm8EmgHL9rOaEP"
   - amount: "USD 100"

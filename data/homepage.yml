@@ -142,40 +142,21 @@ product:
   video: "7lYwaQf9ahU"
   video_thumb: "images/home/video.jpeg"
   image_text_2: "assisting birthing famillies parctially, medically & financially"
-  button_2:
-    enable : true
-    label : "Learn More"
-    Pre: "/"
-    URL : "technology"
 
 ###################### Story ####################
 story:
   enable : true
-  section : "CONTACT US"
-  title : "reach us"
   image : "images/home/child.png"
-  content : "The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business."
-  sub_title: "find us here"
-  formspree_action: "/mail.php"
-  address: "STORE ADDRESS<br>Hong Lun Sdn.Bhd. (PG0340870-H)<br>No. 12, Jalan Nafiri 1,Victory Aura Industry Park,<br>14200 Sungai Bakap,Pulau Pinang,<br>Malaysia  "
-  phone: "CALL US<br>+ 017-510 5584<br>@ mhrhelmetofficial@gmail.com  "
 
 
 ###################### Contact ####################
 contact:
   enable : true
   image: "/images/contact/1.png"
-  section : "CONTACT US"
-  title : "reach us"
-  content : "The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business."
-  sub_title: "find us here"
-  formspree_action: "/mail.php"
-  address: "STORE ADDRESS<br>Hong Lun Sdn.Bhd. (PG0340870-H)<br>No. 12, Jalan Nafiri 1,Victory Aura Industry Park,<br>14200 Sungai Bakap,Pulau Pinang,<br>Malaysia  "
-  phone: "CALL US<br>+ 017-510 5584<br>@ mhrhelmetofficial@gmail.com  "
+
+ 
   
 ################### call to action #################
 call_to_action:
   enable : false
-  title : "Join the Omega family. <br>Click below to view the career opportunities we have for you."
-  button_label : "Apply Now"
-  button_link : "career"
+ 

@@ -37,7 +37,7 @@ teams:
     img : 'images/teams/4.png'
     position : 'right'
   - name : "Dee"
-    pose : "Translator/<br>Assistant Doulaa"
+    pose : "Translator/<br>Assistant Doula"
     img : 'images/teams/5.png'
     position : 'left'
   - name : "Sadia"
