@@ -12,5 +12,7 @@ desc:
     desc: 'US$25 per month/ $300 per year can support a child in elementary education'
   # - title: 'C) Joining our team and volunteer your services'
   #   desc: '<ol><li>Education field.</li><li>Social welfare services</li><li>Midwifery/doula skills (or the willingness to be trained in these skills) </li><ol>'
-
+img:
+  btn: "GIVE"
+  url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
 ---

@@ -14,6 +14,21 @@
   font-weight: 600;
   border: none;
 }
+.img-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 .btn-danger:hover{
   background: $white;
   color: #dc3545;
@@ -32,10 +47,18 @@ button:focus {
   border: 1px solid $green;
   color: $green;
 }
+.btn-green-outline:hover{
+  color: $red; 
+  border: 1px solid $red;
+}
 .btn-red-outline{
   background-color: transparent;
   color: $red;
   border: 1px solid $red;
+}
+.btn-red-outline:hover{
+  color: $green; 
+  border: 1px solid $green;
 }
 #stupid-donate{
   @include mobile{

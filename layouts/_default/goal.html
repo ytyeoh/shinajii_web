@@ -11,29 +11,30 @@
   	<h2 class="text-center">{{.title}} </h2>
     <div class="row row-eq-height my-row">
       {{ range .item }}
-          <div class="border-right col col-lg-4 col-md-4 col-4 py-2 px-1 noborder">
-            <div class="px-5 mx-3 py-2">
-            	<div class="row ">
-            		<div class="col-12 col-sm-12 text-center mb-5">
+          <div class="border-right col col-lg-4 col-md-12 col-12 py-2 px-5 noborder row mx-0 mt-5">
+            
+            	
+            		<div class="col-12 col-sm-12 text-lg-center text-left mb-5 ">
             			<h3 class='px-2 mb-0 text-{{ .color }}'>{{ .title | markdownify }}</h3>
-            			
             		</div>
             		<div class="col-12 col-sm-12 mb-5">
             			{{ .desc }}
 			              
             		</div>
-            		<div class="col-12">
-            			<div class="card-body text-center py-0">
-			              
-			              <a href="{{ .url}}" class="btn btn-{{ .color }}-outline px-5">{{.btn}}</a>
-			              
-			            </div>
+            		<div class="col-12 col-sm-12 btm-0  text-center">
+            			
+			              {{ if .link }}
+				              <a href="{{ .url | absLangURL }}" class="btn btn-{{ .color }}-outline px-5">{{.btn}}</a>
+			              {{ else }}
+		              		  <button class="btn btn-{{ .color }}-outline px-5" data-toggle="modal" data-target="#contactus">{{ .btn }}</button>
+			              {{ end }}
+			            
             		</div>
-            	</div>
+            	
 	             
             
 	            
-            </div>
+            
           </div>
           {{ end }}
     </div>
@@ -43,67 +44,22 @@
 {{ end }}
 <!--====  End of Gallery  ====-->
 
-<!--===============================
-=            Fun Facts            =
-================================-->
-
-{{ if .Params.funfacts.enable }}
-{{ with .Params.funfacts }}
-<section class="section technology-featured ">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12  col-12 col-lg-7">
-        <img loading="lazy" src="{{ .image | absURL }}" class="img-fluid" alt="slider-image">
+<div class="modal" id="contactus" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col-sm-12  col-12 col-lg-5 technology-featured my-lg-5 py-3 px-4 text-left">
-        <div class="block">
-          <!-- written-content -->
-          <div class="content py-lg-5 title-case">
-            <!-- technology heading -->
-            <h2 class="text-uppercase">{{ .title }}</h2>
-            <!-- technology Description -->
-            <p>{{ .content | markdownify }}</p>
-          </div>
-          <!-- Promo Video -->
-        </div>
+      <div class="modal-body">
+         {{ partial "contact_form.html" (dict ) }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!--====  End of Fun Facts  ====-->
-
-<!--===============================
-=            Job lists            =
-================================-->
-{{ if .Params.career.enable }}
-{{ with .Params.career }}
-<section class="hero-slider">
-  <div class="container-fluid p-0 m-0 ">
-    <div class="row m-0">
-      <div class="col-12 p-0 ml-auto my-5">
-        <div class="hero-slider-wrapper">
-          <div class="item">
-            <div class="item-image image-reveal" id="image-100" style="animation-delay: 2s;">
-            	{{ partial "image.html" (dict "image" .image "class" "" ) }}
-              
-            </div>
-            <div class="content text-white" id="content-50">
-              <h2><span class="rev">{{ .title | markdownify}}</span></h2>
-              {{ .content | markdownify }}
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!--====  End of Job lists  ====-->
-
+</div>
+{{ partial "contact_modal.html" (dict ) }}
 {{ end }}

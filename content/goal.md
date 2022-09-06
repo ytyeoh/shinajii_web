@@ -17,13 +17,14 @@ goal:
     btn : "GIVE"
     url: "give"
     color: 'red'
-  - title: '01'
+    link: true
+  - title: 'Volunteer'
     desc: "ive refugee women the opportunity to have an informed pregnancy, a supported labour and a safe birth, and encourage the best nurturing of their infants."
     btn: "Contact Us"
     url: "give"
     color: 'green'
-  - title: '01'
-    desc : "ive refugee women the opportunity to have an informed pregnancy, a supported labour and a safe birth, and encourage the best nurturing of their infants."
+  - title: 'Be a Partner'
+    desc : "ive refugee women the opportunity to hae refugee women the opportunity to hae refugee women the opportunity to havive refugee women the opportunity to have an informed pregnancy, a supported labour and a safe birth, and encourage the best nurturing of their infants."
     btn : "Contact Us"
     url: "give"
     color: 'green'
