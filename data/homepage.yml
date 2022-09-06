@@ -1,10 +1,19 @@
 #################### Banner #####################
+videos:
+  enable: true
+  videos:
+    - video: "7lYwaQf9ahU"
+      video_thumb: "images/home/video.jpeg"
+      image_2 : "images/helmet/a2.png"
+      text: 'video'
+
 banner:
   slide:
     - title : 'You can make a difference!'
       desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
       desc2 : 'in practical ways in Rohingya lives '
       image : 'images/slide/a1.png'
+      
     - title : 'You can make a difference!'
       desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
       desc2 : 'in practical ways in Rohingya lives '

@@ -1,4 +1,5 @@
 #story{
+
   .bg{
     position: relative;
     
@@ -150,6 +151,12 @@
     display: flex;
 }
 #helmet{
+  .my-row :last-child.noborder{
+     border: 0;
+  }
+  .border-right{
+    border-right: 1px solid $red;
+  }
   .mx-x8{
     margin: 0 4.1111%;
     @include tablet{
@@ -170,7 +177,7 @@
       max-width: 1300px;
     }
   }
-  h3,p{
+  p{
     color: black;
   }
   h4{
@@ -182,7 +189,7 @@
   }
   h3{
     font-size: 1.8rem;
-    color: #1A4568;
+    // color: #1A4568;
     font-weight: normal;
     @include desktop-xl{
       font-size: 2.5rem;

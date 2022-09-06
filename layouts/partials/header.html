@@ -25,13 +25,6 @@
 	            {{site.Title}}
 	            {{ end }}
 	        </a>
-	        <div class="navbar-nav mt-lg-5">
-	        <span class="nav-item ">
-	        	{{ $active :=  "" }}
-	        	{{ $active = or $active (and (eq site.Params.menu "donation") (eq .Title "donation")) }}
-	        <!-- <a class="nav-link page-scroll text-green f-700 {{ if $active }}active{{ end }}" href="{{ site.Params.menu | relLangURL }}">{{site.Params.menu}}</a> -->
-	        </span>
-	        </div>
             <ul class="navbar-nav mx-auto mr-lg-5 mt-lg-5">
             	
 		          {{ $current := . }}
@@ -49,8 +42,8 @@
               {{ end }}
               <li>
               	{{ $active :=  "" }}
-	        	{{ $active = or $active (and (eq site.Params.menu "donation") (eq .Title "donation")) }}
-              	<a class="nav-link page-scroll text-red btn f-700 {{ if $active }}active{{ end }}" href="{{ site.Params.menu_url | relLangURL }}">{{site.Params.menu}}</a>
+	        	{{ $active = or $active (and (eq site.Params.menu "GIVE") (eq .Title "give")) }}
+              	<a class="nav-link red-border page-scroll text-red btn px-5 f-700 {{ if $active }}give-active{{ end }}" href="{{ site.Params.menu_url | relLangURL }}">{{site.Params.menu}}</a>
               </li>
             </ul>
           </div>

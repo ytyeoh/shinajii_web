@@ -33,7 +33,7 @@
 ==============================-->
 {{ if .Params.desc.enable }}
 {{ with .Params.desc }}
-<section class="desc gallery mb-5  bg-white">
+<section class="desc gallery bg-white">
   <div class="container-fluid pb-lg-5 pb-1">
     <div class="row text-center">
       <div class="col-sm-12  col-12 col-lg-12 technology-featured px-4">
@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="container text-center my-3 px-lg-5">
+  <div class="container text-center mt-3 px-lg-5">
   	<div class="row">
       <div class="col-12">
       	{{ range .content}}
@@ -66,13 +66,16 @@
 {{ with .Params.teams }}
 <section class="pt-0 teams bg-white">
 	<div class="container">
-		<div class="row px-1 px-sm-5">
-			<div class="col-12  my-lg-5 pt-lg-5 my-4"><h2 class="text-center">{{ .title }}</h2></div>
+		<div class="row px-1 px-sm-5   pt-lg-5 ">
+		
 			<div class="col-12 my-5 bg-green rounded-1">
 				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
 				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
-					<h2>{{ .name }}</h2>
-					<h3>{{ .pose | markdownify }}</h3>
+					<div class="row">
+						<h2 class="col-6">{{ .name }}</h2> {{ partial "image.html" (dict "image" .logo "class" "col-6" ) }} 
+						<h3 class="col-12">{{ .pose | markdownify }}</h3>
+					</div>
+					
 				</div>
 				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
 			</div>
@@ -83,13 +86,16 @@
 	<div class="container">
 		<div class="row px-1 px-sm-5">
 		{{ range .members}}
-		
-
 		{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
 			<div class="col-12 my-5  bg-green rounded-1">
 				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
-					<h2>{{ .name }}</h2>
-					<h3>{{ .pose | markdownify }}</h3>
+					<div class="row">
+						<h2 class="col-6">{{ .name }}</h2>
+						{{ if .enable }}
+							{{ partial "image.html" (dict "image" .logo "class" "col-6" ) }} 
+						{{ end }}
+						<h3 class="col-12">{{ .pose | markdownify }}</h3>
+					</div>
 				</div>
 				<div class="img-{{ .position }} float-{{ .position}}"> {{ partial "image.html" (dict "image" .img "id" "img2" "class" "rounded-1" ) }}</div>
 			</div>

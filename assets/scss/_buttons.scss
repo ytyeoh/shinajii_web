@@ -27,6 +27,16 @@
 button:focus {
   outline: none;
 }
+.btn-green-outline{
+  background-color: transparent;
+  border: 1px solid $green;
+  color: $green;
+}
+.btn-red-outline{
+  background-color: transparent;
+  color: $red;
+  border: 1px solid $red;
+}
 #stupid-donate{
   @include mobile{
     

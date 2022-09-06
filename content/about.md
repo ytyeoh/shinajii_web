@@ -73,12 +73,15 @@ teams:
   name : "Glyn"
   pose : "Midwife/Doula"
   img : 'images/teams/1.png'
+  logo : "images/about/logo.png"
   position : 'left'
   members:
   - name : "Lynne"
     pose : "Educator/<br>Doula Assistant"
     img : 'images/teams/2.png'
     position : 'right'
+    enable: true
+    logo : "images/about/logo.png"
   - name : "Ashley"
     pose : "Midwife/Doula"
     img : 'images/teams/3.png'

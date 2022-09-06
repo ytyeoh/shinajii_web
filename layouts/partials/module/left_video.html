@@ -1,23 +1,5 @@
-<div class="col col-12 my-0 ml-auto content_2 content text-center pt-lg-5 py-3 px-lg-5 px-0 ">
-	<h2 class=" ml-lg-5">
-      
-          {{.title | markdownify}}
-      
-    </h2>
-</div>
-<div class="col col-sm-12 col-12 col-lg-6  my-0 px-lg-0 ml-auto content_2 content text-center py-lg-4 px-lg-5 py-3 px-4 ">
-  <div class="align-middle  pl-lg-5">
-    <p>{{ .content | markdownify }}</p>
-    <p>{{ .content_2 | markdownify }}</p>
-    {{ if .button_2.enable }}
-    {{ with .button_2 }}
-    <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll" class=" my-3 hero-btn btn page-scroll">{{.label}}</a>
-    {{ end }}
-    {{ end }}
-</div>
-</div>
-<div class="col-sm-12  col-12 col-lg-6 p-0 ml-auto  my-0 py-lg-4 " >
-  <div class="hero-slider-wrapper px-5">
+<div class="col-sm-12  col-12 col-12 p-0 m-0 " >
+  <div class="hero-slider-wrapper">
     <div class="item">
     	<div class="video image-reveal item-image-2 image-reveal mr-auto ml-0 hh rounded-1 vv" style="animation-delay: 2s;">
 			<!-- Video Thumb -->
