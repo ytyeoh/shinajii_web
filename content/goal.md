@@ -10,7 +10,7 @@ image : "images/helmet/c1.png"
 goal:
   enable : true
   section : ""
-  title: 'Get Involve Today!'
+  title: 'Get Involved Today!'
   item:
   - title: 'GIVE'
     desc : "<b>YOUR dollars WILL make a difference! </b><br><br>Any amount can change a refugee's circumstance and add hope to their difficult lives.<br><br>$ 25 can provide school fees for 1child for 1month<br><br>$ 30 can provide a 'Hard Times’ food package for a struggling family.<br>$ 35 can provide a baby supplies package to a birthing refugee woman. <br><br>$ 250 can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><br>$ 300 provides education for 1child for 1 year.<br><br>$ 500 provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><br><b>When YOUR dollars are combined with our services and care, a refugee’s live is given HOPE.</b>"
