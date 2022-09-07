@@ -8,13 +8,18 @@
     <div class="row m-0">
       <div class="col-12 p-0 ml-auto ">
       	<div class="owl-carousel owl1 owl-theme h-screen">
+      		{{ $index := 0}}
       		{{range .slide}}
 		    <div class="item text-center">
 		    	<div class="row">
 
 		    		<div class="col-12 ">
 		    			<div class="row">
-			    		{{ partial "full_width_image.html" (dict "image" .image ) }}
+		    			{{ if eq $index 0 }}	
+				    		{{ partial "full_width_image.html" (dict "image" .image "lazy" "true") }}
+			    		{{ else }}
+				    		{{ partial "full_width_image.html" (dict "image" .image ) }}
+			    		{{ end }}
 			    		{{ if site.Data.homepage.videos.enable }}
 							{{ with site.Data.homepage.videos }}
 								{{range .videos}}
