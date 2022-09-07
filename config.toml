@@ -23,7 +23,7 @@ url = "about"
 weight = 2
 
 [[menu.main]]
-name = "Get Involve Today"
+name = "Get Involved Today"
 pre = ""
 url = "goal"
 weight = 3
