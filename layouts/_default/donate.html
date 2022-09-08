@@ -18,8 +18,8 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 mt-5">
-        {{ partial "image.html" (dict "image" .image "class" "img-fluid w-100" ) }}
-        <a href="{{.img.url}}" class="btn btn-danger img-btn">{{ .img.btn }}</a>
+        
+        <a href="{{.img.url}}">{{ partial "image.html" (dict "image" .image "class" "img-fluid w-100" ) }}</a>
       </div>
 
     </div>
