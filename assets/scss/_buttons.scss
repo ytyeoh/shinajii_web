@@ -60,6 +60,18 @@ button:focus {
   color: $green; 
   border: 1px solid $green;
 }
+.btn-red{
+  background: $red;
+  color: white;
+}
+.btn-green{
+  background: $green;
+  color: white;
+}
+.btn-blue{
+  background: $blue;
+  color: white;
+}
 #stupid-donate{
   @include mobile{
     
