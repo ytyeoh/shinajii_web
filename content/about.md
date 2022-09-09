@@ -60,7 +60,7 @@ teams:
     pose : "Educator/<br>Doula Assistant"
     img : 'images/teams/2.png'
     position : 'right'
-    enable: true
+    enable: false
     logo : "images/about/logo.png"
   - name : "Ashley"
     pose : "Midwife/Doula"

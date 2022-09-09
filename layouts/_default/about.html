@@ -72,7 +72,8 @@
 				{{ $pop  := (cond (ne (.position) "left") "left" "right")}}
 				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
 					<div class="row">
-						<h2 class="col-6">{{ .name }}</h2> {{ partial "image.html" (dict "image" .logo "class" "col-6" ) }} 
+						<h2 class="col-6">{{ .name }}</h2> 
+						
 						<h3 class="col-12">{{ .pose | markdownify }}</h3>
 					</div>
 					
