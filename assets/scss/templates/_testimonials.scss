@@ -61,7 +61,7 @@
       }
     }
   }
-  img{
+  .head-img{
     width: 30%;
     position: absolute;
     top: -20%;
@@ -70,9 +70,11 @@
     }
   }
   .cbi{
+    top: -56%;
+    right: -3%;
     @include mobile{
-      right: 10%;
-      top: 42%!important;
+      right: -50%;
+      top: 72%!important;
       width: 25%;
     }
   }
