@@ -15,20 +15,20 @@
   border: none;
 }
 .img-btn{
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
+  width: 20%;
+  position: absolute;
+  top: 14%;
+  left: 85%;
+  img{
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
 }
+
 .btn-danger:hover{
   background: $white;
   color: #dc3545;

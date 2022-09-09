@@ -313,3 +313,6 @@ body{
     opacity: 1; 
   }
 }
+@keyframes mymove {
+  25% {transform: rotate(25deg);}
+}
