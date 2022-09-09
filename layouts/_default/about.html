@@ -73,7 +73,7 @@
 				<div class="px-lg-5 text float-{{ $pop }} text-{{ .position }}">
 					<div class="row">
 						<h2 class="col-6">{{ .name }}</h2> 
-						
+						{{ partial "image.html" (dict "image" .logo "class" "col-6 cbi" ) }} 
 						<h3 class="col-12">{{ .pose | markdownify }}</h3>
 					</div>
 					
@@ -91,7 +91,7 @@
 			<div class="col-12 my-5  bg-green rounded-1">
 				<div class="px-lg-5 text text-{{ .position}} float-{{ $pop }} text-{{ .position }}">
 					<div class="row">
-						<h2 class="col-6">{{ .name }}</h2>
+						<h2 class="col-12">{{ .name }}</h2>
 						{{ if .enable }}
 							{{ partial "image.html" (dict "image" .logo "class" "col-6" ) }} 
 						{{ end }}
