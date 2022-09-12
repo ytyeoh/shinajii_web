@@ -15,20 +15,19 @@
             
             	
             		
-            		<div class="col-12 col-sm-12 mb-5">
+            		<div class="col-12 col-sm-12 mb-5 ">
             			<h3 class=' text-center mb-5 px-2 mb-0 text-{{ .color }}'>{{ .title | markdownify }}</h3>
-            			<p>{{ .desc  | markdownify}}</p>
-			              
-            		</div>
-            		<div class="col-12 col-sm-12 btm-0 mb-5 text-center">
-            			
-			              {{ if .link }}
+            			<div class="text-center my-5">
+            			 {{ if .link }}
 				              <a href="{{ .url | absLangURL }}" class="btn btn-{{ .color }} px-5">{{.btn}}</a>
 			              {{ else }}
 		              		  <button class="btn btn-{{ .color }} px-5" data-toggle="modal" data-target="#contactus">{{ .btn }}</button>
 			              {{ end }}
-			            
+			              </div>
+            			<p>{{ .desc  | markdownify}}</p>
+			              
             		</div>
+            		
             	
 	             
             

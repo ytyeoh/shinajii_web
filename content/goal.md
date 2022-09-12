@@ -13,7 +13,7 @@ goal:
   title: 'Get Involved Today!'
   item:
   - title: 'GIVE'
-    desc : "<b>YOUR dollars WILL make a difference! </b><br><br>Any amount can change a refugee's circumstance and add hope to their difficult lives.<br><br><b>$</b>25 can provide school fees for 1child for 1month<br><br><b>$</b>35 can provide a baby supplies package to a birthing refugee woman. <br><br><b>$</b>250 can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><br><b>$</b>300 provides education for 1child for 1 year.<br><br><b>$</b>500 provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><br><b>When YOUR dollars are combined with our services and care, a refugee’s live is given HOPE.</b>"
+    desc : "<b>YOUR dollars WILL make a difference! </b><br><br>Any amount can change a refugee's circumstance and add hope to their difficult lives.<br><br><b>$25</b> can provide school fees for 1 child for 1month<br><br><b>$35</b> can provide a baby supplies package to a birthing refugee woman. <br><br><b>$250</b> can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><br><b>$300</b> provides education for 1 child for 1 year.<br><br><b>$500</b> provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><br><b>When YOUR dollars are combined with our services and care, a refugee’s life is given HOPE.</b>"
     btn : "GIVE"
     url: "give"
     color: 'blue'

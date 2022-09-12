@@ -165,7 +165,6 @@
     @include mobile{
       margin: 0 4.1666%;
     }
-
   }
   
   background: $body;
@@ -179,6 +178,9 @@
   }
   p{
     color: white;
+    b{
+      font-size: 1.6rem;
+    }
   }
   h4{
     color: #F9F9F9;
