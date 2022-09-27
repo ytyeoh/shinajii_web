@@ -13,22 +13,28 @@ goal:
   title: 'Get Involved Today!'
   item:
   - title: 'GIVE'
-    desc : "<b>YOUR dollars WILL make a difference! </b><br><br>Any amount can change a refugee's circumstance and add hope to their difficult lives.<br><br><b>$25</b> can provide school fees for 1 child for 1month<br><a href='/give' class='btn btn-blue px-5 mb-5'>GIVE</a><br><b>$35</b> can provide a baby supplies package to a birthing refugee woman. <br><a href='/give' class='btn btn-blue px-5 mb-5'>GIVE</a><br><b>$250</b> can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><a href='/give' class='btn btn-blue px-5 mb-5'>GIVE</a><br><b>$300</b> provides education for 1 child for 1 year.<br><a href='/give' class='btn btn-blue px-5 mb-5'>GIVE</a><br><b>$500</b> provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><a href='/give' class='btn btn-blue px-5 mb-5'>GIVE</a><br><b>When YOUR dollars are combined with our services and care, a refugee’s life is given HOPE.</b>"
+    desc : '<b>YOUR dollars WILL make a difference! </b><br><br>Any amount can change a refugee`s circumstance and add hope to their difficult lives.<br><br><b>$25</b> can provide school fees for 1 child for 1 month<br><br>
+    <picture>
+    <source media="(min-width:650px)" srcset="/images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_1000x0_resize_q75_h1_box_3.webp" type="image/webp">
+    <source media="(min-width:300px)" srcset="/images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_400x0_resize_q75_h1_box_3.webp" type="image/webp">
+    <img srcset="/images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_400x0_resize_q90_box_3.png 200w, /images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_600x0_resize_q90_box_3.png 768w, /images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_800x0_resize_q90_box_3.png 1024w, /images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_900x0_resize_q90_box_3.png 1366w" img="" loading="lazy" src="/images/donate/1_hub5dc487bf0669ae937bc960a0343be02_1559793_600x0_resize_q90_box_3.png" class="img-fluid w-100" alt="" name="" id="">
+    </picture>
+    <br><b>$35</b> can provide a baby supplies package to a birthing refugee woman. <br><br><b>$250</b> can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><br><b>$300</b> provides education for 1 child for 1 year.<br><br><b>$500</b> provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><br><b>When YOUR dollars are combined with our services and care, a refugee’s life is donationn HOPE.</b>'
     btn : "GIVE"
-    url: "give"
+    url: "donation"
     color: 'blue'
     link: true
     bg: 'green'
   - title: 'Volunteer'
     desc: "<b>If YOU have a heart to serve - join our team and volunteer your services!</b><br><br><br><b>* Education field: </b><br>Short term or long term volunteers are needed to help run small learning centres. Need to speak good English and enjoy working with children who are eager to learn. Teaching experience is welcomed but not essential - can train on site.We can also use help with curriculum developement, which can be done online.<br><br><b>* Mental Health field:</b><br> Trained Social workers, experience in this field or someone who has this field at heart, but without qualification, can still be of great value in this work.<br><br><b>* Birthing field:</b><br> Midwives, Doulas, or the willingness to be trained in these skills, would be most welcome. <br>In all of the above - we need helpers who will be dedicated, flexible and most especially, who have a heart to love, care and respect vulnerable refugees."
     btn: "Contact Us"
-    url: "give"
+    url: "donation"
     color: 'green'
     bg: 'red'
   - title: 'Corporate Partners'
     desc : "The world faces a massive refugee crisis, with more than 200,000 Rohingya refugees within our sphere of influence.<br>With <b>Corporate social responsibility and investment </b> becoming a standard in business strategies, giving back to society and contributing to the community, you have an enormous capacity to support and empower these refugees as full participants in the economy and bring value to society as a whole.<br> <br>This can be recognised as <b>a force for good</b>, creating a positive brand image, attracting talent and investors and increasing brand loyalty in an era when consumers want to see businesses acting as <b>agents of positive change.</b><br>This kind of corporate action says a lot about how they treat their stakeholders.<br><br>As an organization committed to CSR you can partner with us to continue to serve, support, educate and care for these families.<br>Our efforts and services enable organizations to participate through a reliable channel that has proven its dedication to this community over the last 2 years, <b>assisting more than 200 families</b> and which has established several community learning centers. And this is only the beginning. We can do so much more with your support and investment."
     btn : "Contact Us"
-    url: "give"
+    url: "donation"
     color: 'red'
     bg: 'blue'
 ---
