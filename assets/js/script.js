@@ -533,7 +533,12 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 	});
   $('#myTab a').on('click', function (e) {
     e.preventDefault()
-    $(".nav-link").removeClass( 'active' )
+    $(".nav-link-2").removeClass( 'active' )
+    $(this).tab('show')
+  })
+  $('#paymentTab a').on('click', function (e) {
+    e.preventDefault()
+    $(".nav-link-1").removeClass( 'active' )
     $(this).tab('show')
   })
 
