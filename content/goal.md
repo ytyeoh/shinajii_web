@@ -21,7 +21,7 @@ goal:
     </picture>
     <b>$250</b> can subsidise birth costs (normal or C-Section) as refugees are charged private rates.<br><br><b>$300</b> provides education for 1 child for 1 year.<br>
 
-    <img src="/images/tool.jpg"  loading="lazy" class="img-fluid w-100" alt="" name="" id="">
+    <img src="/images/tool.png"  loading="lazy" class="img-fluid w-100" alt="" name="" id="">
     </picture><br><b>$500</b> provides for complete birthing costs (start to finish) for 1 refugee woman/family<br><br><b>When YOUR dollars are combined with our services and care, a refugee’s life is donationn HOPE.</b>'
     btn : "GIVE"
     url: "donation"
