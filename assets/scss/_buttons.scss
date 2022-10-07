@@ -29,16 +29,7 @@
   }
 }
 
-.btn-danger:hover{
-  background: $white;
-  color: #dc3545;
-  border: 3px solid #dc3545;
-  font-weight: bold;
-  svg path, svg text{
-    fill:#dc3545;
-  }
-  // filter: invert(26%) sepia(30%) saturate(5075%) hue-rotate(334deg) brightness(98%) contrast(89%);
-}
+
 button:focus {
   outline: none;
 }
