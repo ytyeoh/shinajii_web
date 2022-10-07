@@ -1,9 +1,9 @@
 {{- $image := resources.Get .image -}}
-{{ $tiny := ($image.Resize "400x q90") }}
+{{ $tiny := ($image.Resize "450x q90") }}
 {{ $small := ($image.Resize "600x q90") }}
 {{ $medium := ($image.Resize "700x q90") }}
 {{ $large := ($image.Resize "1900x q90") }}
-{{ $webp1 := $image.Resize "400x webp picture"  }}
+{{ $webp1 := $image.Resize "450x webp picture"  }}
 {{ $webp2 := $image.Resize "1900x webp picture"  }}
 <picture>
     <source media="(min-width:650px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
