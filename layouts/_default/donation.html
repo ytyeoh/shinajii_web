@@ -6,17 +6,22 @@
       <div class="col-12 col-12 mt-5 ">
         <div class="container bg-green">
           <div class="container  p-3 rounded-2">
-          	<ul class="nav nav-pills justify-content-center mt-5 " id="paymentTab" role="tablist">
-	          	<div class="bg-white" id="flex">
-				  <li class="nav-item">
-				    <a class="nav-link-1 nav-link active px-6" id="stripe-tab" data-toggle="tab" href="#stripe" role="tab" aria-controls="home" aria-selected="true">Stripe</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link-1 nav-link px-6" id="gdg-tab" data-toggle="tab" href="#gdg" role="tab" aria-controls="profile" aria-selected="false">GDG<span style="font-size: 0.8em;">(tax benefit)</span></a>
-				  </li>
+			  	<div class="row px-md-5 row-eq-height mt-5">
+			  		<div class="col-md-6 col-6  align-mid">
+				  		<a class="col btn btn-white rounded-2 py-3 active" id="stripe-tab" data-toggle="tab" href="#stripe" role="tab" aria-controls="home" aria-selected="true">Stripe</a>
+			  		</div>
+
+					  <div class="col-md-6 col-6  align-mid">
+				  		 <a class="col btn btn-white rounded-2 py-3" id="gdg-tab" data-toggle="tab" href="#gdg" role="tab" aria-controls="profile" aria-selected="false">GDG<span style="font-size: 0.8em;">(tax benefit)</span></a>
+			  		</div>
+			  		<div class="col-md-6 col-6 mt-2 align-mid">
+				  	</div>
+						<div class="col-md-6 col-6 mt-2 align-mid">
+					  	<p>tax benefit for USA, Aus, Nz</p>
+				  	</div>
 				  </div>
-			</ul>
-			<div class="tab-content py-4 mt-3" id="paymentTabContent">
+			</div>
+			<div class="tab-content pb-4" id="paymentTabContent">
 			  <div class="tab-pane fade show active" id="stripe" role="tabpanel" aria-labelledby="profile-tab">
 			  	<ul class="nav nav-pills justify-content-center mt-5 " id="myTab" role="tablist">
 	          	<div class="bg-white" id="flex">
@@ -34,7 +39,10 @@
 				  	<div class="row px-md-5 row-eq-height">
 				  		{{ range .one}}
 					  		<div class="col-md-6 col-6  mb-5 align-mid">
-						  		<a href="{{ .url}}" class="col btn btn-white rounded-2 py-3">{{ .amount}}</a>
+					  			<div class="row w-100">
+							  		<a href="{{ .url}}" class="col btn btn-white rounded-2 py-3 col-12">{{ .amount}}</a>
+							  		<p class="col col-12">{{.info}}</p>
+						  		</div>
 					  		</div>
 					  	{{ end }}
 				  	</div>

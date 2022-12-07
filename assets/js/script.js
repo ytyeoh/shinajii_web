@@ -571,11 +571,32 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
     })
   }
   sendContact()
-  function moveUp(){
-    if (screen.width > 768 ){
-      var clientHeight = document.getElementById('nav').clientHeight;
-      document.getElementById('fff').style.marginTop = '-'+clientHeight+'px';
-    }
+  // function moveUp(){
+  //   if (screen.width > 768 ){
+  //     var clientHeight = document.getElementById('nav').clientHeight;
+  //     document.getElementById('fff').style.marginTop = '-'+clientHeight+'px';
+  //   }
+  // }
+  // moveUp()
+  function gdg() {
+    $('#gdg-tab').on('click', function (e) {
+
+      $('#gdg-tab').toggleClass("active");
+      $('#stripe-tab').toggleClass("active");
+      $('#stripe').toggleClass("active show");
+      $('#gdg').toggleClass("active show");
+      
+
+    });
+    $('#stripe-tab').on('click', function (e) {
+
+      $('#gdg-tab').toggleClass("active");
+      $('#stripe-tab').toggleClass("active");
+      $('#stripe').toggleClass("active show");
+      $('#gdg').toggleClass("active show");
+      
+
+    });
   }
-  moveUp()
+  gdg()
 })(jQuery);
