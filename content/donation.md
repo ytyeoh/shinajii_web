@@ -25,7 +25,7 @@ one:
     info: "single set full birth cost"
   - amount: "Any Amounts"
     url: "https://donate.stripe.com/7sIdUiaMu4Z333q4gA"
-    info: "Need put some text"
+    info: "Any amount greatly appreciated"
 monthly:
   # - amount: "USD 20"
   #   url: "https://buy.stripe.com/7sI9E25sabnrfQc28i"
