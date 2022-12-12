@@ -3,7 +3,7 @@ videos:
   enable: true
   videos:
     - video: "7lYwaQf9ahU"
-      video_thumb: "images/home/video.jpeg"
+      video_thumb: "images/home/video.png"
       image_2 : "images/helmet/a2.png"
       text: 'video'
 
