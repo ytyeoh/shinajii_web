@@ -580,20 +580,20 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   // moveUp()
   function gdg() {
     $('#gdg-tab').on('click', function (e) {
-
-      $('#gdg-tab').toggleClass("active");
-      $('#stripe-tab').toggleClass("active");
-      $('#stripe').toggleClass("active show");
-      $('#gdg').toggleClass("active show");
+// debugger;
+      $('#gdg-tab').addClass("active");
+      $('#stripe-tab').removeClass("active");
+      $('#stripe').removeClass("active show");
+      $('#gdg').addClass("active show");
       
 
     });
     $('#stripe-tab').on('click', function (e) {
 
-      $('#gdg-tab').toggleClass("active");
-      $('#stripe-tab').toggleClass("active");
-      $('#stripe').toggleClass("active show");
-      $('#gdg').toggleClass("active show");
+      $('#gdg-tab').removeClass("active");
+      $('#stripe-tab').addClass("active");
+      $('#stripe').addClass("active show");
+      $('#gdg').removeClass("active show");
       
 
     });
