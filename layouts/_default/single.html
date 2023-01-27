@@ -1,82 +1,30 @@
 {{ define "main" }}
-{{ with .Params }}
-{{ $.Scratch.Set "image" "images/specs/" }}
-{{ $.Scratch.Add "image" .spec.type }}
-{{ $.Scratch.Add "image" "/a1.png" }}
-{{ $.Scratch.Set "image_2" "images/specs/" }}
-{{ $.Scratch.Add "image_2" .spec.type }}
-{{ $.Scratch.Add "image_2" "/a2.png" }}
-{{ $.Scratch.Set "image_3" "images/specs/" }}
-{{ $.Scratch.Add "image_3" .spec.type }}
-{{ $.Scratch.Add "image_3" "/a3.png" }}
-{{ $.Scratch.Set "url" "https://shop.mhrracing.com/index.php?route=product/product&product_id=" }}
-{{ $str := (index .spec.graphic 0).id}}
-{{ $.Scratch.Add "url" (string $str) }}
-
-<section id='single'>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-md-6 py-5">
-				<span class="pl-lg-5 text-uppercase text-white">
-					<a href="{{.main | absURL }}">{{replace .spec.main "_" " "}}</a>/<a href="{{.type | absURL }}">{{replace .spec.type "_" " "}}</a>/<b class='text-white'>{{ .name}}</b>
-				</span>
-				<div id="slider">
-					<div class="owl-carousel owl-theme" data-slider-id="1">
-						{{ $img:= .spec.color_name }}
-						{{ range $num := (seq .spec.images_total) }}
-							{{ partial "product/lightbox.html" (dict "image" (printf "%s%d.png" $img $num) "class" " mt-5 card-img-top img-fluid px-lg-5 px-3" ) }}
-						{{ end }}
+<div style="opacity: 1;" class="wrapper">
+	<div class="section blog-hero wf-section">
+		<div class="container">
+			<div class="row margin-80">
+				<div class="col _18-24 center">
+					<div class="margin-32">
+						<h1 class="text-display-3">{{ .Params.name }}</h1>
 					</div>
-				</div>
-				<div id="thumb_slider">
-					<div class="owl-thumbs" data-slider-id="1">
-						{{ range $num := (seq .spec.images_total) }}
-					    {{ end }}
+					<div class="blog-data">
+						<div class="text-micro-1 text-color-dark">{{ .Params.goal }}</div>
+						<div class="text-divider">/</div>
+						<div class="text-micro-1 text-color-dark">{{ .Params.dates }}</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 py-5">
-				{{ partial "partials/product/product.html" .Spec }}
-
-				<div class="row">
-					<div class="col-12 mt-5"><h3>Buy Now</h3></div>
-					{{ partial "partials/product/btn_link.html" (dict "image" "images/Shopee.png" "url" "https://shopee.com.my/mhrhelmets") }}
-					{{ partial "partials/product/btn_link.html" (dict "image" "images/Lazada.png" "url" "https://www.lazada.com.my/shop/mhr-helmet/") }}
-					{{ partial "partials/product/btn_link.html" (dict "image" "images/Webstore.png" "url" ($.Scratch.Get "url") "class" "webstore") }}
+			<div class="row margin-80">
+				<div class="image-contain blog-thumb">
+					{{ partial "image.html" (dict "image" .Params.image "id" "" "class" "image") }}
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="rich-text center w-richtext">
+					{{ .Content }}
+				</div>
+			</div>
 		</div>
 	</div>
-</section>
-{{ end }}
-{{with $.Site.Data.products}}
-<section id="spec">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 title-case text-center">
-				<h2>{{ .title }}</h2>
-			</div>
-			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_1  "desc" .desc_1 "img" ($.Scratch.Get "image") "bg_color" "black" "h2_class" "text-decoration-none") }}
-			</div>
-			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_2  "desc" .desc_2 "img" ($.Scratch.Get "image_2") "bg_color" "black" "h2_class" "text-decoration-none") }}
-			</div>
-			<div class="col-12">
-				{{ partial "partials/product/right_img.html" (dict "title" .title_3  "desc" .desc_4 "img" ($.Scratch.Get "image_3") "bg_color" "black" "h2_class" "text-decoration-none") }}
-			</div>
-			<div class="col-12">
-				{{ partial "partials/product/left_img.html" (dict "title" .title_4  "desc" .desc_4 "img" .image_4 "bg_color" "black") }}
-			</div>
-			<div class="col-12">
-				{{ partial "partials/product/btm_img.html" (dict "title" .title_5  "desc" .desc_5 "img" .image_5a  "img_2" .image_5b "bg_color" "black") }}
-			</div>
-			<div class="col-12">
-		        {{ partial "partials/product/right_img.html" (dict "title" .title_6  "desc" .desc_6 "img" .image_6 "bg_color" "black") }}
-		    </div>
-		</div>
-	</div>
-</section>
-{{ end }}
+</div>
 {{ end }}

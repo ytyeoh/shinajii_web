@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "/"
-title = "Breathe Life"
+title = "Shinajii"
 theme = "omega"
 # google analytics
 googleAnalytics = "" # example : UA-123-45
@@ -18,25 +18,25 @@ weight = 1
 
 [[menu.main]]
 name = "About"
-pre = ""
+pre = "#"
 url = "about"
-weight = 2
-
-[[menu.main]]
-name = "Get Involved Today"
-pre = ""
-url = "goal"
 weight = 3
 
 [[menu.main]]
-name = "testimonials"
-pre = ""
-url = "testimonials"
+name = "work"
+pre = "#"
+url = "work"
+weight = 3
+
+[[menu.main]]
+name = "blog"
+pre = "/"
+url = "profile"
 weight = 4
 
 [[menu.main]]
-name = "Contact us"
-pre = ""
+name = "Contact"
+pre = "#"
 url = "contact"
 weight = 6
 
@@ -44,13 +44,13 @@ weight = 6
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.svg"
+logo = "img/logo.png"
 logo_width = ""
 menu = "GIVE"
 menu_url = "donation"
 
 # Meta data
-description = "breathe life"
+description = "Shinajii"
 author = "Themefisher"
 # contact info
 contact_info = "1001 Brickell bay <br>Dr. Miami, <br>FL 33131"
@@ -58,7 +58,7 @@ contact_info = "1001 Brickell bay <br>Dr. Miami, <br>FL 33131"
 preloader = true
 # google map
 [params.map]
-enable = true
+enable = false
 gmap_api = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7946.308513203729!2d100.48114753448746!3d5.238450000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ab79101eb5f1f%3A0xdf352d232f26eba7!2sHong%20Lun%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1646904951212!5m2!1sen!2smy"
 map_center_lat = "25.773606"
 map_center_lng = "-80.732655"
@@ -73,9 +73,10 @@ expire_days = 2
 
 [params.contact]
 phone= '+6017 413 0454'
-email="info@breathelife.org.my"
+email= "info@shinajii.com"
 text= "We welcome your involvement in the support of our refugee families; Finances are crucial in serving them well.<br><br>Trained midwives/doulas, educators (any level) and social workers can contact us via email to volunteer services."
 image = "/images/contact/1.png"
+address ="59-2 Persiaran Bayan Indah <br>Bayan Bay,11900 Bayan Lepas,<br>Penang, Malaysia"
 
 [[params.aaa]]
 title = 'Security'
@@ -88,20 +89,20 @@ title = 'Term of Use'
 url= "/tnc"
 
 [params.footer]
-title = 'Copyright © BREATHE LIFE 202201014862 (1460559-H)<br>Website managed by <img src="/images/shinajii.svg">. <br>All rights reserved.'
+title = 'Copyright © BREATHE LIFE 202201014862 (1460559-H)<br>Website managed by <img src="svg/logo.svg">. <br>All rights reserved.'
 ############################# social site ########################
 [[params.social]]
-title = "facebook"
+title = "Fb"
 icon = "fa-facebook" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "#"
 
 [[params.social]]
-title = "instagram"
+title = "ig"
 icon = "fa-instagram" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "#"
 
 [[params.social]]
-title = "twitter"
+title = "Tw"
 icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "#"
 

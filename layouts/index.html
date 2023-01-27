@@ -1,170 +1,54 @@
 {{ define "main" }}
 
-{{ if site.Data.homepage.banner.enable }}
-{{ with site.Data.homepage.banner }}
+<div data-w-id="c770df62-bff5-3c1f-354f-73f3ad779e7f" class="wrapper" style="opacity: 1;">
+{{ if site.Data.homepage.hero.enable }}
+{{ with site.Data.homepage.hero }}
 
-<section class="hero-slider" id="fff">
-  <div class="container-fluid p-0 m-0 ">
-    <div class="row m-0">
-      <div class="col-12 p-0 ml-auto ">
-      	<div class="owl-carousel owl1 owl-theme h-screen">
-      		{{ $index := 0}}
-      		{{range .slide}}
-		    <div class="item text-center">
-		    	<div class="row">
+  {{ partial "module/hero.html" (dict "desc" .desc)  }}
 
-		    		<div class="col-12 ">
-		    			<div class="row">
-		    			{{ if eq $index 0 }}	
-				    		{{ partial "full_width_image.html" (dict "image" .image "lazy" "true") }}
-			    		{{ else }}
-				    		{{ partial "full_width_image.html" (dict "image" .image ) }}
-			    		{{ end }}
-			    		{{ if site.Data.homepage.videos.enable }}
-							{{ with site.Data.homepage.videos }}
-								{{range .videos}}
-								<div class="col pt-lg-5 pt-4">
-										    		<!-- Button trigger modal -->
-								<button type="button" class="btn btn-danger display-1" data-toggle="modal" data-target="#{{.video}}">
-								  <i class="fa fa-youtube-play" aria-hidden="true"></i> {{ .text }}
-								</button>
-								</div>
-								{{ end }}
-							{{ end }}
-						{{ end }}
-						</div>
-					</div>
-		    		<h2 class="col-12 mt-5 mb-3 ">{{ .title }}</h2>
-		    		<h5 class="col-12 my-4">{{ .desc1 | markdownify }}</h5>
-		    		<h5 class="col-12 mb-5 pb-lg-5">{{ .desc2 | markdownify }}</h5>
-		    	</div>
-		    	
-		    </div>
-		    {{ end }}
-		</div>
-      </div>
-      {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title_2 "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
-      
-
-    </div>
-  </div>
-</section>
 {{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.mission.enable }}
-{{ with site.Data.homepage.mission }}
-<section class="mission" id="mission">
-  <!-- <div class="bg">
-    <img loading="lazy" src="{{`images/who.svg` | absURL}}" class="img-fluid " alt="section-bg">
-  </div> -->
-  <!-- <div class="right-shape">
-    <img loading="lazy" src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
-  </div> -->
-  <div class="container-fluid p-0 m-0">
-    <div class="row m-0">
-      {{ partial "module/left_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ if site.Data.homepage.track.enable }}
+	{{ with site.Data.homepage.track }}
+
+	  {{ partial "module/track.html" (dict "slide" .slide)  }}
+
+	{{ end }}
 {{ end }}
 
+{{ if site.Data.homepage.about.enable }}
+	{{ with site.Data.homepage.about }}
 
-{{ if site.Data.homepage.vision.enable }}
-{{ with site.Data.homepage.vision }}
-<section class="vision  bg-white">
-  <div class="container-fluid p-0 m-0">
-    <div class="row m-0">
-        
-          {{ partial "module/right_image.html" (dict "image" .image "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 ) }}
-    </div>
-  </div>
-</section>
-{{ end }}
+	  {{ partial "module/about.html" (dict "text" .text)  }}
+
+	{{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.product.enable }}
-{{ with site.Data.homepage.product }}
-<section class="products" id="products">
-  <div class="container-fluid p-0 m-0 mb-5">
-    <div class="row m-0">
-        <div class="col col-12 my-0 ml-auto content_2 content text-center pt-lg-5 py-3 px-lg-5 px-0 ">
-			<h2 class=" ml-lg-5">
-		      
-		          {{.title | markdownify}}
-		      
-		    </h2>
-		</div>
-		<div class="col col-sm-12 col-12   my-0 px-lg-0 ml-auto content_2 content text-center py-lg-4 px-lg-5 py-3 px-4 ">
-		  <div class="align-middle  pl-lg-5">
-		    <p>{{ .content | markdownify }}</p>
-		    <p>{{ .content_2 | markdownify }}</p>
-		    {{ if .button_2.enable }}
-		    {{ with .button_2 }}
-		    <a href="{{if .Pre}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}" class="hero-btn btn page-scroll" class=" my-3 hero-btn btn page-scroll">{{.label}}</a>
-		    {{ end }}
-		    {{ end }}
-		</div>
-		</div>
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ if site.Data.homepage.work.enable }}
+	{{ with site.Data.homepage.work }}
+
+	  {{ partial "module/work.html" (dict "brand" .brand)  }}
+
+	{{ end }}
 {{ end }}
 
-{{ if site.Data.homepage.story.enable }}
-{{ with site.Data.homepage.story }}
-<section class="story" id="story">
-  <div class="container-fluid p-0 m-0 text-center">
-    <div class="row m-0">
-    	<div class="col col-12 bg-grey py-5">
-    		<h3>Seize the opportunity to bring light into their darkness....</h3>
-    		<a href="/donation" class="f-700 font-3 btn btn-danger text-capitalize rounded-1 mt-5 px-6">GIVE here!</a>
-    	</div>
-        <div class="col col-12 bg text-center py-5">
-        	{{ partial "image.html" (dict "image" .image "id" "img1" "class" "") }}
-        </div>
-          
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ if site.Data.homepage.partner.enable }}
+	{{ with site.Data.homepage.partner }}
+
+	  {{ partial "module/partner.html" (dict "partner" .slide)  }}
+
+	{{ end }}
 {{ end }}
 
+{{ if site.Data.homepage.blog.enable }}
 
+					
+	  {{ partial "module/blog.html" (dict "blog" site.Data.homepage.blog "bb"  (where .Site.RegularPages "Type" "profile"))  }}
 
-{{ if site.Data.homepage.call_to_action.enable }}
-{{ with site.Data.homepage.call_to_action }}
-<footer class="footer">
-	<div class="call-to-action text-center">
-		<h2>{{ .title | markdownify }}</h2>
-		<a href="{{.button_link | absURL }}">{{.button_label}}</a>
-	</div>
-</footer>
-{{end}}
-{{end}}
-{{ if site.Data.homepage.videos.enable }}
-{{ with site.Data.homepage.videos }}
-{{range .videos}}
-<!-- Modal -->
-<div class="modal fade" id="{{ .video }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <div class="modal-body">
-      	<div class="container">
-      		<div class="row">
-		         {{ partial "module/left_video.html" (dict "image" .video_thumb "image_2" .image_2 "image_text" .image_text "image_text_2" .image_text_2 "title" .title "content" .content "content_2" .content_2 "subtitle" .subtitle "subtitle_2" .subtitle_2 "video" .video) }}
-	         </div>
-         </div>
-      </div>
-      </div>
-    </div>
-  </div>
+	
+{{ end }}
+
 </div>
-{{end}}
-{{end}}
-{{end}}
 
 {{ end }}

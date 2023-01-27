@@ -1,18 +1,24 @@
 {{- $image := resources.Get .image -}}
-{{ $tiny := ($image.Resize "450x q90") }}
-{{ $small := ($image.Resize "600x q90") }}
-{{ $medium := ($image.Resize "800x q90") }}
-{{ $large := ($image.Resize "900x q90") }}
-{{ $webp1 := $image.Resize "450x webp picture"  }}
-{{ $webp2 := $image.Resize "1000x webp picture"  }}
+{{ $tiny := ($image.Resize "500x q90") }}
+{{ $small := ($image.Resize "800x q90") }}
+{{ $medium := ($image.Resize "1080x q90") }}
+{{ $large := ($image.Resize "1280x q90") }}
+{{ $webp1 := $image.Resize "500x webp picture"  }}
+{{ $webp2 := $image.Resize "800x webp picture"  }}
+{{ $webp3 := $image.Resize "1080x webp picture"  }}
+{{ $webp4 := $image.Resize "1200x webp picture"  }}
+
 <picture>
-    <source media="(min-width:650px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
+    <source media="(min-width:479px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
+    <source media="(min-width:767px)" srcset="{{ $webp1.RelPermalink }}" type="image/webp">
+	<source media="(min-width:650px)" srcset="{{ $webp2.RelPermalink }}" type="image/webp">
     <source media="(min-width:300px)" srcset="{{ $webp1.RelPermalink }}" type="image/webp">
     <img 
+	sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 94vw, 89vw" 
     srcset="
-    {{- with $tiny.RelPermalink -}}{{.}} 200w{{- end -}}
-    {{- with $small.RelPermalink -}}, {{.}} 768w{{- end -}}
-    {{- with $medium.RelPermalink -}}, {{.}} 1024w{{- end -}}
-    {{- with $large.RelPermalink -}}, {{.}} 1366w{{- end -}}"
+    {{- with $tiny.RelPermalink -}}{{.}} 500w{{- end -}}
+    {{- with $small.RelPermalink -}}, {{.}} 800w{{- end -}}
+    {{- with $medium.RelPermalink -}}, {{.}} 1080w{{- end -}}
+    {{- with $large.RelPermalink -}}, {{.}} 1280w{{- end -}}"
     img loading="lazy" src="{{ $small.RelPermalink }}" class="{{.class}}"  alt="{{ .alt}}" name= "{{ .name }}" id="{{.id}}">
 </picture>

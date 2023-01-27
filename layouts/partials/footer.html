@@ -1,105 +1,42 @@
-<footer>
-	<div class="row pb-5 mb-5">
-		<div class="col-lg-2 col-12	text-lg-right text-center px-0 mb-3">
-			<a href="/"><img src="{{`images/logo.svg` | absURL}}" class="img-fluid" alt="section-bg"></a>
-		</div>
-		<div class="col-lg-5 col-12 mt-sm-3">
-			<div class="row center text-center text-lg-left">
-				<div class="col col-12 ">
-					<h2 class="mb-0">contact us</h2>
-				</div>
-				<div class="col-12 text-blue py-3 ">
-					<span id="rb-5">{{  site.Params.contact.phone }}</span>{{  site.Params.contact.email }}
-				</div>
-				<div class="col-12">
-					{{ range site.Params.social }}
-					<a href="{{ .link }}" class="btn btn-primary btn-floating btn-round-small"><i class="fa {{ .icon }}"></i></a>
-					{{ end }}
-				</div>
+<footer id="contact" class="section footer">
+	<div class="container footer margin-40">
+		<div class="row footer">
+			<div class="social-wrap margin-32">
+				{{ range site.Params.social }}
+					<a href="{{ .link }}" target="_blank" class="social-item w-inline-block"><div>{{ .title }}</div></a>
+				{{ end }}
 			</div>
-			
+		<div class="margin-24"><h2 class="text-display-1">get in touch</h2></div>
+			<a href="mailto:{{  site.Params.contact.email }}" target="_blank" class="text-link text-color-accent">{{  site.Params.contact.email }}</a>
 		</div>
-		<div class="col-lg-5 col-12 text-right pr-6 py-3 py-lg-0">
-			<div class="row text-lg-left text-center  pl-lg-5 ">
-				{{  site.Params.contact.text | markdownify }}
-				<div class="col-12 mt-4">
-					<div class="row">
-						{{ range site.Params.aaa }}
-							<a href="{{ .url }}" class="col-4 px-0 text-red f-700">{{ .title }}</a>
-						{{ end }}
-					</div>
-				</div>
-			</div>
+	</div>
+	<div class="container">
+		<div class="row footer-bottom">
+
 			
 			
+			<a href="https://www.shinajii.com/" target="_blank" class="text-link">POWERED BY SHINAJII</a>
+			<!-- div class="footer-links"><a href="https://honor-template.webflow.io/template/style-guide" class="text-link">STYLE GUIDE</a>
+			<div class="text-divider">/</div><a href="https://honor-template.webflow.io/template/licenses" class="text-link">LICENSES</a>
+			<div class="text-divider">/</div><a href="https://honor-template.webflow.io/template/changelog" class="text-link">CHANGELOG</a>
+			<div class="text-divider">/</div><a href="https://honor-template.webflow.io/template/support" class="text-link">SUPPORT</a></div>
+ -->			<a href="http://www.leonardomattar.com/" target="_blank" class="text-link">{{ dateFormat "2006" now }} © Shinajii Sdn Bhd. All Rights Reserved</a>
 		</div>
-		<div class="col-12 text-center my-lg-5 pt-lg-3">
-			{{  site.Params.footer.title | markdownify }}
-		</div>
+		{{  site.Params.contact.address | safeHTML }}
 	</div>
 </footer>
 <!-- Back to top button -->
 
-<button
-	type="button"
-	class="btn text-danger btn-light btn-floating btn-lg"
-	id="btn-back-to-top"
-	>
-	<i class="fa fa-chevron-up"></i>
-</button>
-{{ "<!-- Google Map API -->" | safeHTML }}
-{{ with site.Params.map.gmap_api }}
-<script src="{{ . | safeURL }}"></script>
-{{ end }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{{ "<!-- Main Script -->" | safeHTML }}
+
+
+{{ $jj := resources.Get "js/jquery-3.5.1.min.js"  }}
+<script src="{{ $jj.Permalink }}" async></script>
 {{ $js := resources.Get "js/script.js"  }}
-{{ $script := $js | resources.Minify }}
-<script src="{{ $script.Permalink }}" async></script>
+<!-- {{ $script := $js | resources.Minify }} -->
+<script src="{{ $js.Permalink }}" async></script>
+<!--[if lte IE 9]>
+<script  src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
-<!-- cookie -->
-{{ if site.Params.cookies.enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm border ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-	
-</script>
-<script>
-	
-</script>
-<!-- cookie style -->
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
 
-.cookie-box-hide {
-  display: none;
-}
-</style>
-{{ end }}
+</body>
+</html>

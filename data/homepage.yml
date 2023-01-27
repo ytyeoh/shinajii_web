@@ -7,77 +7,63 @@ videos:
       image_2 : "images/helmet/a2.png"
       text: 'video'
 
-banner:
-  slide:
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a1.png'
-      
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a2.png'
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a3.png'
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a4.png'
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a5.png'
-    - title : 'You can make a difference!'
-      desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-      desc2 : 'in practical ways in Rohingya lives '
-      image : 'images/slide/a6.png'
-    # - title : 'You can make a difference!'
-    #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-    #   desc2 : 'in practical ways in Rohingya lives '
-    #   image : 'images/slide/a7.png'
-    # - title : 'You can make a difference!'
-    #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-    #   desc2 : 'in practical ways in Rohingya lives '
-    #   image : 'images/slide/a8.png'
-    # - title : 'You can make a difference!'
-    #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-    #   desc2 : 'in practical ways in Rohingya lives '
-    #   image : 'images/slide/a9.png'
-    # - title : 'You can make a difference!'
-    #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-    #   desc2 : 'in practical ways in Rohingya lives '
-    #   image : 'images/slide/a10.png'
-    # - title : 'You can make a difference!'
-    #   desc1 : 'To raise <b>Hope</b> and  <b>support</b>'
-    #   desc2 : 'in practical ways in Rohingya lives '
-    #   image : 'images/slide/a11.png'
+hero:
+  enable: true
+  desc: 'Award-winning creative studio for storytelling, branding and design'
 
 
-
+track:
   enable : true
-  title : "MHR"
-  subtitle: 'Imagine...'
-  content : "You are a refugee in a foreign country. Your baby is about to be born. Instead of excitement, you are filled with fear. The language barrier makes communication impossible, leaving you feeling isolated and afraid to go to a hospital. As a refugee, how will you be treated? Will your baby survive an unassisted home birth? And how will you pay the bill anyway?"
-  image : "images/home/baby.png"
-  image_text: "Assisting Birthing Families <br>Practically, Medically & <br>Financially"
-  button:
-    enable : true
-    label : "images/hero-image/mhr.png"
-    Pre: "#"
-    URL : "advance"
-  title_2 : "Educate and support Vulnerable Pregnant Women"
-  subtitle_2: 'With YOUR help'
-  content_2 : "Breathe Life can ensure a calm and <b>safe home labour</b>, a hospital birth providing <b>medical supervision</b> and <b>birth records</b>, and, with your financial generosity, <b>lessen the anxiety</b> upon discharge, by a <b>partial subsidy</b> of the hospital bill."
-  image_2 : "images/home/baby1.png"
-  image_text_2: "<ul><li>ensure safe labour and birth</li><li>give women emotional support  </li><li>allay fears of harsh treatment and arrest</li><li>bring comfort,  assurance and sound advise</li><li>lift their financial burden</li></ul>"
-  button_2:
-    enable : true
-    label : "Learn More"
-    Pre: "/"
-    URL : "technology"
+  slide:
+    - image: "PressAd_1.jpg"
+    - image: "POSTER.jpg"
+    - image: "namecardPng.png"
+    - image: "REDPACKET1.jpg"
+    - image: "SHOWROOM1.jpg"
+    - image: "WEB1.jpg"
+
+
+about:
+  enable : true
+  text: 
+    word: "Advertising Agency"
+    based: "Based in Penang"
+    text_1: "with honor"
+    text_2: "visual"
+    text_3: "design"
+    text_4: "branding"
+
+work:
+  enable: true
+  brand:
+    - title: "ADVERTISING"
+      image: 'WEB4.jpg'
+    - title: "BRANDING / CORPORATE IDENTITY"
+      image: 'REDPACKET3.jpg'
+    - title: "GRAPHICS & WEB DESIGN"
+      image: 'SIERRA EAST2.jpg'
+    - title: "CMS & DATABASE DESIGN"
+      image: 'silicon.jpg'
+    - title: "HOSTING"
+      image: 'SHOWROOM3.jpg'
+    - title: "WEB CONSULTATION"
+      image: 'silicon.jpg'
+    - title: "WEB MARKETING"
+      image: 'SHOWROOM3.jpg'
+
+partner:
+  enable : true
+  slide:
+    - image: "jpg50.jpg"
+    - image: "jpg51.jpg"
+    - image: "jpg52.jpg"
+    - image: "jpg54.jpg"
+    - image: "jpg56.jpg"
+    - image: "jpg57.jpg"
+
+blog:
+  enable: true
+  title: "Blog resources"
 
 #################### Mission #####################
 mission:

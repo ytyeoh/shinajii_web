@@ -1,5 +1,39 @@
 {{ define "main" }}
 
-abc
+
+<div style="opacity: 1;" class="wrapper">
+	
+	<div class="section wf-section">
+
+		<div class="container">
+			<div class="row licenses">
+				<div class="col _14-24"><h1 class="text-display-1">Shinajii<br>RESOURCES</h1></div>
+			</div>
+			<div class="row blog">
+				<div class="w-dyn-list">
+					<div role="list" class="grid-thirds blog w-dyn-items">
+						{{ range .Pages.ByWeight }}
+							<div id="w-node-bece8a54-44bd-2aec-ff2e-5026fee5cc5f-0fa81c2c" role="listitem" class="w-dyn-item">
+								
+								<a href="{{.Permalink}}" style="border-color: rgb(44, 44, 44);">
+									<div class="blog-card-top">
+										<div class="image-contain thumb margin-24"><img src="../{{.Params.image}}"  class="image" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+										<div class="margin-96"><h2 class="text-display-5">{{ .Params.name | markdownify}}</h2></div>
+									</div>
+									<div class="blog-card-bottom">
+										<div class="text-micro-1 text-color-dark">{{.Params.goal }}</div>
+										<div class="text-micro-1 text-color-dark">View More</div>
+									</div>
+								</a>
+								
+							</div>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 {{ end }}
